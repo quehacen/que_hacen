@@ -14,7 +14,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Script de prueba</title>
+        <title>Visualización de las votaciones comparando sí/no/abs/no presente</title>
         <script src="js/d3.v2.min.js"></script>
         <style type="text/css">
           svg {
@@ -59,33 +59,36 @@ var minPresentes = d3.min(data, function(d) { return d.presentes; });
 var x = d3.scale.linear().domain([0, data.length]).range([0, width]);
 var y = d3.scale.linear().domain([0, 350]).rangeRound([0, height]);
 
-var barDemo = d3.select("#viz").
-  append("svg:svg").
-  attr("width", width).
-  attr("height", height);
+var barDemo = d3.select("#viz")
+  .append("svg:svg")
+  .attr("width", width)
+  .attr("height", height);
 
-var enter = barDemo.selectAll("rect").data(data).enter();
+var enter = barDemo
+  .selectAll("rect")
+  .data(data)
+  .enter();
 
-enter.append("svg:rect").
-  attr("x", function(d, index) { return x(index); }).
-  attr("y", function(d) { return height - y(d.si) - y(d.no); }).
-  attr("height", function(d) { return y(d.no); }).
-  attr("width", barWidth).
-  attr("fill", "#AA4444");
+enter.append("svg:rect")
+  .attr("x", function(d, index) { return x(index); })
+  .attr("y", function(d) { return height - y(d.si) - y(d.no); })
+  .attr("height", function(d) { return y(d.no); })
+  .attr("width", barWidth)
+  .attr("fill", "#AA4444");
 
-enter.append("svg:rect").
-  attr("x", function(d, index) { return x(index); }).
-  attr("y", function(d) { return height - y(d.si); }).
-  attr("height", function(d) { return y(d.si); }).
-  attr("width", barWidth).
-  attr("fill", "#448800");
+enter.append("svg:rect")
+  .attr("x", function(d, index) { return x(index); })
+  .attr("y", function(d) { return height - y(d.si); })
+  .attr("height", function(d) { return y(d.si); })
+  .attr("width", barWidth)
+  .attr("fill", "#448800");
 
-enter.append("svg:rect").
-  attr("x", function(d, index) { return x(index); }).
-  attr("y", function(d) { return height - y(d.si) - y(d.no) - y(d.abs); }).
-  attr("height", function(d) { return y(d.abs); }).
-  attr("width", barWidth).
-  attr("fill", "#444444");
+enter.append("svg:rect")
+  .attr("x", function(d, index) { return x(index); })
+  .attr("y", function(d) { return height - y(d.si) - y(d.no) - y(d.abs); })
+  .attr("height", function(d) { return y(d.abs); })
+  .attr("width", barWidth)
+  .attr("fill", "#444444");
 
 document.write("Max presentes: " + maxPresentes + "<br/>");
 document.write("Min presentes: " + minPresentes + "<br/>");
