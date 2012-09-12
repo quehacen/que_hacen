@@ -31,16 +31,20 @@
 var data = [
 <?php
   while($row = $res->fetch_assoc()) {
-    $x = $row['xml'];
-    if(preg_match("/".
-      "<Fecha>([0-9\/]*?)<\/Fecha>.*?".
-      "<Presentes>(\d+)<\/Presentes>.*?".
-      "<AFavor>(\d+)<\/AFavor>.*?".
-      "<EnContra>(\d+)<\/EnContra>.*?".
-      "<Abstenciones>(\d+)<\/Abstenciones>".
-      "/ms", $x, $F)) {
+    $r = new SimpleXMLElement($row['xml']);
 
-      print "  { fecha:$F[1], presentes:$F[2], si:$F[3], no:$F[4], abs:$F[5] },\n";
+    if($r->Totales->AFavor) {
+      print sprintf("  { fecha:%s, presentes:%s, si:%s, no:%s, abs:%s },\n",
+        $r->Informacion->Fecha,
+        $r->Totales->Presentes,
+        $r->Totales->AFavor,
+        $r->Totales->EnContra,
+        $r->Totales->Abstenciones
+      );
+    } else {
+      print sprintf(" // Asentimiento: %s (%s)\n",
+        $r->Totales->Asentimiento,
+        $r->Informacion->Fecha);
     }
   }
 ?>
