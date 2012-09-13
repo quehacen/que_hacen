@@ -1,0 +1,12 @@
+body {
+	font-family:Arial, Helvetica;
+	padding:30px;
+}
+svg {
+	shape-rendering: crispEdges;
+	background-color:#ADF;
+}
+#viz {
+	margin-top:10px;
+	margin-bottom:10px;
+}
