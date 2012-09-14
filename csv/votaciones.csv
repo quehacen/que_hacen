@@ -1,269 +1,319 @@
-fecha,presentes,si,no,abs
-17/7/2012,309,309,0,0
-17/7/2012,309,309,0,0
-19/7/2012,324,144,179,1
-19/7/2012,325,141,183,1
-19/7/2012,324,319,4,1
-19/7/2012,325,324,0,1
-19/7/2012,325,298,21,6
-19/7/2012,325,117,182,26
-19/7/2012,324,207,17,100
-19/7/2012,325,207,118,0
-19/7/2012,325,308,17,0
-19/7/2012,325,197,127,1
-19/7/2012,331,145,184,2
-19/7/2012,331,123,201,7
-19/7/2012,331,132,183,16
-19/7/2012,331,153,178,0
-19/7/2012,312,180,131,1
-24/7/2012,318,177,140,1
-24/7/2012,315,195,113,7
-24/7/2012,316,139,177,0
-24/7/2012,314,305,2,7
-24/7/2012,314,194,112,8
-12/6/2012,323,0,322,1
-12/6/2012,326,146,178,2
-12/6/2012,323,201,10,112
-12/6/2012,329,319,0,10
-12/6/2012,329,139,175,15
-12/6/2012,326,136,174,16
-14/6/2012,320,206,111,3
-14/6/2012,323,323,0,0
-14/6/2012,318,302,10,6
-14/6/2012,319,202,110,7
-14/6/2012,319,303,12,4
-14/6/2012,319,316,0,3
-14/6/2012,319,316,0,3
-14/6/2012,319,208,9,102
-19/6/2012,327,120,203,4
-19/6/2012,328,48,277,3
-19/6/2012,327,327,0,0
-19/6/2012,324,194,122,8
-19/6/2012,328,133,178,17
-19/6/2012,326,207,111,8
-19/6/2012,324,311,11,2
-19/6/2012,328,130,194,4
-19/6/2012,327,146,177,4
-21/6/2012,329,19,310,0
-21/6/2012,328,19,309,0
-21/6/2012,330,311,19,0
-21/6/2012,329,122,206,1
-21/6/2012,328,118,183,27
-21/6/2012,329,149,180,0
-26/6/2012,318,129,184,5
-26/6/2012,318,145,172,1
-26/6/2012,316,294,19,3
-26/6/2012,317,27,277,13
-26/6/2012,317,21,290,6
-26/6/2012,315,196,4,115
-26/6/2012,313,140,171,2
-26/6/2012,317,128,173,16
-26/6/2012,317,126,171,20
-28/6/2012,306,262,2,42
-28/6/2012,322,121,184,17
-28/6/2012,322,5,290,27
-28/6/2012,323,19,301,3
-28/6/2012,322,17,301,4
-28/6/2012,323,6,303,14
-28/6/2012,322,136,183,3
-28/6/2012,323,17,296,10
-28/6/2012,322,134,185,3
-28/6/2012,323,288,20,15
-28/6/2012,323,318,5,0
-28/6/2012,322,308,2,12
-28/6/2012,323,195,125,3
-28/6/2012,322,194,30,98
-16/5/2012,323,144,172,7
-16/5/2012,325,131,172,22
-16/5/2012,317,127,174,16
-17/5/2012,303,265,1,37
-17/5/2012,303,265,1,37
-17/5/2012,303,265,1,37
-17/5/2012,303,265,1,37
-17/5/2012,314,179,135,0
-17/5/2012,315,137,177,1
-17/5/2012,315,183,131,1
-17/5/2012,314,313,0,1
-17/5/2012,315,193,122,0
-17/5/2012,315,122,193,0
-17/5/2012,315,178,137,0
-17/5/2012,315,139,176,0
-17/5/2012,312,296,13,3
-17/5/2012,312,296,13,3
-17/5/2012,312,296,13,3
-21/5/2012,316,27,177,112
-21/5/2012,316,19,191,106
-21/5/2012,314,122,181,11
-21/5/2012,316,131,183,2
-21/5/2012,317,176,141,0
-21/5/2012,317,20,288,9
-21/5/2012,317,27,280,10
-21/5/2012,316,177,139,0
-21/5/2012,316,133,181,2
-21/5/2012,317,22,293,2
-21/5/2012,316,117,177,22
-21/5/2012,317,41,179,97
-21/5/2012,317,99,184,34
-21/5/2012,317,20,293,4
-22/5/2012,330,130,181,19
-22/5/2012,331,34,286,11
-22/5/2012,337,5,183,149
-22/5/2012,335,6,297,32
-22/5/2012,337,5,300,32
-22/5/2012,337,17,285,35
-22/5/2012,335,16,284,35
-22/5/2012,337,16,287,34
-22/5/2012,337,129,187,21
-22/5/2012,337,145,184,8
-22/5/2012,338,124,182,32
-22/5/2012,338,180,158,0
-22/5/2012,338,150,182,6
-22/5/2012,338,147,182,9
-22/5/2012,336,43,185,108
-23/5/2012,329,129,181,19
-23/5/2012,328,129,183,16
-23/5/2012,330,106,199,25
-23/5/2012,331,107,194,30
-23/5/2012,332,120,186,26
-23/5/2012,332,141,185,6
-23/5/2012,332,144,181,7
-23/5/2012,331,142,184,5
-23/5/2012,332,128,184,20
-23/5/2012,330,137,182,11
-23/5/2012,330,122,183,25
-23/5/2012,330,136,180,14
-23/5/2012,332,142,186,4
-23/5/2012,329,7,286,36
-23/5/2012,332,4,287,41
-29/5/2012,322,36,183,103
-29/5/2012,322,147,175,0
-29/5/2012,322,207,112,3
-29/5/2012,323,308,1,14
-29/5/2012,322,143,178,1
-29/5/2012,323,321,1,1
-29/5/2012,322,145,177,0
-31/5/2012,329,178,28,123
-31/5/2012,328,328,0,0
-31/5/2012,327,129,182,16
-31/5/2012,327,148,178,1
-31/5/2012,326,312,0,14
-31/5/2012,326,312,0,14
-31/5/2012,327,313,11,3
-31/5/2012,327,313,11,3
-31/5/2012,327,325,0,2
-31/5/2012,327,325,0,2
-31/5/2012,327,325,0,2
-31/5/2012,327,325,0,2
-31/5/2012,327,325,0,2
-31/5/2012,327,325,0,2
-31/5/2012,327,325,0,2
-10/4/2012,324,42,282,0
-10/4/2012,321,196,119,6
-10/4/2012,324,119,189,16
-10/4/2012,320,141,174,5
-10/4/2012,321,126,180,15
-10/4/2012,321,202,114,5
-12/4/2012,327,310,13,4
-12/4/2012,327,12,302,13
-12/4/2012,331,194,137,0
-12/4/2012,330,151,179,0
-12/4/2012,331,21,198,112
-12/4/2012,331,109,209,13
-12/4/2012,331,20,199,112
-12/4/2012,331,17,198,116
-12/4/2012,331,6,213,112
-12/4/2012,329,149,180,0
-12/4/2012,313,1,293,19
-12/4/2012,313,11,189,113
-12/4/2012,312,108,184,20
-12/4/2012,312,12,188,112
-25/4/2012,339,156,182,1
-25/4/2012,329,328,0,1
-25/4/2012,329,140,183,6
-25/4/2012,328,178,145,5
-25/4/2012,329,154,174,1
-25/4/2012,314,276,1,37
-6/3/2012,336,140,196,0
-6/3/2012,329,289,18,22
-6/3/2012,334,334,0,0
-6/3/2012,335,36,181,118
-6/3/2012,336,136,200,0
-6/3/2012,336,105,204,27
-8/3/2012,339,197,142,0
-8/3/2012,338,337,0,1
-8/3/2012,321,301,14,6
-8/3/2012,321,140,177,4
-13/3/2012,339,179,133,27
-13/3/2012,317,126,173,18
-13/3/2012,316,146,169,1
-13/3/2012,315,315,0,0
-13/3/2012,321,132,176,13
-15/3/2012,314,295,6,13
-15/3/2012,312,186,101,25
-15/3/2012,313,299,12,2
-15/3/2012,309,129,175,5
-15/3/2012,319,5,314,0
-15/3/2012,318,5,313,0
-15/3/2012,320,19,279,22
-15/3/2012,315,113,193,9
-27/3/2012,323,23,290,10
-27/3/2012,326,25,292,9
-27/3/2012,323,178,129,16
-27/3/2012,327,135,190,2
-27/3/2012,323,123,179,21
-27/3/2012,323,110,179,34
-27/3/2012,323,125,188,10
-27/3/2012,323,106,195,22
-29/3/2012,310,309,0,1
-29/3/2012,310,310,0,0
-29/3/2012,310,310,0,0
-29/3/2012,310,310,0,0
-29/3/2012,310,309,1,0
-29/3/2012,310,310,0,0
-29/3/2012,310,201,109,0
-29/3/2012,310,129,181,0
-29/3/2012,310,196,2,112
-29/3/2012,309,122,182,5
-29/3/2012,310,14,188,108
-7/2/2012,329,298,28,3
-7/2/2012,327,125,184,18
-7/2/2012,327,327,0,0
-7/2/2012,331,20,204,107
-9/2/2012,338,182,127,29
-9/2/2012,336,153,181,2
-14/2/2012,320,26,291,3
-14/2/2012,321,306,14,1
-14/2/2012,319,127,192,0
-14/2/2012,320,108,180,32
-16/2/2012,337,303,28,6
-16/2/2012,336,152,183,1
-21/2/2012,327,130,180,17
-21/2/2012,326,181,144,1
-21/2/2012,320,34,286,0
-21/2/2012,331,5,326,0
-21/2/2012,326,323,0,3
-23/2/2012,312,118,179,15
-23/2/2012,312,113,198,1
-23/2/2012,312,18,280,14
-23/2/2012,312,18,280,14
-23/2/2012,312,32,280,0
-23/2/2012,312,130,182,0
-23/2/2012,311,18,279,14
-23/2/2012,312,113,185,14
-23/2/2012,311,130,181,0
-23/2/2012,314,133,181,0
-23/2/2012,312,296,13,3
-23/2/2012,313,183,116,14
-23/2/2012,313,296,13,4
-23/2/2012,313,298,11,4
-23/2/2012,313,308,5,0
-23/2/2012,312,202,110,0
-23/2/2012,312,24,288,0
-23/2/2012,313,22,285,6
-11/1/2012,333,327,0,6
-11/1/2012,339,197,138,4
-11/1/2012,338,141,175,22
-11/1/2012,341,127,190,24
-11/1/2012,342,44,298,0
-11/1/2012,342,25,295,22
-11/1/2012,343,337,0,6
+fecha,presentes,si,no,abs,num_expediente,titulo,texto_expediente,titulo_subgrupo,texto_subgrupo
+17/7/2012,309,309,0,0,162/000371,"Proposiciones no de Ley.","Proposición no de Ley sobre medidas para paliar los daños producidos por los incendios forestales.
+Se vota en los términos de la enmienda transaccional presentada por  los Grupos Parlamentarios Popular, Socialista, Catalán (CiU), de Unión Progreso y Democracia, de la Izquierda Plural (IU-ICV-EUiA:CHA), Vasco (EAJ-PNV) y Mixto.",,
+17/7/2012,309,309,0,0,162/000366,"Proposiciones no de Ley.","Proposición no de Ley sobre extinción de incendios y ayudas ante los daños causados por los mismos.
+Se vota en los términos de la enmienda transaccional presentada por  los Grupos Parlamentarios Popular, Socialista, Catalán (CiU), de Unión Progreso y Democracia, de la Izquierda Plural (IU-ICV-EUiA:CHA), Vasco (EAJ-PNV) y Mixto.",,
+19/7/2012,324,144,179,1,173/000031,"Mociones consecuencia de interpelaciones urgentes.","Moción consecuencia de interpelación urgente sobre las prioridades y compromisos del Ministerio de Fomento con la Comunidad Autónoma de Canarias.","Votación separada por puntos ","Puntos 1, 2, 8  y 11."
+19/7/2012,325,141,183,1,173/000031,"Mociones consecuencia de interpelaciones urgentes.","Moción consecuencia de interpelación urgente sobre las prioridades y compromisos del Ministerio de Fomento con la Comunidad Autónoma de Canarias.","Votación separada por puntos "," Puntos 3, 4, 6, 7, 9, y 12."
+19/7/2012,324,319,4,1,173/000031,"Mociones consecuencia de interpelaciones urgentes.","Moción consecuencia de interpelación urgente sobre las prioridades y compromisos del Ministerio de Fomento con la Comunidad Autónoma de Canarias.","Votación separada por puntos "," Punto 5."
+19/7/2012,325,324,0,1,173/000031,"Mociones consecuencia de interpelaciones urgentes.","Moción consecuencia de interpelación urgente sobre las prioridades y compromisos del Ministerio de Fomento con la Comunidad Autónoma de Canarias.","Votación separada por puntos "," Punto 10."
+19/7/2012,325,298,21,6,173/000032,"Mociones consecuencia de interpelaciones urgentes.","Moción consecuencia de interpelación urgente sobre las infraestructuras a incluir en el nuevo Plan de Infraestructuras, Transporte y Vivienda, PITVI 2012-2024, con especial referencia a Aragón.","Votación separada por puntos ","Punto 1, apartado n)."
+19/7/2012,325,117,182,26,173/000032,"Mociones consecuencia de interpelaciones urgentes.","Moción consecuencia de interpelación urgente sobre las infraestructuras a incluir en el nuevo Plan de Infraestructuras, Transporte y Vivienda, PITVI 2012-2024, con especial referencia a Aragón.","Votación separada por puntos "," Resto de la moción."
+19/7/2012,324,207,17,100,173/000033,"Mociones consecuencia de interpelaciones urgentes.","Moción consecuencia de interpelación urgente sobre las medidas que tiene previsto adoptar el Gobierno y el Ministerio del Interior para reforzar la seguridad ciudadana ante los problemas de la multirreincidencia y la violencia callejera.","Votación separada por puntos ","Puntos 1 y 2."
+19/7/2012,325,207,118,0,173/000033,"Mociones consecuencia de interpelaciones urgentes.","Moción consecuencia de interpelación urgente sobre las medidas que tiene previsto adoptar el Gobierno y el Ministerio del Interior para reforzar la seguridad ciudadana ante los problemas de la multirreincidencia y la violencia callejera.","Votación separada por puntos "," Punto 5."
+19/7/2012,325,308,17,0,173/000033,"Mociones consecuencia de interpelaciones urgentes.","Moción consecuencia de interpelación urgente sobre las medidas que tiene previsto adoptar el Gobierno y el Ministerio del Interior para reforzar la seguridad ciudadana ante los problemas de la multirreincidencia y la violencia callejera.","Votación separada por puntos "," Puntos 9 y 10."
+19/7/2012,325,197,127,1,173/000033,"Mociones consecuencia de interpelaciones urgentes.","Moción consecuencia de interpelación urgente sobre las medidas que tiene previsto adoptar el Gobierno y el Ministerio del Interior para reforzar la seguridad ciudadana ante los problemas de la multirreincidencia y la violencia callejera.","Votación separada por puntos "," Resto de la Moción."
+19/7/2012,331,145,184,2,173/000034,"Mociones consecuencia de interpelaciones urgentes.","Moción consecuencia de interpelación urgente sobre la política del Gobierno respecto de la continuidad de la actividad de la minería del carbón y el desarrollo alternativo de las comarcas mineras.","Votación separada por puntos ","Punto 3."
+19/7/2012,331,123,201,7,173/000034,"Mociones consecuencia de interpelaciones urgentes.","Moción consecuencia de interpelación urgente sobre la política del Gobierno respecto de la continuidad de la actividad de la minería del carbón y el desarrollo alternativo de las comarcas mineras.","Votación separada por puntos "," Punto 5."
+19/7/2012,331,132,183,16,173/000034,"Mociones consecuencia de interpelaciones urgentes.","Moción consecuencia de interpelación urgente sobre la política del Gobierno respecto de la continuidad de la actividad de la minería del carbón y el desarrollo alternativo de las comarcas mineras.","Votación separada por puntos "," Punto 6."
+19/7/2012,331,153,178,0,173/000034,"Mociones consecuencia de interpelaciones urgentes.","Moción consecuencia de interpelación urgente sobre la política del Gobierno respecto de la continuidad de la actividad de la minería del carbón y el desarrollo alternativo de las comarcas mineras.","Votación separada por puntos "," Resto de la Moción."
+19/7/2012,312,180,131,1,130/000021,"Convalidación o derogación de Reales Decretos-Leyes.","Real Decreto-Ley 20/2012, de 13 de julio, de medidas para garantizar la estabilidad presupuestaria y de fomento de la competitividad.",,
+24/7/2012,318,177,140,1,430/000002,"Debate relativo al objetivo de estabilidad presupuestaria.","Acuerdo por el que, conforme a lo establecido en el artículo 15 de la Ley Orgánica 2/2012, de 27 de abril, de Estabilidad Presupuestaria y Sostenibilidad Financiera, se fijan los objetivos de estabilidad presupuestaria y de deuda pública para el conjunto de Administraciones Públicas y de cada uno de sus subsectores para el período 2013-2015 y el límite de gasto no financiero del Presupuesto del Estado para 2013.",,
+24/7/2012,315,195,113,7,130/000023,"Convalidación o derogación de Reales Decretos-Leyes.","Real Decreto-Ley 22/2012, de 20 de julio, por el que se adoptan medidas en materia de infraestructuras y servicios ferroviarios.",,
+24/7/2012,316,139,177,0,130/000023,"Convalidación o derogación de Reales Decretos-Leyes.","Tramitación como Proyecto de Ley por el procedimiento de urgencia del Real Decreto-Ley 22/2012, de 20 de julio, por el que se adoptan medidas en materia de infraestructuras y servicios ferroviarios.",,
+24/7/2012,314,305,2,7,121/000009,"Enmiendas del Senado.","Proyecto de Ley de modificación de la Ley 7/2010, de 31 de marzo, General de la Comunicación Audiovisual, para flexibilizar los modos de gestión de los servicios públicos de comunicación audiovisual autonómicos.","Votación separada de las Enmiendas","Enmienda al Artículo Único, Uno, de adición al  párrafo primero del Apartado 2 del Artículo 7 de la Ley 7/2010."
+24/7/2012,314,194,112,8,121/000009,"Enmiendas del Senado.","Proyecto de Ley de modificación de la Ley 7/2010, de 31 de marzo, General de la Comunicación Audiovisual, para flexibilizar los modos de gestión de los servicios públicos de comunicación audiovisual autonómicos.","Votación separada de las Enmiendas"," Enmienda al Artículo Único, Uno, de supresión del párrafo tercero del Apartado 2 del Artículo 7 de la Ley 7/2010."
+12/6/2012,323,0,322,1,125/000001,"Toma en consideración de Proposiciones de Ley de Comunidades y Ciudades Autónomas.","Proposición de Ley de modificación de la Ley 10/1990, de 15 de octubre, del Deporte (corresponde al número de expediente 125/000007/0000 de la IX Legislatura).",,
+12/6/2012,326,146,178,2,410/000003,"Toma en consideración de Proposición de reforma del Reglamento del Congreso de los Diputados.","Proposición de reforma del Reglamento del Congreso de los Diputados para la creación de la Comisión de Peticiones y Participación Ciudadana.",,
+12/6/2012,323,201,10,112,162/000272,"Proposiciones no de Ley.","Proposición no de Ley relativa a las penas por delitos de incendios forestales.",,
+12/6/2012,329,319,0,10,162/000323,"Proposiciones no de Ley.","Proposición no de Ley sobre la denegación de indemnizaciones a altos cargos de entidades financieras que han requerido de ayudas del Estado a través del FROB.
+
+Se vota en los términos de la enmienda transaccional presentada por los Grupos Parlamentarios Popular, Socialista, GC-CiU, GV-EAJ-PNV, GMx.",,
+12/6/2012,329,139,175,15,173/000023,"Mociones consecuencia de interpelaciones urgentes.","Moción consecuencia de interpelación urgente sobre las medidas que piensa tomar el Gobierno para examinar las causas de la crisis financiera en España.
+
+Se vota en los términos de la enmienda transaccional presentada por  los Grupo Parlamentarios de IU, ICV-EUiA, CHA: La Izquierda Plural y UPyD.",,
+12/6/2012,326,136,174,16,173/000024,"Mociones consecuencia de interpelaciones urgentes.","Moción consecuencia de interpelación urgente sobre los cambios en nuestro modelo social que amenazan el futuro de las mujeres españolas.
+
+Se vota en los términos de la enmienda transaccional presentada por  los Grupo Parlamentarios: Socialista, GC-CiU y de IU, ICV-EUiA, CHA: La Izquierda Plural ",,
+14/6/2012,320,206,111,3,130/000020,"Convalidación o derogación de Reales Decretos-Leyes.","Real Decreto-Ley 19/2012, de 25 de mayo, de medidas urgentes de liberalización del comercio y de determinados servicios.",,
+14/6/2012,323,323,0,0,130/000020,"Convalidación o derogación de Reales Decretos-Leyes.","Tramitación como Proyecto de Ley por el procedimiento de urgencia del Real Decreto-Ley 19/2012, de 25 de mayo, de medidas urgentes de liberalización del comercio y de determinados servicios.",,
+14/6/2012,318,302,10,6,121/000007,"Enmiendas del Senado.","Proyecto de Ley de simplificación de las obligaciones de información y documentación de fusiones y escisiones de sociedades de capital (procedente del Real Decreto-Ley 9/2012, de 16 de marzo).","Enmiendas del Senado","Enmienda al artículo Primero.Tres"
+14/6/2012,319,202,110,7,121/000007,"Enmiendas del Senado.","Proyecto de Ley de simplificación de las obligaciones de información y documentación de fusiones y escisiones de sociedades de capital (procedente del Real Decreto-Ley 9/2012, de 16 de marzo).","Enmiendas del Senado"," Resto de las enmiendas"
+14/6/2012,319,303,12,4,110/000031,"Dictámenes de la Comisión de Asuntos Exteriores sobre Convenios internacionales.","Resoluciones  137 y 138  de la  Junta de  Gobernadores del  Banco  Europeo de  Reconstrucción y Desarrollo, por las que se enmiendan los artículos 1 y 18 del Banco Europeo de Reconstrucción y Desarrollo, adoptadas en Londres el 30 de septiembre de 2011.",,
+14/6/2012,319,316,0,3,110/000032,"Dictámenes de la Comisión de Asuntos Exteriores sobre Convenios internacionales.","Acuerdo de contratación pública común para la contratación de una entidad única supervisora de las subastas, hecho en Madrid el 3 de noviembre de 2011.",,
+14/6/2012,319,316,0,3,110/000033,"Dictámenes de la Comisión de Asuntos Exteriores sobre Convenios internacionales.","Acuerdo de contratación pública común para la contratación de plataformas comunes de subastas, hecho en Madrid el 3 de noviembre de 2011.",,
+14/6/2012,319,208,9,102,158/000007,"Propuestas de creación de Subcomisiones.","Solicitud de creación de una Subcomisión, en el seno de la Comisión de Sanidad y Servicios Sociales, para el análisis de los problemas estructurales del sistema sanitario y de las principales reformas que deberán acometerse para garantizar su sostenibilidad.",,
+19/6/2012,327,120,203,4,122/000009,"Toma en consideración de Proposiciones de Ley.","Proposición de Ley por la que se regulan los servicios de atención al cliente destinados a los consumidores y usuarios.",,
+19/6/2012,328,48,277,3,122/000021,"Toma en consideración de Proposiciones de Ley.","Proposición de Ley de modificación de la Ley 37/1992, de 28 de diciembre, del Impuesto sobre el Valor Añadido.",,
+19/6/2012,327,327,0,0,162/000336,"Proposiciones no de Ley.","Proposición no de Ley sobre reducción de la pobreza infantil.",,
+19/6/2012,324,194,122,8,162/000133,"Proposiciones no de Ley.","Proposición no de Ley relativa al apoyo público a la actividad innovadora.
+
+Se vota en los términos de la enmienda transaccional presentada por los Grupos Parlamentarios Popular y Catalán (CIU).",,
+19/6/2012,328,133,178,17,162/000115,"Proposiciones no de Ley.","Proposición no de Ley contra la pobreza y la exclusión social.
+
+Se vota en los términos resultantes de la incorporación de la enmienda del Grupo Socialista.",,
+19/6/2012,326,207,111,8,173/000025,"Mociones consecuencia de interpelaciones urgentes.","Moción consecuencia de interpelación urgente sobre propósitos del Gobierno en relación al establecimiento a nivel nacional de la custodia compartida como modelo preferente en los procedimientos de separación o divorcio.
+
+Se vota en los términos de la enmienda transaccional presentada por  los Grupos Parlamentarios Popular, Catalán (CiU), de Unión Progreso y Democracia , Vasco (EAJ-PNV) y Mixto.",,
+19/6/2012,324,311,11,2,173/000026,"Mociones consecuencia de interpelaciones urgentes.","Moción consecuencia de interpelación urgente sobre los planes del Gobierno acerca de la posible implantación de la formación en alternancia también en centros universitarios.
+
+Se vota en los términos de la enmienda transaccional presentada por  los Grupos Parlamentarios Popular, Socialista, de Unión Progreso y Democracia, Vasco (EAJ-PNV) y Mixto. ",,
+19/6/2012,328,130,194,4,173/000027,"Mociones consecuencia de interpelaciones urgentes.","Moción consecuencia de interpelación urgente sobre la política de inserción laboral del Gobierno y la extensión de la cobertura a los desempleados que hayan agotado todas sus prestaciones.","Votación separada por puntos","Punto 4"
+19/6/2012,327,146,177,4,173/000027,"Mociones consecuencia de interpelaciones urgentes.","Moción consecuencia de interpelación urgente sobre la política de inserción laboral del Gobierno y la extensión de la cobertura a los desempleados que hayan agotado todas sus prestaciones.","Votación separada por puntos"," Resto de la Moción"
+21/6/2012,329,19,310,0,121/000010,"Tramitación directa y en lectura única de iniciativas legislativas.","Tramitación directa y en lectura única del Proyecto de Ley Orgánica por la que se autoriza la ratificación por España del Tratado de Estabilidad, Coordinación y Gobernanza en la Unión Económica y Monetaria entre el Reino de Bélgica, la República de Bulgaria, el Reino de Dinamarca, la República Federal de Alemania, la República de Estonia, Irlanda, la República Helénica, el Reino de España, la República Francesa, la República Italiana, la República de Chipre, la República de Letonia, la República de Lituania, el Gran Ducado de Luxemburgo, Hungría, Malta, el Reino de los Países Bajos, la República de Austria, la República de Polonia, la República Portuguesa, Rumanía, la República de Eslovenia, la República Eslovaca, la República de Finlandia y el Reino de Suecia, firmado en Bruselas el 2 de marzo de 2012.","Enmiendas a la totalidad","Votación conjunta de las enmiendas de devolución presentadas por el Grupo Parlamentario Mixto y por el Grupo Parlamentario de IU, ICV, EUiA, CHA: La Izquierda Plural"
+21/6/2012,328,19,309,0,121/000010,"Tramitación directa y en lectura única de iniciativas legislativas.","Tramitación directa y en lectura única del Proyecto de Ley Orgánica por la que se autoriza la ratificación por España del Tratado de Estabilidad, Coordinación y Gobernanza en la Unión Económica y Monetaria entre el Reino de Bélgica, la República de Bulgaria, el Reino de Dinamarca, la República Federal de Alemania, la República de Estonia, Irlanda, la República Helénica, el Reino de España, la República Francesa, la República Italiana, la República de Chipre, la República de Letonia, la República de Lituania, el Gran Ducado de Luxemburgo, Hungría, Malta, el Reino de los Países Bajos, la República de Austria, la República de Polonia, la República Portuguesa, Rumanía, la República de Eslovenia, la República Eslovaca, la República de Finlandia y el Reino de Suecia, firmado en Bruselas el 2 de marzo de 2012.","Enmiendas al articulado","Enmienda 3 del Grupo Parlamentario de IU, ICV, EUiA, Cha: La Izquierda Plural"
+21/6/2012,330,311,19,0,121/000010,"Tramitación directa y en lectura única de iniciativas legislativas.","Tramitación directa y en lectura única del Proyecto de Ley Orgánica por la que se autoriza la ratificación por España del Tratado de Estabilidad, Coordinación y Gobernanza en la Unión Económica y Monetaria entre el Reino de Bélgica, la República de Bulgaria, el Reino de Dinamarca, la República Federal de Alemania, la República de Estonia, Irlanda, la República Helénica, el Reino de España, la República Francesa, la República Italiana, la República de Chipre, la República de Letonia, la República de Lituania, el Gran Ducado de Luxemburgo, Hungría, Malta, el Reino de los Países Bajos, la República de Austria, la República de Polonia, la República Portuguesa, Rumanía, la República de Eslovenia, la República Eslovaca, la República de Finlandia y el Reino de Suecia, firmado en Bruselas el 2 de marzo de 2012.","Texto del Proyecto","Votación de conjunto"
+21/6/2012,329,122,206,1,121/000011,"Debates de totalidad de iniciativas legislativas.","Proyecto de Ley de medidas urgentes en materia de medio ambiente (procedente del Real Decreto-Ley 17/2012, de 4 de mayo).","Enmiendas a la totalidad","Enmienda de texto alternativo presentada por el Grupo Parlamentario de IU, ICV, EUiA, CHA: La Izquierda Plural"
+21/6/2012,328,118,183,27,121/000011,"Debates de totalidad de iniciativas legislativas.","Proyecto de Ley de medidas urgentes en materia de medio ambiente (procedente del Real Decreto-Ley 17/2012, de 4 de mayo).","Enmiendas a la totalidad"," Enmienda de texto alternativo presentada por el Grupo Parlamentario Socialista"
+21/6/2012,329,149,180,0,121/000011,"Debates de totalidad de iniciativas legislativas.","Proyecto de Ley de medidas urgentes en materia de medio ambiente (procedente del Real Decreto-Ley 17/2012, de 4 de mayo).","Avocación por el Pleno","Avocación por el Pleno "
+26/6/2012,318,129,184,5,122/000004,"Toma en consideración de Proposiciones de Ley.","Proposición de Ley reguladora de los derechos de la persona ante el proceso final de la vida.",,
+26/6/2012,318,145,172,1,122/000041,"Toma en consideración de Proposiciones de Ley.","Proposición de Ley de medidas contra el sobreendeudamiento personal y de protección ante procedimientos de ejecución que afecten a personas naturales, incluyendo el derecho a la vivienda.",,
+26/6/2012,316,294,19,3,162/000356,"Proposiciones no de Ley.","Proposición no de Ley relativa a una política para el crecimiento, el empleo y la integración fiscal y financiera de la Unión Europea.",,
+26/6/2012,317,27,277,13,162/000187,"Proposiciones no de Ley.","Proposición no de Ley sobre los hechos ocurridos el 3 de marzo de 1976 en Vitoria-Gasteiz.",,
+26/6/2012,317,21,290,6,173/000028,"Mociones consecuencia de interpelaciones urgentes.","Moción consecuencia de interpelación urgente sobre las medidas de reparto del trabajo a impulsar a fin de paliar la grave situación de paro existente.
+",,
+26/6/2012,315,196,4,115,173/000029,"Mociones consecuencia de interpelaciones urgentes.","Moción consecuencia de interpelación urgente sobre las actuaciones que el Gobierno piensa llevar a cabo para propiciar una atención adecuada a las personas en situación de dependencia.","Votación separada por puntos","Primer punto"
+26/6/2012,313,140,171,2,173/000029,"Mociones consecuencia de interpelaciones urgentes.","Moción consecuencia de interpelación urgente sobre las actuaciones que el Gobierno piensa llevar a cabo para propiciar una atención adecuada a las personas en situación de dependencia.","Votación separada por puntos"," Segundo punto"
+26/6/2012,317,128,173,16,173/000030,"Mociones consecuencia de interpelaciones urgentes.","Moción consecuencia de interpelación urgente sobre la posición del Gobierno ante la petición de rescate financiero.","Votación separada por puntos","Primer punto"
+26/6/2012,317,126,171,20,173/000030,"Mociones consecuencia de interpelaciones urgentes.","Moción consecuencia de interpelación urgente sobre la posición del Gobierno ante la petición de rescate financiero.","Votación separada por puntos"," Segundo punto"
+28/6/2012,306,262,2,42,042/000011,"Dictamen de la Comisión del Estatuto de los Diputados.","Dictamen de la Comisión del Estatuto de los Diputados sobre declaración de actividades de Excmos. Sres. Diputados.",,
+28/6/2012,322,121,184,17,121/000001,"Dictámenes de Comisiones sobre iniciativas legislativas.","Proyecto de Ley Orgánica de Reforma de la Ley Orgánica 8/2007, de 4 de julio, sobre financiación de los partidos políticos.","Enmiendas del Grupo Parlamentario Mixto (Sra. Oramas y Sr. Quevedo)","Enmienda 12"
+28/6/2012,322,5,290,27,121/000001,"Dictámenes de Comisiones sobre iniciativas legislativas.","Proyecto de Ley Orgánica de Reforma de la Ley Orgánica 8/2007, de 4 de julio, sobre financiación de los partidos políticos.","Enmiendas del Grupo Parlamentario Mixto (Sra. Oramas y Sr. Quevedo)","Resto de enmiendas"
+28/6/2012,323,19,301,3,121/000001,"Dictámenes de Comisiones sobre iniciativas legislativas.","Proyecto de Ley Orgánica de Reforma de la Ley Orgánica 8/2007, de 4 de julio, sobre financiación de los partidos políticos.","Enmiendas del Grupo Parlamentario Mixto (Sr. Jorquera)","Votación en bloque de las enmiendas"
+28/6/2012,322,17,301,4,121/000001,"Dictámenes de Comisiones sobre iniciativas legislativas.","Proyecto de Ley Orgánica de Reforma de la Ley Orgánica 8/2007, de 4 de julio, sobre financiación de los partidos políticos.","Enmiendas del Grupo Parlamentario Mixto (Sr. Bosch)","Votación en bloque de las enmiendas"
+28/6/2012,323,6,303,14,121/000001,"Dictámenes de Comisiones sobre iniciativas legislativas.","Proyecto de Ley Orgánica de Reforma de la Ley Orgánica 8/2007, de 4 de julio, sobre financiación de los partidos políticos.","Enmiendas del Grupo Parlamentario Mixto (Sr. Cuadra)","Votación en bloque de las enmiendas"
+28/6/2012,322,136,183,3,121/000001,"Dictámenes de Comisiones sobre iniciativas legislativas.","Proyecto de Ley Orgánica de Reforma de la Ley Orgánica 8/2007, de 4 de julio, sobre financiación de los partidos políticos.","Enmiendas del Grupo Parlamentario Vasco (EAJ-PNV)","Enmienda 39"
+28/6/2012,323,17,296,10,121/000001,"Dictámenes de Comisiones sobre iniciativas legislativas.","Proyecto de Ley Orgánica de Reforma de la Ley Orgánica 8/2007, de 4 de julio, sobre financiación de los partidos políticos.","Enmiendas del Grupo Parlamentario de IU, ICV-EUiA, CHA: La Izquierda Plural","Votación en bloque de las enmiendas"
+28/6/2012,322,134,185,3,121/000001,"Dictámenes de Comisiones sobre iniciativas legislativas.","Proyecto de Ley Orgánica de Reforma de la Ley Orgánica 8/2007, de 4 de julio, sobre financiación de los partidos políticos.","Enmiendas del Grupo Parlamentario Socialista","Enmienda transaccional"
+28/6/2012,323,288,20,15,121/000001,"Dictámenes de Comisiones sobre iniciativas legislativas.","Proyecto de Ley Orgánica de Reforma de la Ley Orgánica 8/2007, de 4 de julio, sobre financiación de los partidos políticos.","Votación del dictamen","Artículo noveno"
+28/6/2012,323,318,5,0,121/000001,"Dictámenes de Comisiones sobre iniciativas legislativas.","Proyecto de Ley Orgánica de Reforma de la Ley Orgánica 8/2007, de 4 de julio, sobre financiación de los partidos políticos.","Votación del dictamen","Resto del dictamen"
+28/6/2012,322,308,2,12,121/000001,"Dictámenes de Comisiones sobre iniciativas legislativas.","Proyecto de Ley Orgánica de Reforma de la Ley Orgánica 8/2007, de 4 de julio, sobre financiación de los partidos políticos.","Votación final sobre el conjunto del Proyecto por tener el mismo carácter orgánico","Votación del Proyecto de Ley Orgánica"
+28/6/2012,323,195,125,3,121/000004,"Enmiendas del Senado.","Proyecto de Ley de medidas urgentes para la reforma del mercado laboral (procedente del Real Decreto-Ley 3/2012, de 10 de febrero).","Enmiendas del Senado","Enmiendas al apartado III del Preámbulo; al apartado IV del Preámbulo; a la disposición transitoria cuarta; a la disposición transitoria séptima; a la disposición final decimoséptima"
+28/6/2012,322,194,30,98,121/000004,"Enmiendas del Senado.","Proyecto de Ley de medidas urgentes para la reforma del mercado laboral (procedente del Real Decreto-Ley 3/2012, de 10 de febrero).","Enmiendas del Senado","Enmiendas al apartado VI del Preámbulo"
+16/5/2012,323,144,172,7,173/000018,"Mociones consecuencia de interpelaciones urgentes.","Moción consecuencia de interpelación urgente sobre la reducción del compromiso presupuestario en relación a las políticas activas de empleo. Se vota en los términos resultantes de las enmiendas formuladas por el Grupo Parlamentario Socialista, el Grupo Parlamentario Catalán (CiU) y el Grupo Parlamentario de IU, ICV-EUiA, CHA: La Izquierda Plural. ",,
+16/5/2012,325,131,172,22,173/000019,"Mociones consecuencia de interpelaciones urgentes.","Moción consecuencia de interpelación urgente sobre el modelo de bienestar social a la vista del Proyecto de Presupuestos Generales del Estado para 2012. Se vota en los términos resultantes de la enmienda formulada por el Grupo Parlamentario de IU, ICV-EUiA, CHA: La Izquierda Plural. ",,
+16/5/2012,317,127,174,16,173/000020,"Mociones consecuencia de interpelaciones urgentes.","Moción consecuencia de interpelación urgente sobre las medidas de racionalización y reducción del gasto en defensa en el marco del fortalecimiento de la política de seguridad y defensa europea. Se vota en los términos resultantes de la enmienda transaccional formulada por el Grupo Parlamentario Socialista, el Grupo Parlamentario Catalán (CiU) y el Grupo Parlamentario de Unión Progreso y Democracia. ",,
+17/5/2012,303,265,1,37,004/000192,"Dictamen de la Comisión del Estatuto de los Diputados.","Dictamen de la Comisión del Estatuto de los Diputados sobre declaración de actividades de Excmos. Sres. Diputados.",,
+17/5/2012,303,265,1,37,004/000228,"Dictamen de la Comisión del Estatuto de los Diputados.","Dictamen de la Comisión del Estatuto de los Diputados sobre declaración de actividades de Excmos. Sres. Diputados.",,
+17/5/2012,303,265,1,37,004/000285,"Dictamen de la Comisión del Estatuto de los Diputados.","Dictamen de la Comisión del Estatuto de los Diputados sobre declaración de actividades de Excmos. Sres. Diputados.",,
+17/5/2012,303,265,1,37,004/000369,"Dictamen de la Comisión del Estatuto de los Diputados.","Dictamen de la Comisión del Estatuto de los Diputados sobre declaración de actividades de Excmos. Sres. Diputados.",,
+17/5/2012,314,179,135,0,130/000015,"Convalidación o derogación de Reales Decretos-Leyes.","Real Decreto-Ley 14/2012, de 20 de abril, de medidas urgentes de racionalización del gasto público en el ámbito educativo.",,
+17/5/2012,315,137,177,1,130/000015,"Convalidación o derogación de Reales Decretos-Leyes.","Tramitación como Proyecto de Ley por el procedimiento de urgencia del Real Decreto-Ley 14/2012, de 20 de abril, de medidas urgentes de racionalización del gasto público en el ámbito educativo.",,
+17/5/2012,315,183,131,1,130/000018,"Convalidación o derogación de Reales Decretos-Leyes.","Real Decreto-Ley 17/2012, de 4 de mayo, de medidas urgentes en materia de medio ambiente.",,
+17/5/2012,314,313,0,1,130/000018,"Convalidación o derogación de Reales Decretos-Leyes.","Tramitación como Proyecto de Ley por el procedimiento de urgencia del Real Decreto-Ley 17/2012, de 4 de mayo, de medidas urgentes en materia de medio ambiente.",,
+17/5/2012,315,193,122,0,130/000016,"Convalidación o derogación de Reales Decretos-Leyes.","Real Decreto-Ley 15/2012, de 20 de abril, de modificación del régimen de Administración de la Corporación RTVE previsto en la Ley 17/2006, de 5 de junio.",,
+17/5/2012,315,122,193,0,130/000016,"Convalidación o derogación de Reales Decretos-Leyes.","Tramitación como Proyecto de Ley por el procedimiento de urgencia del Real Decreto-Ley 15/2012, de 20 de abril, de modificación del Régimen de Administración de la Corporación RTVE previsto en la Ley 17/2006, de 5 de junio.",,
+17/5/2012,315,178,137,0,130/000017,"Convalidación o derogación de Reales Decretos-Leyes.","Real Decreto-Ley 16/2012, de 20 de abril, de medidas urgentes para garantizar la sostenibilidad del Sistema Nacional de Salud y mejorar la calidad y seguridad de sus prestaciones.",,
+17/5/2012,315,139,176,0,130/000017,"Convalidación o derogación de Reales Decretos-Leyes.","Tramitación como Proyecto de Ley por el procedimiento de urgencia del Real Decreto-Ley 16/2012, de 20 de abril, de medidas urgentes para garantizar la sostenibilidad del Sistema Nacional de Salud y mejorar la calidad y seguridad de sus prestaciones.",,
+17/5/2012,312,296,13,3,110/000006,"Dictámenes de la Comisión de Asuntos Exteriores sobre Convenios internacionales.","Convenio entre el Reino de España y el Reino de Marruecos relativo a la asistencia judicial en materia penal, hecho en Rabat el 24 de junio de 2009.",,
+17/5/2012,312,296,13,3,110/000007,"Dictámenes de la Comisión de Asuntos Exteriores sobre Convenios internacionales.","Convenio de extradición entre el Reino de España y el Reino de Marruecos, hecho en Rabat el 24 de junio de 2009.",,
+17/5/2012,312,296,13,3,110/000011,"Dictámenes de la Comisión de Asuntos Exteriores sobre Convenios internacionales.","Acuerdo entre el Reino de España y los Estados Unidos de América sobre cooperación científica y tecnológica de interés para la seguridad nacional, hecho en Madrid el 30 de junio de 2011.",,
+21/5/2012,316,27,177,112,121/000008,"Presupuestos Generales del Estado",,"Enmiendas del Grupo Parlamentario Mixto (Sr. Jorquera)","Enmienda  2578"
+21/5/2012,316,19,191,106,121/000008,"Presupuestos Generales del Estado",,"Enmiendas del Grupo Parlamentario de IU, ICV-EUiA, CHA: La Izquierda Plural","Enmienda 1700"
+21/5/2012,314,122,181,11,121/000008,"Presupuestos Generales del Estado",,"Enmiendas del Grupo Parlamentario Catalán (CiU)","Enmienda 2750"
+21/5/2012,316,131,183,2,121/000008,"Presupuestos Generales del Estado",,"Enmiendas del Grupo Parlamentario Socialista","Enmienda 794"
+21/5/2012,317,176,141,0,121/000008,"Presupuestos Generales del Estado",,"Texto del Dictamen del Título I","Votación del Dictamen"
+21/5/2012,317,20,288,9,121/000008,"Presupuestos Generales del Estado",,"Enmiendas del Grupo Parlamentario (CiU)","Enmiendas 2761 y 2762"
+21/5/2012,317,27,280,10,121/000008,"Presupuestos Generales del Estado",,"Enmiendas del Grupo Parlamentario (CiU)","Resto de enmiendas"
+21/5/2012,316,177,139,0,121/000008,"Presupuestos Generales del Estado",,"Texto del Dictamen del Título II","Votación del Dictamen"
+21/5/2012,316,133,181,2,121/000008,"Presupuestos Generales del Estado",,"Enmiendas del Grupo Parlamentario Mixto (Sr. Jorquera)","Enmiendas 2579 y 2581"
+21/5/2012,317,22,293,2,121/000008,"Presupuestos Generales del Estado",,"Enmiendas del Grupo Parlamentario Mixto (Sr. Jorquera)","Enmienda 2580"
+21/5/2012,316,117,177,22,121/000008,"Presupuestos Generales del Estado",,"Enmiendas del Grupo Parlamentario Mixto (Sr. Jorquera)","Enmienda 2582"
+21/5/2012,317,41,179,97,121/000008,"Presupuestos Generales del Estado",,"Enmiendas del Grupo Parlamentario Vasco (EAJ-PNV)","Enmienda 3335"
+21/5/2012,317,99,184,34,121/000008,"Presupuestos Generales del Estado",,"Enmiendas del Grupo Parlamentario de Unión Progreso y Democracia","Votación en bloque de las enmiendas"
+21/5/2012,317,20,293,4,121/000008,"Presupuestos Generales del Estado",,"Enmiendas del Grupo Parlamentario de IU, ICV-EUiA, CHA: La Izquierda Plural","Enmienda 1701"
+22/5/2012,330,130,181,19,121/000008,"Presupuestos Generales del Estado",,"Enmiendas del Grupo Parlamentario Mixto (Sra. Barkos)","Enmienda 780"
+22/5/2012,331,34,286,11,121/000008,"Presupuestos Generales del Estado",,"Enmiendas del Grupo Parlamentario Mixto (Sra. Jordà)","Votación en bloque de las enmiendas"
+22/5/2012,337,5,183,149,121/000008,"Presupuestos Generales del Estado",,"Enmiendas del Grupo Parlamentario de Unión Progreso y Democracia","Enmienda 1599"
+22/5/2012,335,6,297,32,121/000008,"Presupuestos Generales del Estado",,"Enmiendas del Grupo Parlamentario de Unión Progreso y Democracia","Enmienda 1600"
+22/5/2012,337,5,300,32,121/000008,"Presupuestos Generales del Estado",,"Enmiendas del Grupo Parlamentario de Unión Progreso y Democracia","Enmienda 1601"
+22/5/2012,337,17,285,35,121/000008,"Presupuestos Generales del Estado",,"Enmiendas del Grupo Parlamentario de Unión Progreso y Democracia","Enmienda 1602"
+22/5/2012,335,16,284,35,121/000008,"Presupuestos Generales del Estado",,"Enmiendas del Grupo Parlamentario de Unión Progreso y Democracia","Enmienda 1603"
+22/5/2012,337,16,287,34,121/000008,"Presupuestos Generales del Estado",,"Enmiendas del Grupo Parlamentario de Unión Progreso y Democracia","Enmienda 1604"
+22/5/2012,337,129,187,21,121/000008,"Presupuestos Generales del Estado",,"Enmiendas del Grupo Parlamentario de IU, ICV-EUiA, CHA: La Izquierda Plural","Enmienda 2438"
+22/5/2012,337,145,184,8,121/000008,"Presupuestos Generales del Estado",,"Enmiendas del Grupo Parlamentario Catalán (CiU)","Enmienda 3084"
+22/5/2012,338,124,182,32,121/000008,"Presupuestos Generales del Estado",,"Enmiendas del Grupo Parlamentario Socialista","Votación en bloque de las enmiendas"
+22/5/2012,338,180,158,0,121/000008,"Presupuestos Generales del Estado",,"Texto del Dictamen de la Sección 25","Votación del Dictamen"
+22/5/2012,338,150,182,6,121/000008,"Presupuestos Generales del Estado",,"Enmiendas del Grupo Parlamentario Mixto (Sra. Barkos)","Votación en bloque de las enmiendas"
+22/5/2012,338,147,182,9,121/000008,"Presupuestos Generales del Estado",,"Enmiendas del Grupo Parlamentario Mixto (Sra. Oramas)","Enmienda 2545"
+22/5/2012,336,43,185,108,121/000008,"Presupuestos Generales del Estado",,"Enmiendas del Grupo Parlamentario Mixto (Sr. Jorquera)","Votación en bloque de las enmiendas"
+23/5/2012,329,129,181,19,121/000008,"Presupuestos Generales del Estado",,"Enmiendas del Grupo Parlamentario Mixto (Sra. Barkos)","Enmiendas 746 a 752"
+23/5/2012,328,129,183,16,121/000008,"Presupuestos Generales del Estado",,"Enmiendas del Grupo Parlamentario Mixto (Sra. Barkos)","Resto de las enmiendas"
+23/5/2012,330,106,199,25,121/000008,"Presupuestos Generales del Estado",,"Enmiendas del Grupo Parlamentario Mixto (Sr. Salvador)","Enmienda 729"
+23/5/2012,331,107,194,30,121/000008,"Presupuestos Generales del Estado",,"Enmiendas del Grupo Parlamentario Mixto (Sr. Salvador)","Resto de las enmiendas"
+23/5/2012,332,120,186,26,121/000008,"Presupuestos Generales del Estado",,"Enmiendas del Grupo Parlamentario Mixto (Sr. Álvarez Sostres)","Votación en bloque de las enmiendas"
+23/5/2012,332,141,185,6,121/000008,"Presupuestos Generales del Estado",,"Enmiendas del Grupo Parlamentario Mixto (Sr. Baldoví)","Votación en bloque de las enmiendas"
+23/5/2012,332,144,181,7,121/000008,"Presupuestos Generales del Estado",,"Enmiendas del Grupo Parlamentario Mixto (Sra. Oramas)","Votación en bloque de las enmiendas"
+23/5/2012,331,142,184,5,121/000008,"Presupuestos Generales del Estado",,"Enmiendas del Grupo Parlamentario Mixto (Sr. Jorquera)","Enmiendas 2681, 2682, 2684, 2685, 2686 y 2700"
+23/5/2012,332,128,184,20,121/000008,"Presupuestos Generales del Estado",,"Enmiendas del Grupo Parlamentario Mixto (Sr. Jorquera)","Resto de las enmiendas"
+23/5/2012,330,137,182,11,121/000008,"Presupuestos Generales del Estado",,"Enmiendas del Grupo Parlamentario Mixto (Sra. Jordá)","Enmiendas 116 a 118, 120, 215, 216, 227, 246, 247, 249, 252, 256, 259, 262, 263, 266, 315 y 316"
+23/5/2012,330,122,183,25,121/000008,"Presupuestos Generales del Estado",,"Enmiendas del Grupo Parlamentario Mixto (Sra. Jordá)","Enmiendas 140 y 141"
+23/5/2012,330,136,180,14,121/000008,"Presupuestos Generales del Estado",,"Enmiendas del Grupo Parlamentario Mixto (Sra. Jordá)","Resto de las enmiendas"
+23/5/2012,332,142,186,4,121/000008,"Presupuestos Generales del Estado",,"Enmiendas del Grupo Parlamentario Vasco (EAJ-PNV)","Votación en bloque de las enmiendas"
+23/5/2012,329,7,286,36,121/000008,"Presupuestos Generales del Estado",,"Enmiendas del Grupo Parlamentario de Unión Progreso y Democracia","Enmienda 1491"
+23/5/2012,332,4,287,41,121/000008,"Presupuestos Generales del Estado",,"Enmiendas del Grupo Parlamentario de Unión Progreso y Democracia","Enmiendas 1492, 1496 , 1497, 1533, 1535 y 1536"
+29/5/2012,322,36,183,103,122/000017,"Toma en consideración de Proposiciones de Ley.","Proposición de Ley de reforma del Real Decreto-Ley 9/2009, de 26 de junio, sobre reestructuración bancaria y reforzamiento de los recursos propios de las entidades de crédito, relativa a la participación pública en la desinversión de entidades financieras con presencia de cajas de ahorros.",,
+29/5/2012,322,147,175,0,122/000052,"Toma en consideración de Proposiciones de Ley.","Proposición de Ley de modificación de la Ley General de la Seguridad Social, Texto Refundido aprobado por Real Decreto Legislativo 1/1994, de 20 de junio, para extender la cobertura de las pensiones de orfandad.",,
+29/5/2012,322,207,112,3,162/000271,"Proposiciones no de Ley.","Proposición no de Ley relativa a la remisión de un Plan Integral de Turismo.
+Se vota en los términos de la enmienda transaccional presentada por el Grupo Parlamentario Popular en el Congreso, el Grupo Parlamentario Catalán (CiU) y el Grupo Parlamentario de IU, ICV-EUiA, CHA: La Izquierda Plural. ",,
+29/5/2012,323,308,1,14,162/000005,"Proposiciones no de Ley.","Proposición no de Ley relativa a la entrada en vigor de un sistema de eurobonos.
+Se vota en los términos de una enmienda transaccional presentada por el Grupo Parlamentario Popular en el Congreso, el Grupo Parlamentario Socialista, el Grupo Parlamentario Catalán (CiU), el Grupo Parlamentario de Unión Progreso y Democracia, el Grupo Parlamentario Vasco (EAJ-PNV) y la Sra. Oramas y el Sr. Álvarez Sostres (GMx). ",,
+29/5/2012,322,143,178,1,173/000021,"Mociones consecuencia de interpelaciones urgentes.","Moción consecuencia de interpelación urgente sobre el cambio unilateral de modelo del Sistema Nacional de Salud.
+Se vota en los términos resultantes de la incorporación de las enmiendas del Grupo Parlamentario Socialista y del Grupo Parlamentario Catalán (CiU), asi como de la enmienda al punto 4º presentada por el Grupo Parlamentario de Unión Progreso y Democracia. ",,
+29/5/2012,323,321,1,1,173/000022,"Mociones consecuencia de interpelaciones urgentes.","Moción consecuencia de interpelación urgente sobre la necesidad de una estrategia de crecimiento para Europa y España.","Votación separada por puntos","Punto 2 del apartado a)"
+29/5/2012,322,145,177,0,173/000022,"Mociones consecuencia de interpelaciones urgentes.","Moción consecuencia de interpelación urgente sobre la necesidad de una estrategia de crecimiento para Europa y España.","Votación separada por puntos","Resto de la moción"
+31/5/2012,329,178,28,123,130/000019,"Convalidación o derogación de Reales Decretos-Leyes.","Real Decreto-Ley 18/2012, de 11 de mayo, sobre saneamiento y venta de los activos inmobilarios del sector financiero.",,
+31/5/2012,328,328,0,0,130/000019,"Convalidación o derogación de Reales Decretos-Leyes.","Tramitación como Proyecto de Ley por el procedimiento de urgencia del Real Decreto-Ley 18/2012, de 11 de mayo, sobre saneamiento y venta de los activos inmobilarios del sector financiero.",,
+31/5/2012,327,129,182,16,121/000009,"Debates de totalidad de iniciativas legislativas.","Proyecto de Ley de modificación de la Ley 7/2010, de 31 de marzo, General de la Comunicación Audiovisual, para flexibilizar los modos de gestión de los canales públicos de televisión autonómica.
+Se votan de forma conjunta las enmiendas de devolución presentadas por el Grupo Parlamentario Socialista; el Grupo Parlamentario de IU, ICV-EUiA, CHA: La Izquierda Plural; el Grupo Parlamentario de Unión Progreso y Democracia; el Grupo Parlamentario Mixto (Sr. Jorquera y Sra Fernández Davila) y el Grupo Parlamentario Mixto (Sr. Bosch). ",,
+31/5/2012,327,148,178,1,121/000009,"Debates de totalidad de iniciativas legislativas.","Solicitud de avocación por el Pleno de la Cámara del debate y votación final del Proyecto de Ley de modificación de la Ley 7/2010, de 31 de marzo, General de la Comunicación Audiovisual, para flexibilizar los modos de gestión de los canales públicos de televisión autonómica.",,
+31/5/2012,326,312,0,14,110/000017,"Dictámenes de la Comisión de Asuntos Exteriores sobre Convenios internacionales.","Acuerdo entre el Gobierno del Reino de España y el Gobierno Federal Austríaco relativo al intercambio y protección mutua de la información clasificada, hecho en Madrid el 11 de noviembre de 2011.",,
+31/5/2012,326,312,0,14,110/000019,"Dictámenes de la Comisión de Asuntos Exteriores sobre Convenios internacionales.","Acuerdo entre el Reino de España y el Gobierno de Australia para la protección mutua de información clasificada de interés para la Defensa, hecho en Madrid el 17 de noviembre de 2011.",,
+31/5/2012,327,313,11,3,110/000018,"Dictámenes de la Comisión de Asuntos Exteriores sobre Convenios internacionales.","Declaración de aceptación por España de la adhesión del Reino de Marruecos al Convenio sobre la obtención de pruebas en el extranjero en materia civil o mercantil, hecho en La Haya el 18 de marzo de 1970.",,
+31/5/2012,327,313,11,3,110/000026,"Dictámenes de la Comisión de Asuntos Exteriores sobre Convenios internacionales.","Acuerdo para el establecimiento del Centro Internacional Rey Abdullah Bin Abdulaziz para el Diálogo Interreligioso e Intercultural, hecho en Viena el 13 de octubre de 2011.",,
+31/5/2012,327,325,0,2,110/000016,"Dictámenes de la Comisión de Asuntos Exteriores sobre Convenios internacionales.","Declaración de aceptación por España de la adhesión del Principado de Andorra al Convenio sobre los aspectos civiles de la sustracción internacional de menores, hecho en La Haya el 25 de octubre de 1980.",,
+31/5/2012,327,325,0,2,110/000021,"Dictámenes de la Comisión de Asuntos Exteriores sobre Convenios internacionales.","Acuerdo sobre transporte aéreo entre el Reino de España y la República de Armenia, hecho en Madrid el 22 de julio de 2011.",,
+31/5/2012,327,325,0,2,110/000022,"Dictámenes de la Comisión de Asuntos Exteriores sobre Convenios internacionales.","Acuerdo de libre comercio entre la Unión Europea y sus Estados miembros, por una parte, y la República de Corea, por otra, hecho en Bruselas el 6 de octubre de 2010.",,
+31/5/2012,327,325,0,2,110/000023,"Dictámenes de la Comisión de Asuntos Exteriores sobre Convenios internacionales.","Acuerdo de cooperación sobre un sistema de navegación por satélite entre la Unión Europea y sus Estados miembros y el Reino de Noruega, hecho en Bruselas el 22 de septiembre de 2010.",,
+31/5/2012,327,325,0,2,110/000024,"Dictámenes de la Comisión de Asuntos Exteriores sobre Convenios internacionales.","Protocolo de Nagoya-Kuala Lumpur sobre responsabilidad y compensación suplementario al Protocolo de Cartagena sobre seguridad de la biotecnología, hecho en Nagoya el 15 de octubre de 2010.",,
+31/5/2012,327,325,0,2,110/000025,"Dictámenes de la Comisión de Asuntos Exteriores sobre Convenios internacionales.","Acuerdo entre el Reino de España y la República de Azerbaiyán sobre supresión recíproca del régimen de visados de corta duración para sus nacionales titulares de pasaportes diplomáticos, hecho en Madrid el 16 de junio de 2011.",,
+31/5/2012,327,325,0,2,110/000027,"Dictámenes de la Comisión de Asuntos Exteriores sobre Convenios internacionales.","Canje de Cartas constitutivo de Acuerdo entre el Reino de España y las Naciones Unidas para acoger un curso de personal directivo de misiones de paz, que se celebrará en Madrid entre los días 31 de octubre y 11 de noviembre de 2011, hecho en Nueva York el 17 y 18 de octubre de 2011.",,
+10/4/2012,324,42,282,0,122/000013,"Toma en consideración de Proposiciones de Ley.","Proposición de Ley de modificación de la Ley 10/1990, de 15 de octubre, del Deporte.",,
+10/4/2012,321,196,119,6,162/000131,"Proposiciones no de Ley.","Proposición no de Ley relativa a impulsar una nueva modalidad de formación profesional de carácter dual.
+
+Se vota en los términos de la enmienda transaccional formulada por el Grupo Parlamentario Popular en el Congreso, el Grupo Parlamentario Catalán (CiU), el Grupo Parlamentario Vasco (EAJ-PNV) y el Grupo Parlamentario Mixto (Sr. Quevedo). ",,
+10/4/2012,324,119,189,16,162/000258,"Proposiciones no de Ley.","Proposición no de Ley del Impuesto sobre las Grandes Fortunas.
+
+Se vota en los términos de la enmienda formulada por el Grupo Parlamentario de Unión Progreso y Democracia a los puntos b) y d) de la Proposición no de Ley. ",,
+10/4/2012,320,141,174,5,173/000015,"Mociones consecuencia de interpelaciones urgentes.","Moción consecuencia de interpelación urgente sobre las previsiones de modificación de la Ley de Costas, especialmente en lo referente a la posible ampliación de las concesiones a fábricas que caducan en el 2018 y a la situación de ilegalidad de numerosos núcleos singulares-históricos afectados por la aplicación de dicha Ley.",,
+10/4/2012,321,126,180,15,173/000016,"Mociones consecuencia de interpelaciones urgentes.","Moción consecuencia de interpelación urgente sobre el impacto que tendrá la reforma laboral en el empleo público y en los servicios a los ciudadanos.
+
+Se vota en los términos de la enmienda transaccional formulada por el Grupo Parlamentario Socialista y el Grupo Parlamentario de IU, ICV-EUiA, CHA: La Izquierda Plural.",,
+10/4/2012,321,202,114,5,173/000017,"Mociones consecuencia de interpelaciones urgentes.","Moción consecuencia de interpelación urgente sobre la aprobación de un plan de choque para la creación de empleo a corto plazo.",,
+12/4/2012,327,310,13,4,130/000011,"Convalidación o derogación de Reales Decretos-Leyes.","Real Decreto-Ley 10/2012, de 23 de marzo, por el que se modifican determinadas normas financieras en relación con las facultades de las Autoridades Europeas de Supervisión.",,
+12/4/2012,327,12,302,13,110/000008,"Debates de totalidad de Convenios internacionales.","Enmiendas a la totalidad presentadas por el Grupo Parlamentario de Unión Progreso y Democracia y el Grupo Mixto (Sr. Bosch) al Tratado Constitutivo del Mecanismo Europeo de Estabilidad (MEDE) entre el Reino de Bélgica, la República Federal de Alemania, la República de Estonia, Irlanda, la República Helénica, el Reino de España, la República Francesa, la República Italiana, la República de Chipre, el Gran Ducado de Luxemburgo, Malta, el Reino de los Países Bajos, la República de Austria, la República Portuguesa, la República de Eslovenia, la República Eslovaca y la República de Finlandia, hecho en Bruselas el 2 de febrero de 2012.",,
+12/4/2012,331,194,137,0,130/000013,"Convalidación o derogación de Reales Decretos-Leyes.","Real Decreto-Ley 12/2012, de 30 de marzo, por el que se introducen diversas medidas tributarias y administrativas dirigidas a la reducción del déficit público.",,
+12/4/2012,330,151,179,0,130/000013,"Convalidación o derogación de Reales Decretos-Leyes.","Tramitación como Proyecto de Ley por el procedimiento de urgencia del Real Decreto-Ley 12/2012, de 30 de marzo, por el que se introducen diversas medidas tributarias y administrativas dirigidas a la reducción del déficit público.",,
+12/4/2012,331,21,198,112,121/000004,"Debates de totalidad de iniciativas legislativas.","Proyecto de Ley de medidas urgentes para la reforma del mercado laboral (procedente del Real Decreto-Ley 3/2012, de 10 de febrero).","Enmiendas a la totalidad de texto alternativo"," Enmienda a la totalidad de texto alternativo formulada por el Grupo Parlamentario Mixto (Sr. Tardá)"
+12/4/2012,331,109,209,13,121/000004,"Debates de totalidad de iniciativas legislativas.","Proyecto de Ley de medidas urgentes para la reforma del mercado laboral (procedente del Real Decreto-Ley 3/2012, de 10 de febrero).","Enmiendas a la totalidad de texto alternativo"," Enmienda a la totalidad de texto alternativo formulada por el Grupo Parlamentario Socialista"
+12/4/2012,331,20,199,112,121/000004,"Debates de totalidad de iniciativas legislativas.","Proyecto de Ley de medidas urgentes para la reforma del mercado laboral (procedente del Real Decreto-Ley 3/2012, de 10 de febrero).","Enmiendas a la totalidad de texto alternativo"," Enmienda a la totalidad de texto alternativo formulada por el Grupo Parlamentario Mixto (Sra. Fernández Davila y Sr. Jorquera Caselas)"
+12/4/2012,331,17,198,116,121/000004,"Debates de totalidad de iniciativas legislativas.","Proyecto de Ley de medidas urgentes para la reforma del mercado laboral (procedente del Real Decreto-Ley 3/2012, de 10 de febrero).","Enmiendas a la totalidad de texto alternativo"," Enmienda a la totalidad de texto alternativo formulada por el Grupo Parlamentario de IU, ICV-EUiA, CHA: La Izquierda Plural"
+12/4/2012,331,6,213,112,121/000004,"Debates de totalidad de iniciativas legislativas.","Proyecto de Ley de medidas urgentes para la reforma del mercado laboral (procedente del Real Decreto-Ley 3/2012, de 10 de febrero).","Enmiendas a la totalidad de texto alternativo"," Enmienda a la totalidad de texto alternativo formulada por el Grupo Parlamentario de Unión Progreso y Democracia"
+12/4/2012,329,149,180,0,121/000004,"Debates de totalidad de iniciativas legislativas.","Solicitudes del Grupo Mixto y el Grupo Parlamentario Socialista de avocación por el Pleno del Proyecto de Ley de medidas urgentes para la reforma del mercado laboral (procedente del Real Decreto-Ley 3/2012, de 10 de febrero).",,
+12/4/2012,313,1,293,19,121/000003,"Dictámenes de Comisiones sobre iniciativas legislativas.","Proyecto de Ley Orgánica de Estabilidad Presupuestaria y Sostenibilidad Financiera.","Enmiendas del Grupo Parlamentario Mixto (Sr. Salvador)","Enmiendas 98, 99, 100, 101, 103, 104, 111, 112, 113, 114, 115, 116 y 117"
+12/4/2012,313,11,189,113,121/000003,"Dictámenes de Comisiones sobre iniciativas legislativas.","Proyecto de Ley Orgánica de Estabilidad Presupuestaria y Sostenibilidad Financiera.","Enmiendas del Grupo Parlamentario Mixto (Sr. Salvador)"," Enmiendas  102, 106, 107 y 108"
+12/4/2012,312,108,184,20,121/000003,"Dictámenes de Comisiones sobre iniciativas legislativas.","Proyecto de Ley Orgánica de Estabilidad Presupuestaria y Sostenibilidad Financiera.","Enmiendas del Grupo Parlamentario Mixto (Sr. Salvador)"," Enmienda 105"
+12/4/2012,312,12,188,112,121/000003,"Dictámenes de Comisiones sobre iniciativas legislativas.","Proyecto de Ley Orgánica de Estabilidad Presupuestaria y Sostenibilidad Financiera.","Enmiendas del Grupo Parlamentario Mixto (Sr. Salvador)"," Enmienda 118"
+25/4/2012,339,156,182,1,121/000008,"Debates de totalidad de iniciativas legislativas.","Proyecto de Ley de Presupuestos Generales del Estado para el año 2012.
+
+Se votan de forma conjunta las enmiendas de devolución presentadas por los Grupos Parlamentarios Vasco (EAJ-PNV), Mixto (Sr. Jorquera, Sr. Baldoví, Sra. Oramas, Sr. Bosch y Sr. Antigüedad), IU, ICV-EUiA, CHA: La Izquierda Plural, Socialista, Unión Progreso y Democracia y Catalán (Convergéncia i Unió).
+
+El Sr. Merino López (GP) observa que por error emitió el voto  de la Sra. Fernández González que se encuentra ausente del hemiciclo.",,
+25/4/2012,329,328,0,1,130/000012,"Convalidación o derogación de Reales Decretos-Leyes.","Real Decreto-Ley 11/2012, de 30 de marzo, de medidas para agilizar el pago de las ayudas a los damnificados por el terremoto, reconstruir los inmuebles demolidos e impulsar la actividad económica de Lorca.",,
+25/4/2012,329,140,183,6,130/000012,"Convalidación o derogación de Reales Decretos-Leyes.","Tramitación como Proyecto de Ley por el procedimiento de urgencia del Real Decreto-Ley 11/2012, de 30 de marzo, de medidas para agilizar el pago de las ayudas a los damnificados por el terremoto, reconstruir los inmuebles demolidos e impulsar la actividad económica de Lorca.",,
+25/4/2012,328,178,145,5,130/000014,"Convalidación o derogación de Reales Decretos-Leyes.","Real Decreto-Ley 13/2012, de 30 de marzo, por el que se transponen directivas en materia de mercados interiores de electricidad y gas y en materia de comunicaciones electrónicas, y por el que se adoptan medidas para la corrección de las desviaciones por desajustes entre los costes e ingresos de los sectores eléctrico y gasista.",,
+25/4/2012,329,154,174,1,130/000014,"Convalidación o derogación de Reales Decretos-Leyes.","Tramitación como Proyecto de Ley por el procedimiento de urgencia del Real Decreto-Ley 13/2012, de 30 de marzo, por el que se transponen directivas en materia de mercados interiores de electricidad y gas y en materia de comunicaciones electrónicas, y por el que se adoptan medidas para la corrección de las desviaciones por desajustes entre los costes e ingresos de los sectores eléctrico y gasista.",,
+25/4/2012,314,276,1,37,130/000014,"Dictamen de la Comisión del Estatuto de los Diputados.","Dictamen de la Comisión del Estatuto de los Diputados sobre declaración de actividades de Excmos. Sres. Diputados.",,
+6/3/2012,336,140,196,0,162/000002,"Proposiciones no de Ley.","Proposición no de Ley relativa a la lucha contra el fraude fiscal. Se vota en los términos de la enmienda transaccional presentada por el Grupo Parlamentario Socialista, el Grupo Parlamentario de IU, ICV-EUiA, CHA: La Izquierda Plural y el Grupo Parlamentario de Unión Progreso y Democracia.  ",,
+6/3/2012,329,289,18,22,162/000182,"Proposiciones no de Ley.","Proposición no de Ley relativa al desarrollo de un Plan General de Marca España. Se vota en los términos de la enmienda transaccional presentada por el Grupo Parlamentario Popular en el Congreso. ",,
+6/3/2012,334,334,0,0,173/000006,"Mociones consecuencia de interpelaciones urgentes.","Moción consecuencia de interpelación urgente sobre la continuidad de los Centros Especiales de Empleo. Se vota en los términos de la enmienda transaccional presentada por el Grupo Parlamentario Popular en el Congreso, el Grupo Parlamentario Socialista, el Grupo Parlamentario Catalán (CiU) y el Grupo Parlamentario Vasco (EAJ-PNV).",,
+6/3/2012,335,36,181,118,173/000007,"Mociones consecuencia de interpelaciones urgentes.","Moción consecuencia de interpelación urgente sobre la dación en pago y los abusos de las entidades financieras. Se vota en los términos de la enmienda presentada por el Grupo Parlamentario Mixto (Sra. Jordà).",,
+6/3/2012,336,136,200,0,173/000008,"Mociones consecuencia de interpelaciones urgentes.","Moción consecuencia de interpelación urgente sobre las repercusiones de la reforma laboral del Gobierno en la negociación colectiva y sus efectos en los salarios.","Votación por puntos","Puntos 1º y 3º"
+6/3/2012,336,105,204,27,173/000008,"Mociones consecuencia de interpelaciones urgentes.","Moción consecuencia de interpelación urgente sobre las repercusiones de la reforma laboral del Gobierno en la negociación colectiva y sus efectos en los salarios.","Votación por puntos","Punto 2º"
+8/3/2012,339,197,142,0,130/000004,"Convalidación o derogación de Reales Decretos-Leyes.","Real Decreto-Ley 3/2012, de 10 de febrero, de medidas urgentes para la reforma del mercado laboral.",,
+8/3/2012,338,337,0,1,130/000004,"Convalidación o derogación de Reales Decretos-Leyes.","Tramitación como Proyecto de Ley por el procedimiento de urgencia del Real Decreto-Ley 3/2012, de 10 de febrero, de medidas urgentes para la reforma del mercado laboral.",,
+8/3/2012,321,301,14,6,130/000005,"Convalidación o derogación de Reales Decretos-Leyes.","Real Decreto-Ley 4/2012, de 24 de febrero, por el que se determinan obligaciones de información y procedimientos necesarios para establecer un mecanismo de financiación para el pago a los proveedores de las entidades locales.",,
+8/3/2012,321,140,177,4,130/000005,"Convalidación o derogación de Reales Decretos-Leyes.","Tramitación como Proyecto de Ley por el procedimiento de urgencia del Real Decreto-Ley 4/2012, de 24 de febrero, por el que se determinan obligaciones de información y procedimientos necesarios para establecer un mecanismo de financiación para el pago a los proveedores de las entidades locales.",,
+13/3/2012,339,179,133,27,430/000001,"Debate relativo al objetivo de estabilidad presupuestaria.","Acuerdo por el que se fija el objetivo de estabilidad presupuestaria para 2012 del conjunto del sector público y de cada uno de los grupos de agentes que lo integran y el límite de gasto no financiero del Presupuesto del Estado para 2012.",,
+13/3/2012,317,126,173,18,122/000010,"Toma en consideración de Proposiciones de Ley.","Proposición de Ley de transparencia y acceso a la información pública.",,
+13/3/2012,316,146,169,1,122/000011,"Toma en consideración de Proposiciones de Ley.","Proposición de Ley relativa a la dación en pago y la protección de las personas físicas insolventes.",,
+13/3/2012,315,315,0,0,162/000183,"Proposiciones no de Ley.","Proposición no de Ley sobre la seguridad de los menores en las redes sociales en Internet.
+
+Se vota en los términos de la enmienda transaccional presentada por todos los Grupos Parlamentarios.",,
+13/3/2012,321,132,176,13,162/000215,"Proposiciones no de Ley.","Proposición no de Ley sobre el acuerdo de libre asociación UE-Marruecos y el sector agrario español.",,
+15/3/2012,314,295,6,13,121/000002,"Tramitación directa y en lectura única de iniciativas legislativas.","Proyecto de Ley Orgánica por la que se excluye del ámbito de aplicación de la disposición adicional de la Ley Orgánica 3/2006, de 26 de mayo, de reforma de la Ley Orgánica 5/2001, de 13 de diciembre, complementaria de la Ley General de Estabilidad Presupuestaria, a determinados mecanismos de financiación.",Votaciones,"-Votación en bloque de las enmiendas  del Grupo Popular"
+15/3/2012,312,186,101,25,121/000002,"Tramitación directa y en lectura única de iniciativas legislativas.","Proyecto de Ley Orgánica por la que se excluye del ámbito de aplicación de la disposición adicional de la Ley Orgánica 3/2006, de 26 de mayo, de reforma de la Ley Orgánica 5/2001, de 13 de diciembre, complementaria de la Ley General de Estabilidad Presupuestaria, a determinados mecanismos de financiación.",Votaciones,"-Votación de conjunto del texto del Proyecto de Ley Orgánica."
+15/3/2012,313,299,12,2,110/000001,"Dictámenes de la Comisión de Asuntos Exteriores sobre Convenios internacionales.","Acuerdo de Sede entre el Reino de España y la Organización Internacional de Comisiones de Valores (OICV/IOSCO), hecho en Madrid el 23 de noviembre de 2011.",,
+15/3/2012,309,129,175,5,173/000009,"Mociones consecuencia de interpelaciones urgentes.","Moción consecuencia de interpelación urgente relativa al corredor ferroviario prioritario que el Gobierno presentará ante la Unión Europea.
+
+Con la enmienda del Grupo de IU-ICV-EUiA, CHA: la Izquierda Plural",,
+15/3/2012,319,5,314,0,173/000010,"Mociones consecuencia de interpelaciones urgentes.","Moción consecuencia de interpelación urgente sobre los propósitos del Gobierno en relación a las medidas que va adoptar para evitar el despilfarro y duplicidades en el conjunto de las Administraciones Públicas y con ello impedir que los recortes se produzcan en servicios públicos esenciales.","Votaciones Separadas","-Puntos 1, 2, 3 y 4"
+15/3/2012,318,5,313,0,173/000010,"Mociones consecuencia de interpelaciones urgentes.","Moción consecuencia de interpelación urgente sobre los propósitos del Gobierno en relación a las medidas que va adoptar para evitar el despilfarro y duplicidades en el conjunto de las Administraciones Públicas y con ello impedir que los recortes se produzcan en servicios públicos esenciales.","Votaciones Separadas","-Resto de la Moción"
+15/3/2012,320,19,279,22,173/000011,"Mociones consecuencia de interpelaciones urgentes.","Moción consecuencia de interpelación urgente sobre el planteamiento del Gobierno en el marco de la nueva reforma de la Política Agraria Común (PAC).
+
+En los términos de la transaccional presentada.",,
+15/3/2012,315,113,193,9,173/000012,"Mociones consecuencia de interpelaciones urgentes.","Moción consecuencia de interpelación urgente sobre ahorro en el gasto farmacéutico mediante el sistema de subastas de medicamentos impulsado por Andalucía.",,
+27/3/2012,323,23,290,10,122/000025,"Toma en consideración de Proposiciones de Ley.","Proposición de Ley de modificación de la Ley 49/2002, de 23 de diciembre, de régimen fiscal de las entidades sin fines lucrativos y de los incentivos fiscales al mecenazgo.",,
+27/3/2012,326,25,292,9,122/000038,"Toma en consideración de Proposiciones de Ley.","Proposición de Ley Orgánica sobre disponibilidad de la propia vida.",,
+27/3/2012,323,178,129,16,162/000176,"Proposiciones no de Ley.","Proposición no de Ley sobre supresión de las subvenciones nominativas.",,
+27/3/2012,327,135,190,2,162/000003,"Proposiciones no de Ley.","Proposición no de Ley sobre medidas relacionadas con el copago.",,
+27/3/2012,323,123,179,21,173/000013,"Mociones consecuencia de interpelaciones urgentes.","Moción consecuencia de interpelación urgente sobre las medidas que piensa tomar el Gobierno en relación con la reforma de la ESO, el Bachillerato y la FP, así como sobre sus previsibles consecuencias de índole organizativa, curricular y económica.",,
+27/3/2012,323,110,179,34,173/000014,"Mociones consecuencia de interpelaciones urgentes.","Moción consecuencia de interpelación urgente sobre el impacto que tendrá en las Comunidades Autónomas la distribución del ajuste fiscal previsto.","Votación por puntos","- Punto 1"
+27/3/2012,323,125,188,10,173/000014,"Mociones consecuencia de interpelaciones urgentes.","Moción consecuencia de interpelación urgente sobre el impacto que tendrá en las Comunidades Autónomas la distribución del ajuste fiscal previsto.","Votación por puntos","- Punto 2"
+27/3/2012,323,106,195,22,173/000014,"Mociones consecuencia de interpelaciones urgentes.","Moción consecuencia de interpelación urgente sobre el impacto que tendrá en las Comunidades Autónomas la distribución del ajuste fiscal previsto.","Votación por puntos"," - Punto 3"
+29/3/2012,310,309,0,1,130/000006,"Convalidación o derogación de Reales Decretos-Leyes.","Real Decreto-Ley 5/2012, de 5 de marzo, de mediación en asuntos civiles y mercantiles.",,
+29/3/2012,310,310,0,0,130/000006,"Convalidación o derogación de Reales Decretos-Leyes.","Tramitación como Proyecto de Ley por el procedimiento de urgencia del Real Decreto-Ley 5/2012, de 5 de marzo, de mediación en asuntos civiles y mercantiles.",,
+29/3/2012,310,310,0,0,130/000009,"Convalidación o derogación de Reales Decretos-Leyes.","Real Decreto-Ley 8/2012, de 16 de marzo, de contratos de aprovechamiento por turno de bienes de uso turístico, de adquisición de productos vacacionales de larga duración, de reventa y de intercambio.",,
+29/3/2012,310,310,0,0,130/000009,"Convalidación o derogación de Reales Decretos-Leyes.","Tramitación como Proyecto de Ley por el procedimiento de urgencia del Real Decreto-Ley 8/2012, de 16 de marzo, de contratos de aprovechamiento por turno de bienes de uso turístico, de adquisición de productos vacacionales de larga duración, de reventa y de intercambio.",,
+29/3/2012,310,309,1,0,130/000010,"Convalidación o derogación de Reales Decretos-Leyes.","Real Decreto-Ley 9/2012, de 16 de marzo, de simplificación de las obligaciones de información y documentación de fusiones y escisiones de sociedades de capital.",,
+29/3/2012,310,310,0,0,130/000010,"Convalidación o derogación de Reales Decretos-Leyes.","Tramitación como Proyecto de Ley por el procedimiento de urgencia del Real Decreto-Ley 9/2012, de 16 de marzo, de simplificación de las obligaciones de información y documentación de fusiones y escisiones de sociedades de capital.",,
+29/3/2012,310,201,109,0,130/000007,"Convalidación o derogación de Reales Decretos-Leyes.","Real Decreto-Ley 6/2012, de 9 de marzo, de medidas urgentes de protección de deudores hipotecarios sin recursos.",,
+29/3/2012,310,129,181,0,130/000007,"Convalidación o derogación de Reales Decretos-Leyes.","Tramitación como Proyecto de Ley por el procedimiento de urgencia del Real Decreto-Ley 6/2012, de 9 de marzo, de medidas urgentes de protección de deudores hipotecarios sin recursos.",,
+29/3/2012,310,196,2,112,130/000008,"Convalidación o derogación de Reales Decretos-Leyes.","Real Decreto-Ley 7/2012, de 9 de marzo, por el que se crea el Fondo para la financiación de los pagos a proveedores.",,
+29/3/2012,309,122,182,5,130/000008,"Convalidación o derogación de Reales Decretos-Leyes.","Tramitación como Proyecto de Ley por el procedimiento de urgencia del Real Decreto-Ley 7/2012, de 9 de marzo, por el que se crea el Fondo para la financiación de los pagos a proveedores.",,
+29/3/2012,310,14,188,108,121/000003,"Debates de totalidad de iniciativas legislativas.","Proyecto de Ley Orgánica de Estabilidad Presupuestaria y Sostenibilidad Financiera.
+
+Se votan de forma conjunta las enmiendas de devolución presentadas por el Grupo Mixto, el Grupo de IU, ICV-EUiA, CHA: La Izquierda Plural y el Grupo Catalán (Convergència i Unió)",,
+7/2/2012,329,298,28,3,162/000130,"Proposiciones no de Ley.","Proposición no de Ley relativa a la renovación del protocolo de pesca UE-Reino de Marruecos.",,
+7/2/2012,327,125,184,18,162/000135,"Proposiciones no de Ley.","Proposición no de Ley sobre la revisión del calendario del programa de estabilidad y estímulo al crecimiento.",,
+7/2/2012,327,327,0,0,162/000057,"Proposiciones no de Ley.","Proposición no de Ley por la que se insta al Gobierno a adoptar un conjunto de medidas de apoyo al emprendedor.
+
+En los terminos de la Enmienda formulada por el Grupo Parlamentario Popular en el Congreso.",,
+7/2/2012,331,20,204,107,162/000070,"Proposiciones no de Ley.","Proposición no de Ley sobre medidas extraordinarias para la creación de empleo y el estímulo de la economía real.",,
+9/2/2012,338,182,127,29,130/000002,"Convalidación o derogación de Reales Decretos-Leyes.","Real Decreto-Ley 1/2012, de 27 de enero, por el que se procede a la suspensión de los procedimientos de preasignación de retribución y a la supresión de los incentivos económicos para nuevas instalaciones de producción de energía eléctrica a partir de cogeneración, fuentes de energía renovables y residuos.",,
+9/2/2012,336,153,181,2,130/000002,"Convalidación o derogación de Reales Decretos-Leyes.","Tramitación como Proyecto de Ley por el procedimiento de urgencia del Real Decreto-Ley 1/2012, de 27 de enero, por el que se procede a la suspensión de los procedimientos de preasignación de retribución y a la supresión de los incentivos económicos para nuevas instalaciones de producción de energía eléctrica a partir de cogeneración, fuentes de energía renovables y residuos.",,
+14/2/2012,320,26,291,3,162/000052,"Proposiciones no de Ley.","Proposición no de Ley sobre revisión del estatuto de los ex Presidentes del Gobierno y promoción de las iniciativas legislativas necesarias para garantizar la transparencia en su régimen de retribuciones y regular su régimen de incompatibilidades entre la percepción de retribuciones con cargo a fondos públicos y privados.",,
+14/2/2012,321,306,14,1,162/000037,"Proposiciones no de Ley.","Proposición no de Ley sobre el Plan de Derechos Humanos.
+
+Con la enmienda del Grupo Popular",,
+14/2/2012,319,127,192,0,173/000001,"Mociones consecuencia de interpelaciones urgentes.","Moción consecuencia de interpelación urgente sobre el cumplimiento del ""Plan Nacional de Reserva Estratégica de Carbón 2006/2012 y Nuevo Modelo de Desarrollo Integral y Sostenible de las Comarcas Mineras"".",,
+14/2/2012,320,108,180,32,173/000002,"Mociones consecuencia de interpelaciones urgentes.","Moción consecuencia de interpelación urgente sobre su política de estabilidad presupuestaria para las Administraciones Públicas en desarrollo de las previsiones del artículo 135 de la Constitución española.",,
+16/2/2012,337,303,28,6,130/000003,"Convalidación o derogación de Reales Decretos-Leyes.","Real Decreto-Ley 2/2012, de 3 de febrero, de saneamiento del sector financiero.",,
+16/2/2012,336,152,183,1,130/000003,"Convalidación o derogación de Reales Decretos-Leyes.","Tramitación como Proyecto de Ley por el procedimiento de urgencia del Real Decreto-Ley 2/2012, de 3 de febrero, de saneamiento del sector financiero.",,
+21/2/2012,327,130,180,17,162/000087,"Proposiciones no de Ley.","Proposición no de Ley relativa al impulso de soluciones para el sector naval.
+
+En los términos de la incorporación de las enmiendas del Grupo Mixto, del Grupo Socialista y del Grupo de IU, ICV-EUiA, Cha: La Izquierda Plural.",,
+21/2/2012,326,181,144,1,162/000129,"Proposiciones no de Ley.","Proposición no de Ley relativa a implantar un modelo de educación secundaria más flexible con un bachillerato de tres cursos.
+
+En los términos de una enmienda transaccional.",,
+21/2/2012,320,34,286,0,173/000003,"Mociones consecuencia de interpelaciones urgentes.","Moción consecuencia de interpelación urgente sobre la transferencia a la Generalitat de Cataluña de la recaudación que se realiza en Cataluña de la asignación tributaria del porcentaje del Impuesto sobre la Renta de las Personas Físicas (IRPF) destinado a fines sociales.",,
+21/2/2012,331,5,326,0,173/000004,"Mociones consecuencia de interpelaciones urgentes.","Moción consecuencia de interpelación urgente sobre los propósitos del Gobierno en relación a la ilegalización de las coaliciones ""Amaiur"" y ""Bildu"".",,
+21/2/2012,326,323,0,3,173/000005,"Mociones consecuencia de interpelaciones urgentes.","Moción consecuencia de interpelación urgente sobre la sostenibilidad del sistema sanitario.
+
+En los términos de una enmienda transaccional.",,
+23/2/2012,312,118,179,15,245/000002,"Propuestas de Resolución relativas a las Memorias del Consejo General del Poder Judicial.","Propuestas de resolución presentadas con motivo del debate de la Memoria sobre el estado, funcionamiento y actividades del Consejo General del Poder Judicial y de los Juzgados y Tribunales de Justicia, correspondiente al año 2010.","Propuestas de resolución formuladas por el Grupo Parlamentario IU, ICV-EUiA, CHA: La Izquierda Plural","Propuestas 1, 2, 4, 19 y 26."
+23/2/2012,312,113,198,1,245/000002,"Propuestas de Resolución relativas a las Memorias del Consejo General del Poder Judicial.","Propuestas de resolución presentadas con motivo del debate de la Memoria sobre el estado, funcionamiento y actividades del Consejo General del Poder Judicial y de los Juzgados y Tribunales de Justicia, correspondiente al año 2010.","Propuestas de resolución formuladas por el Grupo Parlamentario IU, ICV-EUiA, CHA: La Izquierda Plural","Propuestas 3 y 18"
+23/2/2012,312,18,280,14,245/000002,"Propuestas de Resolución relativas a las Memorias del Consejo General del Poder Judicial.","Propuestas de resolución presentadas con motivo del debate de la Memoria sobre el estado, funcionamiento y actividades del Consejo General del Poder Judicial y de los Juzgados y Tribunales de Justicia, correspondiente al año 2010.","Propuestas de resolución formuladas por el Grupo Parlamentario IU, ICV-EUiA, CHA: La Izquierda Plural","Propuesta 5"
+23/2/2012,312,18,280,14,245/000002,"Propuestas de Resolución relativas a las Memorias del Consejo General del Poder Judicial.","Propuestas de resolución presentadas con motivo del debate de la Memoria sobre el estado, funcionamiento y actividades del Consejo General del Poder Judicial y de los Juzgados y Tribunales de Justicia, correspondiente al año 2010.","Propuestas de resolución formuladas por el Grupo Parlamentario IU, ICV-EUiA, CHA: La Izquierda Plural","Propuesta 7"
+23/2/2012,312,32,280,0,245/000002,"Propuestas de Resolución relativas a las Memorias del Consejo General del Poder Judicial.","Propuestas de resolución presentadas con motivo del debate de la Memoria sobre el estado, funcionamiento y actividades del Consejo General del Poder Judicial y de los Juzgados y Tribunales de Justicia, correspondiente al año 2010.","Propuestas de resolución formuladas por el Grupo Parlamentario IU, ICV-EUiA, CHA: La Izquierda Plural","Propuestas 8, 11 y 17"
+23/2/2012,312,130,182,0,245/000002,"Propuestas de Resolución relativas a las Memorias del Consejo General del Poder Judicial.","Propuestas de resolución presentadas con motivo del debate de la Memoria sobre el estado, funcionamiento y actividades del Consejo General del Poder Judicial y de los Juzgados y Tribunales de Justicia, correspondiente al año 2010.","Propuestas de resolución formuladas por el Grupo Parlamentario IU, ICV-EUiA, CHA: La Izquierda Plural","Propuesta 13"
+23/2/2012,311,18,279,14,245/000002,"Propuestas de Resolución relativas a las Memorias del Consejo General del Poder Judicial.","Propuestas de resolución presentadas con motivo del debate de la Memoria sobre el estado, funcionamiento y actividades del Consejo General del Poder Judicial y de los Juzgados y Tribunales de Justicia, correspondiente al año 2010.","Propuestas de resolución formuladas por el Grupo Parlamentario IU, ICV-EUiA, CHA: La Izquierda Plural","Propuesta 20"
+23/2/2012,312,113,185,14,245/000002,"Propuestas de Resolución relativas a las Memorias del Consejo General del Poder Judicial.","Propuestas de resolución presentadas con motivo del debate de la Memoria sobre el estado, funcionamiento y actividades del Consejo General del Poder Judicial y de los Juzgados y Tribunales de Justicia, correspondiente al año 2010.","Propuestas de resolución formuladas por el Grupo Parlamentario IU, ICV-EUiA, CHA: La Izquierda Plural","Propuesta 25"
+23/2/2012,311,130,181,0,245/000002,"Propuestas de Resolución relativas a las Memorias del Consejo General del Poder Judicial.","Propuestas de resolución presentadas con motivo del debate de la Memoria sobre el estado, funcionamiento y actividades del Consejo General del Poder Judicial y de los Juzgados y Tribunales de Justicia, correspondiente al año 2010.","Propuestas de resolución formuladas por el Grupo Parlamentario IU, ICV-EUiA, CHA: La Izquierda Plural","Resto de propuestas del Grupo Parlamentario IU, ICV-EUiA, CHA: La Izquierda Plural"
+23/2/2012,314,133,181,0,245/000002,"Propuestas de Resolución relativas a las Memorias del Consejo General del Poder Judicial.","Propuestas de resolución presentadas con motivo del debate de la Memoria sobre el estado, funcionamiento y actividades del Consejo General del Poder Judicial y de los Juzgados y Tribunales de Justicia, correspondiente al año 2010.","Propuesta de resolución formulada por el Grupo Mixto (Sr. Tardà)","Propuesta 27"
+23/2/2012,312,296,13,3,245/000002,"Propuestas de Resolución relativas a las Memorias del Consejo General del Poder Judicial.","Propuestas de resolución presentadas con motivo del debate de la Memoria sobre el estado, funcionamiento y actividades del Consejo General del Poder Judicial y de los Juzgados y Tribunales de Justicia, correspondiente al año 2010.","Propuestas de resolución formuladas por el Grupo Parlamentario Popular en el Congreso","Propuesta 29"
+23/2/2012,313,183,116,14,245/000002,"Propuestas de Resolución relativas a las Memorias del Consejo General del Poder Judicial.","Propuestas de resolución presentadas con motivo del debate de la Memoria sobre el estado, funcionamiento y actividades del Consejo General del Poder Judicial y de los Juzgados y Tribunales de Justicia, correspondiente al año 2010.","Propuestas de resolución formuladas por el Grupo Parlamentario Popular en el Congreso","Propuesta 37"
+23/2/2012,313,296,13,4,245/000002,"Propuestas de Resolución relativas a las Memorias del Consejo General del Poder Judicial.","Propuestas de resolución presentadas con motivo del debate de la Memoria sobre el estado, funcionamiento y actividades del Consejo General del Poder Judicial y de los Juzgados y Tribunales de Justicia, correspondiente al año 2010.","Propuestas de resolución formuladas por el Grupo Parlamentario Popular en el Congreso","Propuesta 38, con la incorporación de la enmienda 2 del Grupo Parlamentario Catalán (Convergència i Unió)"
+23/2/2012,313,298,11,4,245/000002,"Propuestas de Resolución relativas a las Memorias del Consejo General del Poder Judicial.","Propuestas de resolución presentadas con motivo del debate de la Memoria sobre el estado, funcionamiento y actividades del Consejo General del Poder Judicial y de los Juzgados y Tribunales de Justicia, correspondiente al año 2010.","Propuestas de resolución formuladas por el Grupo Parlamentario Popular en el Congreso","Resto de propuestas del Grupo Parlamentario Popular en el Congreso"
+23/2/2012,313,308,5,0,245/000002,"Propuestas de Resolución relativas a las Memorias del Consejo General del Poder Judicial.","Propuestas de resolución presentadas con motivo del debate de la Memoria sobre el estado, funcionamiento y actividades del Consejo General del Poder Judicial y de los Juzgados y Tribunales de Justicia, correspondiente al año 2010.","Propuestas de resolución formuladas por el Grupo Parlamentario Catalán (Convergència i Unió)","Propuestas 40, 49 y 51"
+23/2/2012,312,202,110,0,245/000002,"Propuestas de Resolución relativas a las Memorias del Consejo General del Poder Judicial.","Propuestas de resolución presentadas con motivo del debate de la Memoria sobre el estado, funcionamiento y actividades del Consejo General del Poder Judicial y de los Juzgados y Tribunales de Justicia, correspondiente al año 2010.","Propuestas de resolución formuladas por el Grupo Parlamentario Catalán (Convergència i Unió)","Propuestas 41"
+23/2/2012,312,24,288,0,245/000002,"Propuestas de Resolución relativas a las Memorias del Consejo General del Poder Judicial.","Propuestas de resolución presentadas con motivo del debate de la Memoria sobre el estado, funcionamiento y actividades del Consejo General del Poder Judicial y de los Juzgados y Tribunales de Justicia, correspondiente al año 2010.","Propuestas de resolución formuladas por el Grupo Parlamentario Catalán (Convergència i Unió)","Propuesta 42, con la incorporación de la enmienda 1 del Grupo Parlamentario Vasco (EAJ-PNV)"
+23/2/2012,313,22,285,6,245/000002,"Propuestas de Resolución relativas a las Memorias del Consejo General del Poder Judicial.","Propuestas de resolución presentadas con motivo del debate de la Memoria sobre el estado, funcionamiento y actividades del Consejo General del Poder Judicial y de los Juzgados y Tribunales de Justicia, correspondiente al año 2010.","Propuestas de resolución formuladas por el Grupo Parlamentario Catalán (Convergència i Unió)","Propuesta 44"
+11/1/2012,333,327,0,6,410/000002,"Toma en consideración de Proposición de reforma del Reglamento del Congreso de los Diputados.","De los Grupos Parlamentarios Popular en el Congreso, Socialista, Catalán (Convergència i Unió), Unión Progreso y Democracia, Vasco (EAJ-PNV) y de IU, ICV-EUiA, CHA: La Izquierda Plural, de reforma del Reglamento del Congreso de los Diputados, por la que se modifica el artículo 46.1.
+",,
+11/1/2012,339,197,138,4,130/000001,"Convalidación o derogación de Reales Decretos-Leyes.","Real Decreto-Ley 20/2011, de 30 de diciembre, de medidas urgentes en materia presupuestaria, tributaria y financiera para la corrección del déficit público.",,
+11/1/2012,338,141,175,22,130/000001,"Convalidación o derogación de Reales Decretos-Leyes.","Tramitación como Proyecto de Ley por el procedimiento de urgencia del Real Decreto-Ley 20/2011, de 30 de diciembre, de medidas urgentes en materia presupuestaria, tributaria y financiera para la corrección del déficit público.",,
+11/1/2012,341,127,190,24,410/000002,"Convalidación o derogación de Reales Decretos-Leyes.","Proposición de reforma del Reglamento del Congreso de los Diputados, por la que se modifica el artículo 46.1.","GP MIxto (ERC)","Enmienda nº 1"
+11/1/2012,342,44,298,0,410/000002,"Convalidación o derogación de Reales Decretos-Leyes.","Proposición de reforma del Reglamento del Congreso de los Diputados, por la que se modifica el artículo 46.1.","GP MIxto (ERC)","Enmienda nº 2"
+11/1/2012,342,25,295,22,410/000002,"Convalidación o derogación de Reales Decretos-Leyes.","Proposición de reforma del Reglamento del Congreso de los Diputados, por la que se modifica el artículo 46.1.","GP MIxto (ERC)","Enmienda nº 3"
+11/1/2012,343,337,0,6,410/000002,"Convalidación o derogación de Reales Decretos-Leyes.","Proposición de reforma del Reglamento del Congreso de los Diputados, por la que se modifica el artículo 46.1.","Votación conjunta","VOTACIÓN CONJUNTO PROPOSICIÓN DE REFORMA DEL REGLAMENTO DEL CONGRESO DE LOS DIPUTADOS."
