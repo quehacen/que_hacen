@@ -3,7 +3,8 @@
 
   $filename = 'csv/participacion.csv';
 
-  // Nota: la carpeta csv debe ser escribible por apache.
+  // Nota: la carpeta csv debe ser escribible por apache si
+  // este programa se llama desde un navegador.
   // Para cambiar el propietario de la carpeta:
   // sudo chown www-data:www-data csv
 
@@ -43,6 +44,10 @@
   $fp = fopen($filename, 'w');
   $bytes = fputcsv($fp, array('nombre', 'asientos', 'total', 'si', 'no', 'abs', 'novota'));
 
+  if($fp == false) {
+    print("No puedo abrir $filename en modo escritura\n");
+    exit();
+  }
   ksort($diputado);
   foreach($diputado AS $nom => $info) {
     $bytes += fputcsv($fp, array(
@@ -58,4 +63,4 @@
 
   fclose($fp);
 
-  print "$bytes bytes guardados en $filename";
+  print "$bytes bytes guardados en $filename\n";

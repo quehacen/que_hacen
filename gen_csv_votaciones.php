@@ -3,7 +3,8 @@
 
   $filename = 'csv/votaciones.csv';
 
-  // Nota: la carpeta csv debe ser escribible por apache.
+  // Nota: la carpeta csv debe ser escribible por apache si
+  // este programa se llama desde un navegador.
   // Para cambiar el propietario de la carpeta:
   // sudo chown www-data:www-data csv
 
@@ -13,6 +14,12 @@
   $res = $my->use_result();
 
   $fp = fopen($filename, 'w');
+
+  if($fp == false) {
+    print("No puedo abrir $filename en modo escritura\n");
+    exit();
+  }
+
   $bytes = fputcsv($fp, array('fecha', 'presentes', 'si', 'no', 'abs', 'num_expediente', 'titulo', 'texto_expediente', 'titulo_subgrupo', 'texto_subgrupo'));
   while($row = $res->fetch_assoc()) {
     $r = new SimpleXMLElement($row['xml']);
@@ -35,4 +42,4 @@
   }
   fclose($fp);
 
-  print "$bytes bytes guardados en $filename";
+  print "$bytes bytes guardados en $filename\n";
