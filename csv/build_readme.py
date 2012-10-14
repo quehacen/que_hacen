@@ -16,7 +16,7 @@ now = datetime.datetime.now()
 
 f = open('readme.md', "w")
 f.write('**Estos archivos .csv se generaron automáticamente en %s**\n' % now.strftime("%Y-%m-%d %H:%M"))
-f.write('**con datos descargados desde http://www.congreso.es/portal/page/portal/Congreso/Congreso/Actualidad/Votaciones **\n\n')
+f.write('**con datos descargados desde [congreso.es](http://www.congreso.es/portal/page/portal/Congreso/Congreso/Actualidad/Votaciones)**\n\n')
 
 for line in result:
   if line:
