@@ -2,6 +2,7 @@
   ini_set('display_errors', '1');
 
   $filename = 'csv/participacion.csv';
+  $filename2 = 'csv/diputados/%s.csv';
 
   // Nota: la carpeta csv debe ser escribible por apache si
   // este programa se llama desde un navegador.
@@ -10,7 +11,25 @@
 
   include_once('db.php');
 
-  $my->real_query("SELECT id, xml FROM votacion");
+  function fixName($str) {
+    return strtr($str, array(
+      'Á'=>'A', 'À'=>'A', 'Â'=>'A', 'Ã'=>'A', 'Å'=>'A', 'Ä'=>'A', 'Æ'=>'AE', 'Ç'=>'C',
+      'É'=>'E', 'È'=>'E', 'Ê'=>'E', 'Ë'=>'E', 'Í'=>'I', 'Ì'=>'I', 'Î'=>'I', 'Ï'=>'I', 'Ð'=>'Eth',
+      'Ñ'=>'N', 'Ó'=>'O', 'Ò'=>'O', 'Ô'=>'O', 'Õ'=>'O', 'Ö'=>'O', 'Ø'=>'O',
+      'Ú'=>'U', 'Ù'=>'U', 'Û'=>'U', 'Ü'=>'U', 'Ý'=>'Y',
+
+      'á'=>'a', 'à'=>'a', 'â'=>'a', 'ã'=>'a', 'å'=>'a', 'ä'=>'a', 'æ'=>'ae', 'ç'=>'c',
+      'é'=>'e', 'è'=>'e', 'ê'=>'e', 'ë'=>'e', 'í'=>'i', 'ì'=>'i', 'î'=>'i', 'ï'=>'i', 'ð'=>'eth',
+      'ñ'=>'n', 'ó'=>'o', 'ò'=>'o', 'ô'=>'o', 'õ'=>'o', 'ö'=>'o', 'ø'=>'o',
+      'ú'=>'u', 'ù'=>'u', 'û'=>'u', 'ü'=>'u', 'ý'=>'y',
+
+      'ß'=>'sz', 'þ'=>'thorn', 'ÿ'=>'y',
+
+      ' '=>'', ','=>'.'
+    ));
+  }
+
+  $my->real_query("SELECT id, xml FROM votacion ORDER BY fecha");
   $res = $my->use_result();
 
   $diputado = array();
@@ -30,13 +49,16 @@
             'Sí' => 0,
             'No' => 0,
             'Abstención' => 0,
-            'No vota' => 0
+            'No vota' => 0,
+            'listado' => array()
           );
         }
 
         $diputado[$nom]['asientos'][$asiento] = true;
         $diputado[$nom]['total']++;
         $diputado[$nom][$voto]++;
+        $id = $r->Informacion->Fecha .';'. $r->Informacion->Sesion .';'. $r->Informacion->NumeroVotacion;
+        $diputado[$nom]['listado'][$id] = $voto;
       }
     }
   }
@@ -59,6 +81,19 @@
       $info['Abstención'],
       $info['No vota']
     ));
+
+    $fp_listado = fopen(sprintf($filename2, fixName($nom)), 'w');
+    $bytes += fputcsv($fp_listado, array('fecha', 'sesion', 'numeroVotacion', 'voto'));
+    foreach($info['listado'] AS $id => $voto) {
+      $idA = explode(';', $id);
+      $bytes += fputcsv($fp_listado, array(
+        $idA[0],
+        $idA[1],
+        $idA[2],
+        $voto
+      ));
+    }
+    fclose($fp_listado);
   }
 
   fclose($fp);

@@ -1,6 +1,15 @@
 <?php
   ini_set('display_errors', '1');
 
+  // TODO: descarga de diputados. Empezar por:
+  // http://www.congreso.es/portal/page/portal/Congreso/Congreso/Diputados?_piref73_1333056_73_1333049_1333049.next_page=/wc/menuAbecedarioInicio&tipoBusqueda=completo&idLegislatura=10
+  // donde se encontrarán 25 enlaces tipo:
+  // http://www.congreso.es/portal/page/portal/Congreso/Congreso/Diputados/BusqForm?_piref73_1333155_73_1333154_1333154.next_page=/wc/fichaDiputado?idDiputado=242&idLegislatura=10
+  // donde va cambiando idDiputado
+  // Además de los 25 enlaces a diputados hay uno a la página siguiente:
+  // http://www.congreso.es/portal/page/portal/Congreso/Congreso/Diputados?_piref73_2874067_73_1333049_1333049.next_page=/wc/busquedaAlfabeticaDiputados&paginaActual=1&idLegislatura=10&tipoBusqueda=completo
+  // donde va cambiando paginaActual hasta llegar a una página donde no hay paginaActual
+
   if(!isset($argc)) {
     print "Este programa solo puede ejecutarse en línea de comandos, tecleando 'php descarga.php'.";
     exit();
@@ -53,9 +62,12 @@
 
     $res = $my->query("SELECT url FROM pending_url LIMIT 1");
     $row = $res->fetch_assoc();
-    $my->query("DELETE FROM pending_url WHERE url='$row[url]'");
     $html = get_file_from_url($row['url']);
     $fila_diasA = get_div_by_class($html, 'fila_dias') ;
+
+    $my->query("DELETE FROM pending_url WHERE url='$row[url]'");
+
+    // TODO: Esta sección está montada sólo para un tipo de URL, pero ahora tendrémos dos: las votaciones + los diputados
 
     $sesion_inserts = 0;
     foreach($fila_diasA AS $k => $div_fila_dias) {
@@ -252,7 +264,7 @@
           print "CAN'T UPDATE HTML-iniciativa: $row[num_expediente]\n";
         }
       } else {
-        print "CAN'T DOWNLOAD HTML-iniciativa with id=$row[id]";
+        print "CAN'T DOWNLOAD HTML-iniciativa with id=$row[id]\n";
       }
     } else {
       print "No pending HTML-iniciativa to download\n";
@@ -265,8 +277,35 @@
   }
 
   //NOTA: Hay un error en la web del congreso (Un ID 8.0 que en realidad es 000008)
+  //FIX:
   //UPDATE iniciativa set url='http://www.congreso.es/portal/page/portal/Congreso/Congreso/Iniciativas?_piref73_2148295_73_1335437_1335437.next_page=/wc/servidorCGI&CMD=VERLST&BASE=IW10&FMT=INITXDSS.fmt&DOCS=1-1&DOCORDER=FIFO&OPDEF=ADJ&QUERY=%28121%2F000008*.NDOC.%29'
   //  html='' WHERE url='http://www.congreso.es/portal/page/portal/Congreso/Congreso/Iniciativas?_piref73_2148295_73_1335437_1335437.next_page=/wc/servidorCGI&CMD=VERLST&BASE=IW10&FMT=INITXDSS.fmt&DOCS=1-1&DOCORDER=FIFO&OPDEF=ADJ&QUERY=%28121%2F8.0*.NDOC.%29'
   //UPDATE `votacion` SET `num_expediente`='121/000008' WHERE num_expediente='121/8.0'
+
+
+
+  // Extrae información desde los XML de la tabla votacion a columnas como fecha, sesion y num.
+  // Esto será innecesario si en vez de MySQL uso MongoDB, y convierto los XML a JSON al insertarlos.
+
+  $res = $my->query("SELECT id, xml FROM votacion");
+
+  $affected = 0;
+  while($row = $res->fetch_assoc()) {
+    $r = new SimpleXMLElement($row['xml']);
+
+    $fA = explode("/", $r->Informacion->Fecha);
+    $fecha = sprintf("%04d/%02d/%02d", $fA[2], $fA[1], $fA[0]);
+
+    $my->query("UPDATE votacion SET ".
+      "fecha='$fecha', sesion='".$r->Informacion->Sesion."', num='".$r->Informacion->NumeroVotacion."' ".
+      "WHERE id=$row[id]");
+
+    if($my->affected_rows > 0) {
+      $affected++;
+    } else {
+      print $my->error;
+    }
+  }
+  print "$affected filas actualizadas en la tabla 'votacion'.\n";
 
 ?>
