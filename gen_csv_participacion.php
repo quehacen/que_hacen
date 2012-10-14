@@ -64,7 +64,7 @@
   }
 
   $fp = fopen($filename, 'w');
-  $bytes = fputcsv($fp, array('nombre', 'asientos', 'total', 'si', 'no', 'abs', 'novota'));
+  $bytes = fputcsv($fp, array('nombre', 'asientos', 'total', 'si', 'no', 'abs', 'novota', 'dias_no_vota', 'dias_vota_algo', 'dias_vota_todo'));
 
   if($fp == false) {
     print("No puedo abrir $filename en modo escritura\n");
@@ -72,6 +72,43 @@
   }
   ksort($diputado);
   foreach($diputado AS $nom => $info) {
+    $dias_con_no_voto = array();
+    $dias_con_voto = array();
+
+    $fp_listado = fopen(sprintf($filename2, fixName($nom)), 'w');
+    $bytes += fputcsv($fp_listado, array('fecha', 'sesion', 'numeroVotacion', 'voto'));
+    foreach($info['listado'] AS $id => $voto) {
+      list($fecha, $sesion, $numeroVotacion) = explode(';', $id);
+      $bytes += fputcsv($fp_listado, array(
+        $fecha,
+        $sesion,
+        $numeroVotacion,
+        $voto
+      ));
+      if($voto == 'No vota') {
+        $dias_con_no_voto[$fecha] = true;
+      } else {
+        $dias_con_voto[$fecha] = true;
+      }
+    }
+    fclose($fp_listado);
+
+    $dias_no_vota = 0;
+    $dias_vota_algo = 0;
+    $dias_vota_todo = 0;
+    foreach($dias_con_no_voto AS $fecha => $null) {
+      if(isset($dias_con_voto[$fecha])) {
+        $dias_vota_algo++;
+      } else {
+        $dias_no_vota++;
+      }
+    }
+    foreach($dias_con_voto AS $fecha => $null) {
+      if(!isset($dias_con_no_voto[$fecha])) {
+        $dias_vota_todo++;
+      }
+    }
+
     $bytes += fputcsv($fp, array(
       $nom,
       implode(', ', array_keys($info['asientos'])),
@@ -79,21 +116,12 @@
       $info['Sí'],
       $info['No'],
       $info['Abstención'],
-      $info['No vota']
+      $info['No vota'],
+      $dias_no_vota,
+      $dias_vota_algo,
+      $dias_vota_todo
     ));
 
-    $fp_listado = fopen(sprintf($filename2, fixName($nom)), 'w');
-    $bytes += fputcsv($fp_listado, array('fecha', 'sesion', 'numeroVotacion', 'voto'));
-    foreach($info['listado'] AS $id => $voto) {
-      $idA = explode(';', $id);
-      $bytes += fputcsv($fp_listado, array(
-        $idA[0],
-        $idA[1],
-        $idA[2],
-        $voto
-      ));
-    }
-    fclose($fp_listado);
   }
 
   fclose($fp);
