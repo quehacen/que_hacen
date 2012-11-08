@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Sep 11, 2012 at 10:18 PM
--- Server version: 5.5.24
--- PHP Version: 5.3.10-1ubuntu3.2
+-- Generation Time: Nov 08, 2012 at 07:25 PM
+-- Server version: 5.5.28
+-- PHP Version: 5.3.10-1ubuntu3.4
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -23,6 +23,19 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `diputado`
+--
+
+CREATE TABLE IF NOT EXISTS `diputado` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(200) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `nombre` (`nombre`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `iniciativa`
 --
 
@@ -34,7 +47,7 @@ CREATE TABLE IF NOT EXISTS `iniciativa` (
   `titulo` text NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `num_expediente` (`num_expediente`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=379 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=451 ;
 
 -- --------------------------------------------------------
 
@@ -47,7 +60,7 @@ CREATE TABLE IF NOT EXISTS `pending_url` (
   `url` varchar(500) CHARACTER SET ascii NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `url` (`url`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=76 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=91 ;
 
 -- --------------------------------------------------------
 
@@ -63,7 +76,7 @@ CREATE TABLE IF NOT EXISTS `session` (
   `num_sesion` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `url` (`url`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=115 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=112 ;
 
 -- --------------------------------------------------------
 
@@ -75,13 +88,15 @@ CREATE TABLE IF NOT EXISTS `votacion` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `xml_url` varchar(500) CHARACTER SET armscii8 NOT NULL,
   `xml` text NOT NULL,
+  `fecha` varchar(10) NOT NULL,
   `legislatura` int(11) NOT NULL,
   `sesion` int(11) NOT NULL,
   `num` int(11) NOT NULL,
   `num_expediente` varchar(16) NOT NULL,
   `puntos` varchar(100) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=637 ;
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `xml_url` (`xml_url`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=717 ;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
