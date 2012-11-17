@@ -8,3 +8,7 @@ En este repositorio hay por ahora pequeños programas en fase pre-alpha para la 
 + http://quehacenlosdiputados.net/
 + https://www.facebook.com/qhacenlosdiputados
 + https://twitter.com/que_hacen
+
+### Licencia
+
+Los programas de este repositorio se distribuyen bajo licencia GPLv3 http://www.gnu.org/licenses/gpl.txt
