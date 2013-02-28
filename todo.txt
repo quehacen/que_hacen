@@ -1,0 +1,20 @@
+To start qh download:
+node dl.js
+
+The plan was to use couchdb, but mongodb seems simpler to setup and use.
+
+I tried using cofeescript, but I find it hard to read. I prefer JS.
+Dealing with node.io is hard enough (limited documentation and examples).
+node.js also makes things complicated for a task like this, where things
+would be easier in a synchronous way.
+
+I have installed phpmyadmin, set user and password, migrated database.
+
+Completed migrating first part of php (download of all session links
+and linked html pages).
+
+TO DO: 
+	Migration, from line 170+: tables iniciativa and votacion.
+	Make it run regularly.
+	When it runs, send report by e-mail.
+
