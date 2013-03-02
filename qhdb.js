@@ -3,14 +3,13 @@ var client = require('mongodb').MongoClient,
     pendingURL,
     session;
 
-exports.pendingURL = function() { 
-	return pendingURL;
-}
-exports.session = function() { 
-	return session;
-}
-exports.connect = function(callback) {
-	client.connect("mongodb://localhost:27017/votaciones", function (err, db) {
+var cfgMongoURL = 'mongodb://localhost:27017/votaciones',
+    cfgStartURL = 'http://www.congreso.es/portal/page/portal/Congreso/Congreso/Actualidad/Votaciones';
+
+// Connect
+
+exports.connect = function(cb) {
+	client.connect(cfgMongoURL, function (err, db) {
 		if(err) {
 			console.log("Error connecting to db: " + err);
 			process.exit(code=1);
@@ -18,16 +17,25 @@ exports.connect = function(callback) {
 		console.log("Connected to db.");
 		pendingURL = db.collection("pendingURL");
 		session = db.collection("session");
-		callback();
+		cb();
 	});
 }
+
+// Collection: pendingURL
+
 exports.cleanPendingURL = function(cb) {
 	pendingURL.remove(null, {w:1}, cb);
 }
 exports.insertPendingURL = function(url, cb) {
-	if(url == null)	url = 'http://www.congreso.es/portal/page/portal/Congreso/Congreso/Actualidad/Votaciones'; 
+	if(url == null)	url = cfgStartURL; 
 	pendingURL.insert({ url: url }, {w:1}, cb);
 }
+exports.getPendingURL = function(cb) {
+    pendingURL.findAndRemove({}, cb);
+}
+
+// Collection: session
+
 exports.insertIntoSession = function(data, cb) {
 	session.findOne({ fecha: data.fecha}, function(err, item) {
 		if(item)
@@ -39,6 +47,19 @@ exports.insertIntoSession = function(data, cb) {
 exports.setSessionHtml = function(id, html, cb) {
 	session.update({ _id: id }, {$set:{html: html}}, {w:1}, cb);
 }
+exports.getSessionWithNoHtml = function(cb) {
+    session.findOne({ html:null }, cb);
+}
+exports.getSessionWithNoNum = function(cb) {
+    session.findOne({ num:null}, cb);
+}
+
+// Collection: iniciativa
+
+// Collection: votacion
+
+// Test
+
 exports.test = function() {
 	session.findOne({}, function(err, item) {
 		console.log(item);
