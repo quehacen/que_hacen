@@ -18,3 +18,23 @@ TO DO:
 	Make it run regularly.
 	When it runs, send report by e-mail.
 
+UNIQUE in MongoDB:
+> db.test.find()
+{ "_id" : ObjectId("5113e00742c4b2c0963cc829"), "a" : 1 }
+{ "_id" : ObjectId("5113e01b42c4b2c0963cc82a"), "b" : 15 }
+> db.test.ensureIndex({a:1}, { unique:true, background:true, dropDups:true, w:1 }, function(err, indexName) { console.log(err, indexName); });
+> db.test.find()
+{ "_id" : ObjectId("5113e00742c4b2c0963cc829"), "a" : 1 }
+{ "_id" : ObjectId("5113e01b42c4b2c0963cc82a"), "b" : 15 }
+> db.test.insert({ a:3 }, {w:1}, function(e, r) { console.log(e, r); });
+> db.test.find()
+{ "_id" : ObjectId("5113e00742c4b2c0963cc829"), "a" : 1 }
+{ "_id" : ObjectId("5113e01b42c4b2c0963cc82a"), "b" : 15 }
+{ "_id" : ObjectId("5134c8e4f891bb22b323fef9"), "a" : 3 }
+> db.test.insert({ a:1, x:100 }, {w:1}, function(e, r) { console.log(e, r); });
+E11000 duplicate key error index: test.test.$a_1  dup key: { : 1.0 }
+> db.test.find()
+{ "_id" : ObjectId("5113e00742c4b2c0963cc829"), "a" : 1 }
+{ "_id" : ObjectId("5113e01b42c4b2c0963cc82a"), "b" : 15 }
+{ "_id" : ObjectId("5134c8e4f891bb22b323fef9"), "a" : 3 }
+
