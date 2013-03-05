@@ -20,11 +20,11 @@ exports.connect = function(cb) {
 		}
         // TODO: EnsureIndex (create indexes to avoid duplicated entries).
         // Read todo.txt
-		console.log("Connected to db.");
 		cPendingURL = db.collection("pendingURL");
 		cSession    = db.collection("session");
         cIniciativa = db.collection("iniciativa"); 
         cVotacion   = db.collection("votacion");
+		console.log("Connected to db.");
 		cb();
 	});
 }
@@ -79,16 +79,20 @@ exports.insertVotacion = function(url, legis, num, numExp, cb) {
 
 // Info
 
-function ccount(collection, name) {
-        return function(cb) { collection.count(function(err, c) { console.log("  " + name + ":", c); cb(err); }) };
+function ccount(collection) {
+    return function(cb) {
+        collection.count(function(err, cnt) { 
+            console.log(collection.db.databaseName + "." + collection.collectionName + ".count() = ", cnt); 
+            cb(err); 
+        }); 
+    };
 }
 exports.info = function() {
-    console.log("db.votaciones.[collection].count()");
     async.series([
-        ccount(cPendingURL, 'pendingURL'),
-        ccount(cSession, 'session'),
-        ccount(cIniciativa, 'iniciativa'),
-        ccount(cVotacion, 'votacion')
+        ccount(cPendingURL),
+        ccount(cSession),
+        ccount(cIniciativa),
+        ccount(cVotacion)
     ], function(err, result) {
         console.log(err ? err : 'Done.');
     });
