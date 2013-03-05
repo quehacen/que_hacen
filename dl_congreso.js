@@ -7,10 +7,11 @@ var nodeio = require('node.io'),
 
 var argv = require('optimist')
     .usage('Download data from congreso.es, store in MongoDB\nUsage: $0 -abc')
-    .check(function(a) { if(!(a.a || a.b || a.c)) { throw("a, b or c missing"); }; })
+    .check(function(a) { if(!(a.a || a.b || a.c || a.i)) { throw("a, b, c or i missing"); }; })
     .describe('a', 'Download links to sessions')
     .describe('b', 'Download session html')
     .describe('c', 'Populate iniciativa & votacion')
+    .describe('i', 'Database Info')
     .argv
 ;
 
@@ -69,35 +70,31 @@ function run1(item) { // item = { url:'', _id:'' }
 					break;
 			}
 		});
-		var count = urlArray.length;
-		console.log("run1 going to proccess " + count + " urls");
-		for(var i in urlArray) {
-			var o = urlArray[i];
+
+        async.eachSeries(urlArray, function(o, cb) {
 			if(o.pendingURL) {
 				qhdb.insertPendingURL(o.url, function(err, result) { 
-					if(err) gameOver(err);
-					if(--count == 0) {
-						if(!insertedNewSession) consecutiveEmptyMonths++;
-						self.emit(["run1 complete"]);
-					}
+					cb(err);
 				});
 			} else {
 				qhdb.insertIntoSession({ fecha: o.fecha, url: o.url }, function(err, result) {
-					if(err) gameOver(err);
-					if(result !== false) {
-						console.log("run1:" + count + ". Found new session.");
-						insertedNewSession = true;
-						consecutiveEmptyMonths = 0;
-					} else {
-						console.log("run1:" + count + ". Old session.");
-					}
-					if(--count == 0) {
-						if(!insertedNewSession) consecutiveEmptyMonths++;
-						self.emit(["run1 complete"]);
-					}
+					if(err == null) {
+                        if(result !== false) {
+                            console.log("run1: Found new session.");
+                            insertedNewSession = true;
+                            consecutiveEmptyMonths = 0;
+                        } else {
+                            console.log("run1: Old session.");
+                        }
+                    }
+                    cb(err);
 				});
 			}
-		}
+        }, function(err) {
+            if(err) gameOver(err);
+			if(!insertedNewSession) consecutiveEmptyMonths++;
+			self.emit(["run1 complete"]);        
+        });
 	});
 }
 
@@ -132,8 +129,6 @@ function run2(item) { // item = { url:'', fecha:'', _id:'', html:'' }
 // Analiza los html descargados por tarea 2 y extrae información
 
 function input3(pos, limit, cb) {
-    // TEMP TEST LIMIT N
-    if(pos > 0) { cb(null, false); return; }
     qhdb.getSessionWithNoNum(function(err, item) {
         if(err || !item) {
             console.log("No sessions with empty num field");
@@ -144,6 +139,7 @@ function input3(pos, limit, cb) {
 }
 
 function run3(item) { // item = { url:'', fecha:'', _id:'', html:'' }
+	var self = this;
     console.log("run3 " + item.fecha + " url: " + item.url );
     this.parseHtml(item.html, function(err, $) {
         if(err) gameOver(err);
@@ -154,39 +150,47 @@ function run3(item) { // item = { url:'', fecha:'', _id:'', html:'' }
         var rxIniciativa = /QUERY=%28(\d+)%2F([0-9.]+)\*\.NDOC\.%29/,
             rxXML = /sesion=(\d+)&votacion=(\d+)&legislatura=(\d+)/;
 
+		var urlArray = [];
         $('a').each('href', function(url) {
-            if(!url) return;
+            if(url) urlArray.push(url);
+        });
 
+        async.eachSeries(urlArray, function(url, cb) {
             if(url.indexOf('Congreso/Congreso/Iniciativas?') >= 0) {
-                var urlIniciativa = url;
-			    var p = rxIniciativa.exec(urlIniciativa);
+			    var p = rxIniciativa.exec(url);
                 if(p) {
                     numExpediente = p[1] + '/' + p[2];
-                    console.log('iniciativa', numExpediente);
-                    // insert into iniciativa numExpediente, urlIniciativa
+                    qhdb.insertIniciativa(numExpediente, url, function(err, result) {
+                        cb(err);
+                    });
                 } else {
-                    console.log("Err: rx=null. Can't find numExpediente in ", urlIniciativa);
+                    cb("Err: rxIniciativa=null in " + url);
                 }
-            }
-
-            if(numExpediente != '' && url.indexOf('votaciones/OpenData') >= 0) {
-                var urlVotosXML = url;
-                var p = rxXML.exec(urlVotosXML);
-                if(urlVotosXML.charAt(0) == '/')
-                    urlVotosXML = 'http://www.congreso.es' + urlVotosXML;
+            } else if(numExpediente != '' && url.indexOf('votaciones/OpenData') >= 0) {
+                var p = rxXML.exec(url);
+                if(url.charAt(0) == '/')
+                    url = 'http://www.congreso.es' + url;
                 if(p) {
                     numSesion = p[1];
-                    console.log('xml', p[1], p[2], p[3]);
-                    // insert into votacion urlVotosXML, legislatura, num, numExp
+                    qhdb.insertVotacion(url, p[3], p[2], numExpediente, function(err, result) {
+                        cb(err);
+                    });
                 } else {
-                    console.log('Err: rx=null. ses vot leg?');
+                    // La URL puede contener "completa", y la rx falla. Me los salto.
+                    // http://www.congreso.es/votaciones/OpenData?sesion=74&completa=1&legislatura=10
+                    console.log('Warning: rxXML=null in ' + url);
+                    cb();
                 }
+            } else {
+                cb();
             }
+        }, function(err) {
+            if(err) gameOver(err);
+            qhdb.setSessionNum(item._id, numSesion, function(err, result) {
+                self.emit(["Test task 3 done: " + item]);
+            });
         });
-        // update session set num=numSesion where id=item._id
     });
-    // find all href="(.*)" in item.html
-    emit(["Test task 3 done: " + item]);
 }
 
 
@@ -202,7 +206,15 @@ function jobMaker(inputf, runf) {
 function jobSequence() {
     var s = [];
 
-    if(argv.a) s.push(jobMaker(input1, run1));
+    if(argv.i) qhdb.info();
+    if(argv.a) s.push(function(cb) { 
+	    qhdb.cleanPendingURL(function(err, result) {
+		    if(err)	gameOver(err);
+    		qhdb.insertPendingURL(null, function(err, result) {
+                jobMaker(input1, run1)(cb);
+            });
+    	});
+    });
     if(argv.b) s.push(jobMaker(input2, run2));
     if(argv.c) s.push(jobMaker(input3, run3));
     
@@ -211,14 +223,9 @@ function jobSequence() {
 	});
 }
 
-// Inicio. Conexión a la base de datos, lanzar tareas
+// INICIO. Conexión a la base de datos, lanzar tareas
 
-qhdb.connect(function() {
-	qhdb.cleanPendingURL(function(err, result) {
-		if(err)	gameOver("Error cleaning pendingURL: " + err);
-		qhdb.insertPendingURL(null, jobSequence);
-	});
-});
+qhdb.connect(jobSequence);
 
 // FIN (ERROR)
 
