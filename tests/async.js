@@ -1,6 +1,6 @@
 var async = require("async");
 
-function test() {
+function waterfall() {
 	var msg = "hi";
 	async.waterfall([
 		function(c){ 
@@ -16,4 +16,21 @@ function test() {
 		console.log(msg);
 	});
 }
-test();
+function eachSeries() {
+    var files = ['one', 'two', 'three'];
+    async.eachSeries(files, function(item, cb) {
+            console.log(item);
+            setTimeout(function() {
+                cb();
+            }, 1000);
+    }, function(err){
+        if(err) {
+            console.log(err);
+        } else {
+            console.log('success!');
+        }
+    });
+}
+
+//waterfall();
+eachSeries();
