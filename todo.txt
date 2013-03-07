@@ -13,10 +13,16 @@ I have installed phpmyadmin, set user and password, migrated database.
 Completed migrating first part of php (download of all session links
 and linked html pages).
 
+Complete migrating php. The last part does not make sense, because
+data is now in json format and can be searched, no need to extract
+interesting values from the xml as before. I did extract *all values*.
+
 TO DO: 
-	Migration, from line 170+: tables iniciativa and votacion.
+    Add unique to tables.
+    Make program close on end (exit).
 	Make it run regularly.
 	When it runs, send report by e-mail.
+    Generate csv files.
 
 UNIQUE in MongoDB:
 > db.test.find()
