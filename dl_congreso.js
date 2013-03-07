@@ -4,52 +4,69 @@ var nodeio = require('node.io'),
     qhdb = require('./qhdb.js'),
     async = require('async');
 
-var tareaA = require('./tareaA.js'),
-    tareaB = require('./tareaB.js'),
-    tareaC = require('./tareaC.js');
 
 // Linea de comandos
 
 var argv = require('optimist')
-    .usage('Download data from congreso.es, store in MongoDB\nUsage: $0 -abc')
-    .check(function(a) { if(!(a.a || a.b || a.c || a.i)) { throw("a, b, c or i missing"); }; })
+    .usage('Download data from congreso.es, store in MongoDB\nUsage: $0 -abcdei')
+    .check(function(a) {
+        // need at least 3 arguments (first two auto populated)
+        if(Object.keys(a).length < 3) { 
+            throw("Missing parameter. Enter at least one."); 
+        }; 
+    })
     .describe('a', 'Download links to sessions')
     .describe('b', 'Download session html')
     .describe('c', 'Populate iniciativa & votacion')
+    .describe('d', 'Download votacion XML files')
+    .describe('e', 'Download iniciativa html')
     .describe('i', 'Database Info')
     .argv
 ;
 
 // Gestión de tareas
 
-function jobMaker(inputfunc, runfunc) {
+function jobMaker(tarea) {
     return function(cb) { 
-        nodeio.start(new nodeio.Job({ input: inputfunc, run: runfunc }), 
-            { timeout: 15, debug: true }, cb); 
+        nodeio.start(new nodeio.Job({ 
+            input: tarea.input, 
+            run: tarea.run 
+        }), { 
+            timeout: 15,
+            wait: 1,
+            debug: true, 
+            encoding: 'binary' 
+        }, cb); 
     };
 }
 
 function jobSequence() {
-    var s = [];
+    var jobs = [];
 
     // -a = busca enlaces a sesiones y votaciones
-    if(argv.a) s.push(function(cb) { 
+    if(argv.a) jobs.push(function(cb) { 
 	    qhdb.cleanPendingURL(function(err, result) {
 		    if(err)	gameOver(err);
     		qhdb.insertPendingURL(null, function(err, result) {
-                jobMaker(tareaA.input, tareaA.run)(cb);
+                jobMaker(require('./tareaA'))(cb);
             });
     	});
     });
 
     // -b = descarga archivos html y los guarda en la db
-    if(argv.b) s.push(jobMaker(tareaB.input, tareaB.run));
+    if(argv.b) jobs.push(jobMaker(require('./tareaB')));
 
     // -c = extrae datos sobre iniciativas y votaciones del html
-    if(argv.c) s.push(jobMaker(tareaC.input, tareaC.run));
+    if(argv.c) jobs.push(jobMaker(require('./tareaC')));
+
+    // -d = descarga XMLs de las votaciones
+    if(argv.d) jobs.push(jobMaker(require('./tareaD')));
+    
+    // -e = descarga archivos html de las iniciativas
+    if(argv.e) jobs.push(jobMaker(require('./tareaE')));
     
     // ejecuta las tareas una tras otra
-    async.series(s, function(err, result) {
+    async.series(jobs, function(err, result) {
 		gameOver(err);
 	});
     

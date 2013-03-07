@@ -70,11 +70,23 @@ exports.getSessionWithNoNum = function(cb) {
 exports.insertIniciativa = function(numExp, url, cb) {
 	cIniciativa.insert({ nupExpediente: numExp, url: url }, {w:1}, cb);
 }
+exports.getIniciativaWithNoHtml = function(cb) {
+    cIniciativa.findOne({ html:null }, cb);
+}
+exports.setIniciativaHtml = function(id, html, cb) {
+	cIniciativa.update({ _id: id }, {$set:{html: html}}, {w:1}, cb);
+}
 
 // Collection: votacion
 
 exports.insertVotacion = function(url, legis, num, numExp, cb) {
 	cVotacion.insert({ numExpediente: numExp, url:url, legislatura:legis, num:num }, {w:1}, cb);
+}
+exports.getVotacionWithNoXML = function(cb) {
+    cVotacion.findOne({ xml:null }, cb);
+}
+exports.setVotacionXML = function(id, xml, cb) {
+    cVotacion.update({ _id: id }, {$set:{xml: xml}}, {w:1}, cb);
 }
 
 // Info
@@ -82,7 +94,8 @@ exports.insertVotacion = function(url, legis, num, numExp, cb) {
 function ccount(collection) {
     return function(cb) {
         collection.count(function(err, cnt) { 
-            console.log(collection.db.databaseName + "." + collection.collectionName + ".count() = ", cnt); 
+            console.log(collection.db.databaseName + "." + 
+                        collection.collectionName + ".count() = ", cnt); 
             cb(err); 
         }); 
     };
