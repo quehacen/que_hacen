@@ -1,4 +1,5 @@
-var qhdb = require('./qhdb.js');
+var qhdb = require('../qhdb.js');
+var async = require('async');
 
 // Lee y elimina URLs de pendingURL
 // Para cada entrada que encuentra, ejecuta run()

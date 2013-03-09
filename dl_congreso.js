@@ -48,22 +48,22 @@ function jobSequence() {
 	    qhdb.cleanPendingURL(function(err, result) {
 		    if(err)	gameOver(err);
     		qhdb.insertPendingURL(null, function(err, result) {
-                jobMaker(require('./tareaA'))(cb);
+                jobMaker(require('./tarea/A'))(cb);
             });
     	});
     });
 
     // -b = descarga archivos html y los guarda en la db
-    if(argv.b) jobs.push(jobMaker(require('./tareaB')));
+    if(argv.b) jobs.push(jobMaker(require('./tarea/B')));
 
     // -c = extrae datos sobre iniciativas y votaciones del html
-    if(argv.c) jobs.push(jobMaker(require('./tareaC')));
+    if(argv.c) jobs.push(jobMaker(require('./tarea/C')));
 
     // -d = descarga XMLs de las votaciones
-    if(argv.d) jobs.push(jobMaker(require('./tareaD')));
+    if(argv.d) jobs.push(jobMaker(require('./tarea/D')));
     
     // -e = descarga archivos html de las iniciativas
-    if(argv.e) jobs.push(jobMaker(require('./tareaE')));
+    if(argv.e) jobs.push(jobMaker(require('./tarea/E')));
     
     // ejecuta las tareas una tras otra
     async.series(jobs, function(err, result) {

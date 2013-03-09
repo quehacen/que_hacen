@@ -1,4 +1,4 @@
-var qhdb = require('./qhdb.js');
+var qhdb = require('../qhdb.js');
 var xml2js = require('xml2js');
 var Iconv = require('iconv').Iconv;
 

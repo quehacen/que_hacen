@@ -1,4 +1,4 @@
-var qhdb = require('./qhdb.js');
+var qhdb = require('../qhdb.js');
 
 // busca documentos en iniciativa con html:null
 

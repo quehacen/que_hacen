@@ -68,7 +68,7 @@ exports.getSessionWithNoNum = function(cb) {
 // Collection: iniciativa
 
 exports.insertIniciativa = function(numExp, url, cb) {
-	cIniciativa.insert({ nupExpediente: numExp, url: url }, {w:1}, cb);
+	cIniciativa.insert({ numExpediente: numExp, url: url }, {w:1}, cb);
 }
 exports.getIniciativaWithNoHtml = function(cb) {
     cIniciativa.findOne({ html:null }, cb);

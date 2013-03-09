@@ -1,4 +1,4 @@
-var qhdb = require('./qhdb.js');
+var qhdb = require('../qhdb.js');
 
 // Analiza los html descargados por tarea 2 y extrae información
 
