@@ -1,11 +1,11 @@
-var qhdb = require('../qhdb.js');
+var db = require('../db.js');
 var xml2js = require('xml2js');
 var Iconv = require('iconv').Iconv;
 
 // busca documentos en votacion con xml:null
 
 exports.input = function(pos, limit, cb) {
-	qhdb.getVotacionWithNoXML(function(err, item) {
+	db.getVotacionWithNoXML(function(err, item) {
 		if(err || !item) { //  || pos > 0
 			console.log("votacion with no xml not found");
 			cb(null, false);
@@ -36,7 +36,7 @@ exports.run = function(item) { // item = { numExpediente:'', num:'', _id:'', xml
 		if(err) gameOver(err);
         xml2json(xml, function(err, json) {
             //console.log(JSON.stringify(json, null, 4));
-            qhdb.setVotacionXML(item._id, json, function(err, result) {
+            db.setVotacionXML(item._id, json, function(err, result) {
                 if(err) gameOver(err);
                 self.emit(["run D complete: " + item._id + 
                         " xml=" + xml.length + " bytes."]);

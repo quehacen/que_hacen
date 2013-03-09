@@ -1,9 +1,9 @@
-var qhdb = require('../qhdb.js');
+var db = require('../db.js');
 
 // busca documentos en iniciativa con html:null
 
 exports.input = function(pos, limit, cb) {
-	qhdb.getIniciativaWithNoHtml(function(err, item) {
+	db.getIniciativaWithNoHtml(function(err, item) {
 		if(err || !item) {
 			console.log("No iniciativa with empty html field");
 			cb(null, false);
@@ -18,7 +18,7 @@ exports.run = function(item) { // item = { numExpediente:'', url:'', _id:'', htm
 	var self = this;
 	this.get(item.url, function(err, data) {
 		if(err) gameOver(err);
-		qhdb.setIniciativaHtml(item._id, data, function(err, result) {
+		db.setIniciativaHtml(item._id, data, function(err, result) {
 			if(err) gameOver(err);
 			self.emit(["run E complete: " + item._id + " html=" + data.length + " bytes."]);
 		});

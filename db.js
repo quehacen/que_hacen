@@ -13,30 +13,30 @@ var cfgMongoURL = 'mongodb://localhost:27017/votaciones',
 // Connect
 
 exports.connect = function(cb) {
-	client.connect(cfgMongoURL, function (err, db) {
-		if(err) {
-			console.log("Error connecting to db: " + err);
-			process.exit(code=1);
-		}
+    client.connect(cfgMongoURL, function (err, db) {
+        if(err) {
+            console.log("Error connecting to db: " + err);
+            process.exit(code=1);
+        }
         // TODO: EnsureIndex (create indexes to avoid duplicated entries).
         // Read todo.txt
-		cPendingURL = db.collection("pendingURL");
-		cSession    = db.collection("session");
+        cPendingURL = db.collection("pendingURL");
+        cSession    = db.collection("session");
         cIniciativa = db.collection("iniciativa"); 
         cVotacion   = db.collection("votacion");
-		console.log("Connected to db.");
-		cb();
-	});
+        console.log("Connected to db.");
+        cb();
+    });
 }
 
 // Collection: pendingURL
 
 exports.cleanPendingURL = function(cb) {
-	cPendingURL.remove(null, {w:1}, cb);
+    cPendingURL.remove(null, {w:1}, cb);
 }
 exports.insertPendingURL = function(url, cb) {
-	if(url == null)	url = cfgStartURL; 
-	cPendingURL.insert({ url: url }, {w:1}, cb);
+    if(url == null)	url = cfgStartURL; 
+    cPendingURL.insert({ url: url }, {w:1}, cb);
 }
 exports.getPendingURL = function(cb) {
     cPendingURL.findAndRemove({}, cb);
@@ -45,15 +45,15 @@ exports.getPendingURL = function(cb) {
 // Collection: session
 
 exports.insertIntoSession = function(data, cb) {
-	cSession.findOne({ fecha: data.fecha}, function(err, item) {
-		if(item)
-			cb(null, false);
-		else
-			cSession.insert({ fecha: data.fecha, url: data.url }, {w:1}, cb);
-	});
+    cSession.findOne({ fecha: data.fecha}, function(err, item) {
+        if(item)
+            cb(null, false);
+        else
+            cSession.insert({ fecha: data.fecha, url: data.url }, {w:1}, cb);
+    });
 }
 exports.setSessionHtml = function(id, html, cb) {
-	cSession.update({ _id: id }, {$set:{html: html}}, {w:1}, cb);
+    cSession.update({ _id: id }, {$set:{html: html}}, {w:1}, cb);
 }
 exports.setSessionNum = function(id, num, cb) {
     cSession.update({ _id: id }, {$set:{num: num}}, {w:1}, cb);
@@ -68,19 +68,19 @@ exports.getSessionWithNoNum = function(cb) {
 // Collection: iniciativa
 
 exports.insertIniciativa = function(numExp, url, cb) {
-	cIniciativa.insert({ numExpediente: numExp, url: url }, {w:1}, cb);
+    cIniciativa.insert({ numExpediente: numExp, url: url }, {w:1}, cb);
 }
 exports.getIniciativaWithNoHtml = function(cb) {
     cIniciativa.findOne({ html:null }, cb);
 }
 exports.setIniciativaHtml = function(id, html, cb) {
-	cIniciativa.update({ _id: id }, {$set:{html: html}}, {w:1}, cb);
+    cIniciativa.update({ _id: id }, {$set:{html: html}}, {w:1}, cb);
 }
 
 // Collection: votacion
 
 exports.insertVotacion = function(url, legis, num, numExp, cb) {
-	cVotacion.insert({ numExpediente: numExp, url:url, legislatura:legis, num:num }, {w:1}, cb);
+    cVotacion.insert({ numExpediente: numExp, url:url, legislatura:legis, num:num }, {w:1}, cb);
 }
 exports.getVotacionWithNoXML = function(cb) {
     cVotacion.findOne({ xml:null }, cb);
@@ -114,12 +114,12 @@ exports.info = function() {
 // Test
 
 exports.test = function() {
-	cSession.findOne({}, function(err, item) {
-		console.log(item);
-		cPendingURL.findOne({}, function(err, item) {
-			console.log(item);
-			process.exit(code=0);
-		});
-	});
+    cSession.findOne({}, function(err, item) {
+        console.log(item);
+        cPendingURL.findOne({}, function(err, item) {
+            console.log(item);
+            process.exit(code=0);
+        });
+    });
 }
 

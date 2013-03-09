@@ -1,11 +1,11 @@
-var qhdb = require('../qhdb.js');
+var db = require('../db.js');
 var async = require('async');
 
 // Lee y elimina URLs de pendingURL
 // Para cada entrada que encuentra, ejecuta run()
 
 exports.input = function(pos, limit, cb) {
-	qhdb.getPendingURL(function(err, item) {
+	db.getPendingURL(function(err, item) {
 		if(err || !item)
 			cb(null, false);
 		else
@@ -57,11 +57,11 @@ exports.run = function(item) { // item = { url:'', _id:'' }
 
         async.eachSeries(urlArray, function(o, cb) {
 			if(o.pendingURL) {
-				qhdb.insertPendingURL(o.url, function(err, result) { 
+				db.insertPendingURL(o.url, function(err, result) { 
 					cb(err);
 				});
 			} else {
-				qhdb.insertIntoSession({ fecha: o.fecha, url: o.url }, function(err, result) {
+				db.insertIntoSession({ fecha: o.fecha, url: o.url }, function(err, result) {
 					if(err == null) {
                         if(result !== false) {
                             console.log("run1: Found new session.");
