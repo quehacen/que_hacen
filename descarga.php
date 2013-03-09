@@ -1,9 +1,9 @@
 <?php
 
 /*
-    Herramientas para la descarga, análisis y visualización de datos referentes al 
-    trabajo realizado por los diputados españoles en el Congreso.
-    
+    Herramientas para la descarga, anÇ»lisis y visualizaciÃ³n de datos referentes al
+    trabajo realizado por los diputados espaÃ±oles en el Congreso.
+
     Copyright (C) 2012  Abraham Pazos Solatie
 
     This program is free software: you can redistribute it and/or modify
@@ -24,15 +24,15 @@
 
   // TODO: descarga de diputados. Empezar por:
   // http://www.congreso.es/portal/page/portal/Congreso/Congreso/Diputados?_piref73_1333056_73_1333049_1333049.next_page=/wc/menuAbecedarioInicio&tipoBusqueda=completo&idLegislatura=10
-  // donde se encontrarán 25 enlaces tipo:
+  // donde se encontrarÃ¡n 25 enlaces tipo:
   // http://www.congreso.es/portal/page/portal/Congreso/Congreso/Diputados/BusqForm?_piref73_1333155_73_1333154_1333154.next_page=/wc/fichaDiputado?idDiputado=242&idLegislatura=10
   // donde va cambiando idDiputado
-  // Además de los 25 enlaces a diputados hay uno a la página siguiente:
+  // AdemÃ¡s de los 25 enlaces a diputados hay uno a la pÃ¡gina siguiente:
   // http://www.congreso.es/portal/page/portal/Congreso/Congreso/Diputados?_piref73_2874067_73_1333049_1333049.next_page=/wc/busquedaAlfabeticaDiputados&paginaActual=1&idLegislatura=10&tipoBusqueda=completo
-  // donde va cambiando paginaActual hasta llegar a una página donde no hay paginaActual
+  // donde va cambiando paginaActual hasta llegar a una pÃ¡gina donde no hay paginaActual
 
   if(!isset($argc)) {
-    print "Este programa solo puede ejecutarse en línea de comandos, tecleando 'php descarga.php'.";
+    print "Este programa solo puede ejecutarse en lÃ­nea de comandos, tecleando 'php descarga.php'.";
     exit();
   }
 
@@ -65,8 +65,8 @@
 
 
   // Sustituto de file_get_contents()
-  // Por algún motivo no me funciona file_get_contents()
-  // con una url, así que uso wget
+  // Por algÃºn motivo no me funciona file_get_contents()
+  // con una url, asÃ­ que uso wget
   function get_file_from_url($url) {
     exec('wget "'.$url.'" -O file.html');
     $html = file_get_contents('file.html');
@@ -76,7 +76,7 @@
 
 
 
-  // Navega por el calendario de la página, va retrocediendo mes a mes
+  // Navega por el calendario de la pÃ¡gina, va retrocediendo mes a mes
   // guardando todas las URL a sesiones para despues descargarse el HTML.
   function process_pending_url() {
     global $my;
@@ -88,7 +88,7 @@
 
     $my->query("DELETE FROM pending_url WHERE url='$row[url]'");
 
-    // TODO: Esta sección está montada sólo para un tipo de URL, pero ahora tendrémos dos: las votaciones + los diputados
+    // TODO: Esta secciÃ³n estÃ¡ montada sÃ³lo para un tipo de URL, pero ahora tendrÃ©mos dos: las votaciones + los diputados
 
     $sesion_inserts = 0;
     foreach($fila_diasA AS $k => $div_fila_dias) {
@@ -173,16 +173,16 @@
   // N veces
   //   iniciativa.num_expediente (162/000371)
   //   iniciativa.url
-  //   (después leer url e insertar: iniciativa.html)
+  //   (despuÃ©s leer url e insertar: iniciativa.html)
 
   // Por cada href anterion hay uno o varios enlaces a XML
   // URL XML: http://www.congreso.es/votaciones/OpenData?sesion=49&votacion=2&legislatura=10
   // votacion.xml_url
-  // (después leer url e insertar: votacion.xml)
+  // (despuÃ©s leer url e insertar: votacion.xml)
   // votacion.legislatura
   // votacion.num
   // votacion.num_expediente
-  // (después leer contenido xml e insertar: votacion.puntos)
+  // (despuÃ©s leer contenido xml e insertar: votacion.puntos)
 
   // iniciativa.num_sesion=49
 
@@ -305,8 +305,8 @@
 
 
 
-  // Extrae información desde los XML de la tabla votacion a columnas como fecha, sesion y num.
-  // Esto será innecesario si en vez de MySQL uso MongoDB, y convierto los XML a JSON al insertarlos.
+  // Extrae informaciÃ³n desde los XML de la tabla votacion a columnas como fecha, sesion y num.
+  // Esto serÃ¡ innecesario si en vez de MySQL uso MongoDB, y convierto los XML a JSON al insertarlos.
 
   $res = $my->query("SELECT id, xml FROM votacion");
 
