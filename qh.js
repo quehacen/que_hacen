@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 var nodeio = require('node.io'),
-    qhdb = require('./qhdb.js'),
+    db = require('./db.js'),
     async = require('async');
 
 
@@ -45,9 +45,9 @@ function jobSequence() {
 
     // -a = busca enlaces a sesiones y votaciones
     if(argv.a) jobs.push(function(cb) { 
-	    qhdb.cleanPendingURL(function(err, result) {
+	    db.cleanPendingURL(function(err, result) {
 		    if(err)	gameOver(err);
-    		qhdb.insertPendingURL(null, function(err, result) {
+    		db.insertPendingURL(null, function(err, result) {
                 jobMaker(require('./tarea/A'))(cb);
             });
     	});
@@ -71,12 +71,12 @@ function jobSequence() {
 	});
     
     // -i = info
-    if(argv.i) qhdb.info();
+    if(argv.i) db.info();
 }
 
 // Inicio. Conexión a la base de datos, lanzar tareas
 
-qhdb.connect(jobSequence);
+db.connect(jobSequence);
 
 // Fin
 

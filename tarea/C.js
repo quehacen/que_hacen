@@ -1,9 +1,9 @@
-var qhdb = require('../qhdb.js');
+var db = require('../db.js');
 
 // Analiza los html descargados por tarea 2 y extrae información
 
 exports.input = function(pos, limit, cb) {
-    qhdb.getSessionWithNoNum(function(err, item) {
+    db.getSessionWithNoNum(function(err, item) {
         if(err || !item) {
             console.log("No sessions with empty num field");
             cb(null, false);
@@ -34,7 +34,7 @@ exports.run = function(item) { // item = { url:'', fecha:'', _id:'', html:'' }
 			    var p = rxIniciativa.exec(url);
                 if(p) {
                     numExpediente = p[1] + '/' + p[2];
-                    qhdb.insertIniciativa(numExpediente, url, function(err, result) {
+                    db.insertIniciativa(numExpediente, url, function(err, result) {
                         cb(err);
                     });
                 } else {
@@ -46,7 +46,7 @@ exports.run = function(item) { // item = { url:'', fecha:'', _id:'', html:'' }
                     url = 'http://www.congreso.es' + url;
                 if(p) {
                     numSesion = p[1];
-                    qhdb.insertVotacion(url, p[3], p[2], numExpediente, function(err, result) {
+                    db.insertVotacion(url, p[3], p[2], numExpediente, function(err, result) {
                         cb(err);
                     });
                 } else {
@@ -60,7 +60,7 @@ exports.run = function(item) { // item = { url:'', fecha:'', _id:'', html:'' }
             }
         }, function(err) {
             if(err) gameOver(err);
-            qhdb.setSessionNum(item._id, numSesion, function(err, result) {
+            db.setSessionNum(item._id, numSesion, function(err, result) {
                 self.emit(["Test task 3 done: " + item]);
             });
         });
