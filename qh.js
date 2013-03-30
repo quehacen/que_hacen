@@ -8,7 +8,7 @@ var nodeio = require('node.io'),
 // Linea de comandos
 
 var argv = require('optimist')
-    .usage('Download data from congreso.es, store in MongoDB\nUsage: $0 -abcdei')
+    .usage('Download data from congreso.es, store in MongoDB\nUsage: $0 -abcdefi')
     .check(function(a) {
         // need at least 3 arguments (first two auto populated)
         if(Object.keys(a).length < 3) { 
@@ -20,6 +20,7 @@ var argv = require('optimist')
     .describe('c', 'Populate iniciativa & votacion')
     .describe('d', 'Download votacion XML files')
     .describe('e', 'Download iniciativa html')
+    .describe('f', 'Export votaciones')
     .describe('i', 'Database Info')
     .argv
 ;
@@ -64,6 +65,9 @@ function jobSequence() {
     
     // -e = descarga archivos html de las iniciativas
     if(argv.e) jobs.push(jobMaker(require('./tarea/E')));
+    
+    // -f = exporta iniciativas en csv
+    if(argv.f) jobs.push(jobMaker(require('./tarea/gen_csv_votaciones')));
     
     // ejecuta las tareas una tras otra
     async.series(jobs, function(err, result) {

@@ -85,6 +85,9 @@ exports.insertVotacion = function(url, legis, num, numExp, cb) {
 exports.getVotacionWithNoXML = function(cb) {
     cVotacion.findOne({ xml:null }, cb);
 }
+exports.getVotacionAll = function(cb) {
+    cVotacion.find({}, cb);
+}
 exports.setVotacionXML = function(id, xml, cb) {
     cVotacion.update({ _id: id }, {$set:{xml: xml}}, {w:1}, cb);
 }
