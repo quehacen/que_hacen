@@ -9,6 +9,10 @@ En este repositorio hay por ahora pequeños programas en fase pre-alpha para la 
 + https://www.facebook.com/qhacenlosdiputados
 + https://twitter.com/que_hacen
 
+### Historial
++ v0.0.1 PHP y MySQL
++ V0.0.2 Conversión a nodejs y MongoDB 
+
 ### Licencia
 
 Los programas de este repositorio se distribuyen bajo licencia GPLv3 http://www.gnu.org/licenses/gpl.txt
