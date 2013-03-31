@@ -61,7 +61,7 @@ exports.run = function(item) { // item = { url:'', fecha:'', _id:'', html:'' }
         }, function(err) {
             if(err) gameOver(err);
             db.setSessionNum(item._id, numSesion, function(err, result) {
-                self.emit(["Test task 3 done: " + item]);
+                self.emit(["run C complete: " + item]);
             });
         });
     });

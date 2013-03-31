@@ -77,7 +77,7 @@ exports.run = function(item) { // item = { url:'', _id:'' }
         }, function(err) {
             if(err) gameOver(err);
 			if(!insertedNewSession) consecutiveEmptyMonths++;
-			self.emit(["run1 complete"]);        
+			self.emit(["run A complete"]);        
         });
 	});
 }

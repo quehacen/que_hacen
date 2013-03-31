@@ -20,7 +20,7 @@ exports.run = function(item) { // item = { url:'', fecha:'', _id:'', html:'' }
 		if(err) gameOver(err);
 		db.setSessionHtml(item._id, data, function(err, result) {
 			if(err) gameOver(err);
-			self.emit(["run2 complete: " + item._id + " html=" + data.length + " bytes."]);
+			self.emit(["run B complete: " + item._id + " html=" + data.length + " bytes."]);
 		});
 	});
 }
