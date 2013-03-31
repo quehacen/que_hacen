@@ -10,8 +10,8 @@
     (at your option) any later version.
 
     This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    but WITHOUT ANY WAres.ANTY; without even the implied warranty of
+    MEres.HANTABILITY or FITNESS FOres.A PAres.ICULAres.PUres.OSE.  See the
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
@@ -21,14 +21,46 @@
 var db = require('../db.js');
 var csv = require('ya-csv');
 
-// Nota: la carpeta csv debe ser escribible por apache si
-// este programa se llama desde un navegador.
-// Para cambiar el propietario de la carpeta:
-// sudo chown www-data:www-data csv
+// About the node CSV library, keep an eye on 
+// http://justinratner.com/2012/07/nodejs-fs-ya-csv-mysteriously-buffered-write-stream/
 
-// keep an eye on http://justinratner.com/2012/07/nodejs-fs-ya-csv-mysteriously-buffered-write-stream/
+var filename = 'csv/votaciones.csv';
 
 var cursor = false;
+var writer = csv.createCsvFileWriter(filename);
+
+writer.writeRecord([
+    'sesion', 
+    'num_votacion', 
+    'fecha', 
+    'legislatura', 
+    'num_expediente', 
+    'presentes', 
+    'si', 
+    'no', 
+    'abs', 
+    'titulo', 
+    'texto_expediente', 
+    'titulo_subgrupo', 
+    'texto_subgrupo'
+]);
+
+// This first version of this file committed to GitHub 
+// saves one line to the CSV file on each call to run()
+
+// This follows the node.io way of doing things, but it's slow because we
+// have implemente a 1 second delay after each run().
+
+// The 1 second delay is fine when scraping data from the web, but unnecessary
+// when doing one query and writing a file.
+
+// On the other hand, if this is run as a background process, maybe it's a good
+// thing that things happen slowly, so the server is not slowed down by doing
+// complicated operations.
+
+// I will commit this code to GitHub to leave it as reference, but will
+// replace the code and write the complete file inside one call to input(),
+// and that means doing just one input() and one run().
 
 exports.input = function(pos, limit, cb) {
     if(cursor === false) {
@@ -53,58 +85,37 @@ exports.input = function(pos, limit, cb) {
         });
     }
 }
-
-exports.genCSV = function() {
-    var filename = '../csv/votaciones.csv';
-
-    db.getVotacion(function(err, result) {
-        var writer = csv.createCsvFileWriter(filename);
-        var data = [
-            ['a','b','c','d','e','f','g'], 
-            ['h','i','j','k','l','m','n']
-        ];
-        data.forEach(function(rec) {
-            writer.writeRecord(rec);
-        });
-    });
+// Empty values in json are stored as an empty object: {}
+// If we put this directly in the CSV file, it becomes [object object]
+// so we replace objects with an empty string, which loosk better in CSV.
+function fix(str) {
+    if(typeof str == 'object')
+        return '';
+    return str;
 }
 
 exports.run = function(item) {
-    var self = this;
-    console.log(item.url);
-	self.emit(["run F complete."]);
-}
+    var res = item.xml.resultado;
 
-/*
-  $my->real_query("SELECT id, xml, num_expediente FROM votacion");
-
-  if($fp == false) {
-    print("No puedo abrir $filename en modo escritura\n");
-    exit();
-  }
-
-  $bytes = fputcsv($fp, array('fecha', 'presentes', 'si', 'no', 'abs', 'num_expediente', 'titulo', 'texto_expediente', 'titulo_subgrupo', 'texto_subgrupo'));
-  while($row = $res->fetch_assoc()) {
-    $r = new SimpleXMLElement($row['xml']);
-
-    // A veces no hay votos a favor o en contra, solo "asentimiento"
-    if($r->Totales->AFavor) {
-      $bytes += fputcsv($fp, array(
-        $r->Informacion->Fecha,
-        $r->Totales->Presentes,
-        $r->Totales->AFavor,
-        $r->Totales->EnContra,
-        $r->Totales->Abstenciones,
-        $row['num_expediente'],
-        $r->Informacion->Titulo,
-        $r->Informacion->TextoExpediente,
-        $r->Informacion->TituloSubGrupo,
-        $r->Informacion->TextoSubGrupo
-      ));
+    if(res.totales.asentimiento == 'No') {
+        var values = [
+            res.informacion.sesion,
+            item.num,
+            res.informacion.fecha,
+            item.legislatura,
+            item.numExpediente,
+            res.totales.presentes,
+            res.totales.afavor,
+            res.totales.encontra,
+            res.totales.abstenciones,
+            res.informacion.titulo,
+            res.informacion.textoexpediente,
+            res.informacion.titulosubgrupo,
+            res.informacion.textosubgrupo
+        ];
+        values = values.map(fix);
+        writer.writeRecord(values);
     }
-  }
-    fclose($fp);
-
-    console.log("$bytes bytes guardados en $filename\n");
-*/
+	self.emit(["run F complete: " + res.informacion.titulo]);
+}
 
