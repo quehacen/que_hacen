@@ -17,7 +17,7 @@ Complete migrating php. The last part does not make sense, because
 data is now in json format and can be searched, no need to extract
 interesting values from the xml as before. I did extract *all values*.
 
-Merging git repos: I used this
+Merging git repos: I used this:
 http://kerneltrap.org/mailarchive/git/2007/12/9/484613/thread
 
 TO DO: 
