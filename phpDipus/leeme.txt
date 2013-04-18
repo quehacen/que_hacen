@@ -8,7 +8,8 @@ La colección de htmls guarda el html de direcciones del cognreso. Así, cuando 
 - html : string (el html de la url)
 - fecha : date (fecha en la que se escrapeó por ultima vez)
 
-2.) COLECCIÓN DIPUTADOS
+
+3.) COLECCIÓN DIPUTADOS
 La colección con los datos de los diputados en mongoDB es por ahora dipusPrueba->diputados. Aquí se listan todos los campos que tiene cada elemento (diputado) de la colección:
 (Con [OPT] se señalan los campos que pueden no estar)
 
@@ -130,7 +131,8 @@ Comentarios sobre nombres de cargos y órganos:
   - Hay una serie de funciones en quehacenlib.php que obtienen los nombres completos de cargos y órganos, así como procesamiento vario con ellos. Son desde la función nombreCargo() hasta nombreSubcom() (ver principio de quehacenlib.php, donde están listadas todas las funciones).
 
 
+
 5) TRADUCCIÓN
 
 - A gran escala, lo que habría que traducir/codificar algo similar en JS son los archivos lib/quehacenlib.php y dipusmongo.php.
-- Arnau dijo que tenía ya parte traducido. Sería interesante que lo compartiera cuanto antes para que no solapar esfuerzos.
+- Arnau dijo que tenía ya parte traducido. Sería interesante que lo compartiera cuanto antes para no solapar esfuerzos.
