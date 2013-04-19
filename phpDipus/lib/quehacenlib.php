@@ -1825,7 +1825,7 @@ function estandarizarFecha($fecha){
 // Permite parámetro forzarAct, a 1 para forzar actualización
 function getHTMLCongreso($url,$forzarAct=0){
     $m=new MongoClient();
-    $db=$m->dipusPrueba;
+    $db=$m->que_hacen;
     $htmlCol=$db->htmlCongreso;
     $iter=$htmlCol->find();
     $encontrado=false;
@@ -1875,7 +1875,7 @@ function getSimpleHTMLCongreso($url,$forzarAct=0){
 
 function verHTMLCol(){
     $m=new MongoClient();
-    $db=$m->dipusPrueba;
+    $db=$m->que_hacen;
     $htmlCol=$db->htmlCongreso;
     $cursor = $htmlCol->find();
     foreach ($cursor as $document) { 
@@ -1887,16 +1887,15 @@ function verHTMLCol(){
 
 function dropHTMLCol(){
     $m=new MongoClient();
-    $db=$m->dipusPrueba;
+    $db=$m->que_hacen;
     $htmlCol=$db->htmlCongreso;
     $htmlCol->drop();
     echo "La colección htmlCol ha sido borrada\n";
-
 }
 
 function getDipusCol(){
     $m=new MongoClient();
-    $db=$m->dipusPrueba;
+    $db=$m->que_hacen;
     $dipusCol=$db->diputados;
     return $dipusCol;
 }

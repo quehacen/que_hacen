@@ -3,14 +3,16 @@ El script para la obtención o actualización de los datos de los diputados es d
 
 
 2.) COLECCIÓN HTMLS
-La colección de htmls guarda el html de direcciones del cognreso. Así, cuando se quiera consultar versiones no necesariamente actualizadas de una url del congreso, no habrá que scrapear siempre. Cada elemento de la colección tiene tres campos:
+Esta colección guarda el html de urls del congreso. Se encuentra en que_hacen->htmlCongreso. Con esta colección, cuando se quiera consultar versiones no necesariamente actualizadas de una url del congreso, no habrá que scrapear siempre. Cada elemento de la colección tiene tres campos:
 - url : string
 - html : string (el html de la url)
 - fecha : date (fecha en la que se escrapeó por ultima vez)
 
+En el código PHP, se puede forzar actualización de estos HTMLs llamando a la función getHTMLCongreso con parámetro $forzarAct a 1 (función en phpDipus/lib/quehacenlib.php). Por defecto este parámetro está a 0, si se llama así y encuentra la url en la colección, devuelve el html sin scrapearlo.
+
 
 3.) COLECCIÓN DIPUTADOS
-La colección con los datos de los diputados en mongoDB es por ahora dipusPrueba->diputados. Aquí se listan todos los campos que tiene cada elemento (diputado) de la colección:
+La colección con los datos de los diputados en mongoDB se encuentra en que_hacen->diputados. Aquí se listan todos los campos que tiene cada elemento (diputado) de la colección:
 (Con [OPT] se señalan los campos que pueden no estar)
 
 - fecha_alta : date
