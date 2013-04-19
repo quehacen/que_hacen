@@ -49,6 +49,10 @@ function jobSequence() {
 	    db.cleanPendingURL(function(err, result) {
 		    if(err)	gameOver(err);
     		db.insertPendingURL(null, function(err, result) {
+                // note the (cb) at the end!
+                // jobMaker returns a function and we want to
+                // call that function when previous database
+                // calls are executed.
                 jobMaker(require('./tarea/A'))(cb);
             });
     	});

@@ -7,7 +7,7 @@ var cPendingURL,
     cIniciativa,
     cVotacion;
 
-var cfgMongoURL = 'mongodb://localhost:27017/votaciones',
+var cfgMongoURL = 'mongodb://localhost:27017/que_hacen',
     cfgStartURL = 'http://www.congreso.es/portal/page/portal/Congreso/Congreso/Actualidad/Votaciones';
 
 // Connect
@@ -90,6 +90,10 @@ exports.getVotacionAll = function(cb) {
 }
 exports.setVotacionXML = function(id, xml, cb) {
     cVotacion.update({ _id: id }, {$set:{xml: xml}}, {w:1}, cb);
+    // TODO: get date out of xml, reverse date, insert in 
+    // fecha: a new indexed field, to be able to sort by date. 
+    // Original PHP code was doing this reversing.
+    // TODO: create index for fecha.
 }
 
 // Info
