@@ -1,0 +1,140 @@
+1.) SCRIPT
+El script para la obtención o actualización de los datos de los diputados es dipusmongo.php. Si se le llama sin parámetros informa de las opciones con las que se le puede llamar.
+
+
+2.) COLECCIÓN HTMLS
+Esta colección guarda el html de urls del congreso. Se encuentra en que_hacen->htmlCongreso. Con esta colección, cuando se quiera consultar versiones no necesariamente actualizadas de una url del congreso, no habrá que scrapear siempre. Cada elemento de la colección tiene tres campos:
+- url : string
+- html : string (el html de la url)
+- fecha : date (fecha en la que se escrapeó por ultima vez)
+
+En el código PHP, se puede forzar actualización de estos HTMLs llamando a la función getHTMLCongreso con parámetro $forzarAct a 1 (función en phpDipus/lib/quehacenlib.php). Por defecto este parámetro está a 0, si se llama así y encuentra la url en la colección, devuelve el html sin scrapearlo.
+
+
+3.) COLECCIÓN DIPUTADOS
+La colección con los datos de los diputados en mongoDB se encuentra en que_hacen->diputados. Aquí se listan todos los campos que tiene cada elemento (diputado) de la colección:
+(Con [OPT] se señalan los campos que pueden no estar)
+
+- fecha_alta : date
+- activo : int  //1 si activo, 0 si causó baja
+- [OPT] id_sustituido : int  //id del dipu al que ha sustituido
+- [OPT] fecha_baja : date
+- [OPT] id_sustituto : int  //id del dipu por el que ha sido sustituido
+- [OPT] escano_actual : id  //solo para diputados activos
+- id : int
+- sexo : string  //'M' para mujer, 'H' para hombre
+- circunscripcion : string
+- partido : string
+- grupo : string
+- fecha_nac : date
+- [OPT] lugar_nac : string
+- [OPT] legislaturas : array(
+    n : string
+    )
+- [OPT] contacto : array(
+        * tipo : string  //puede ser: 'email', 'telefono', 'google', 'twitter', 'facebook', 'web', 'wikipedia', 'linkedin' y 'flickr'
+        * url : string
+        * oficial : int  //1 si está en congreso.es, 0 si no
+    )
+- actividad : array(
+        * fecha : date
+        * intervenciones : array(
+			* pleno : int
+			* comision : int
+			* dipuPerm : int
+			* otras : int
+			* total : int
+            )
+        * iniciativas : array(
+            * preg_orales : int
+			* preg_escritas : int
+			* solicit_comparecencias : int
+			* solicit_informes : int
+			* solicit_nuevo_organo : int
+			* total : int
+        )
+    )
+- [OPT] relaciones: string
+- [OPT] tuvo_cargos_publicos : int  // 0 o 1
+- [OPT] estuvo_empresas_priv : int  // 0 o 1
+- [OPT] estudios : array(
+    * [OPT] centro : string
+    * estudio : string
+    )
+- [OPT] trayectoria : array(
+    * cargo : string
+    * [OPT] fini : int  //sólo año, no fecha
+    * [OPT] ffin : int  //sólo año, no fecha. Valor 0 = actualidad
+    ) 
+- [OPT] cargos_partido : array(
+    * cargo : string
+    * [OPT] fini : int
+    )
+- [OPT] cargos_gobierno : array(
+    * cargo : string
+    * [OPT] fini : int
+    )
+- [OPT] retencion_irpf : float  //Porcentaje de retención, si lo tenemos
+- [OPT] url_nomina : string
+- [OPT] cargos_congreso : array(
+    // Para ver detenidamente los posibles valores de estos campos, ver sección 3 abajo
+    * tipoOrgano : string
+    * [OPT] idOrgano : int
+    * cargo : string
+    * alta : date
+    * [OPT] baja : date
+    )
+- sueldo --> array(
+    * desglose --> array(
+        * cantidad : float
+        * concepto : string
+        * tributa : int  //1 si tributa, 0 si no
+        )
+    * bruto_mes : float
+    * [OPT] neto_mes : float
+    * [OPT] retencion : float
+    )
+
+
+4) CARGOS EN EL CONGRESO
+Posibles valores para los campos de los cargos en el congreso:
+- tipoOrgano:
+  * 'MC: Mesa del Congreso
+  * 'JP': Junta de Portavoces
+  * 'DP': Diputación Permanente
+  * 'C': Comisiones
+  * 'SC': Subcomisiones
+- cargo:
+  * 'P': Presidente/a
+  * 'VP': Vicepresidente/a
+  * 'VP1': Vicepresidente/a Primero/a
+  * 'VP2': Vicepresidente/a Segundo/a
+  * 'VP3': Vicepresidente/a Tercero/a
+  * 'VP4': Vicepresidente/a Cuarto/a
+  * 'S': Secretario/a
+  * 'S1': Secretario/a Primero/a
+  * 'S2': Secretario/a Segundo/a
+  * 'S3': Secretario/a Tercero/a
+  * 'S4': Secretario/a Cuarto/a
+  * 'PO': Portavoz
+  * 'POT': Portavoz Titular
+  * 'POS': Portavoz Sustituto/a
+  * 'POA': Portavoz adjunto/a
+  * 'V': Vocal
+  * 'VS': Vocal Suplente
+  * 'A': Adscrito/a
+
+Comentarios sobre los ID de órganos:
+  - Son sólo para tipos de órgano con más de un órgano.
+  - Son los ID que usa congreso.es
+  - ID de comisiones y subcomisiones → Se obtienen en la función obtenerComSubCom() en quehacenlib.php, pero creo que lo ideal sería hacer una colección en la BD con estos datos, actualizandola cada X tiempo.
+
+Comentarios sobre nombres de cargos y órganos:
+  - Hay una serie de funciones en quehacenlib.php que obtienen los nombres completos de cargos y órganos, así como procesamiento vario con ellos. Son desde la función nombreCargo() hasta nombreSubcom() (ver principio de quehacenlib.php, donde están listadas todas las funciones).
+
+
+
+5) TRADUCCIÓN
+
+- A gran escala, lo que habría que traducir/codificar algo similar en JS son los archivos lib/quehacenlib.php y dipusmongo.php.
+- Arnau dijo que tenía ya parte traducido. Sería interesante que lo compartiera cuanto antes para no solapar esfuerzos.

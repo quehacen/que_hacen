@@ -1,0 +1,33 @@
+Posibles valores para los campos de los cargos del congreso:
+-Tipos de órganos
+  * 'MC: Mesa del Congreso
+  * 'JP': Junta de Portavoces
+  * 'DP': Diputación Permanente
+  * 'C': Comisiones
+  * 'SC': Subcomisiones
+
+- IDs de cargos en el congreso
+  * 'P': Presidente/a
+  * 'VP': Vicepresidente/a
+  * 'VP1': Vicepresidente/a Primero/a
+  * 'VP2': Vicepresidente/a Segundo/a
+  * 'VP3': Vicepresidente/a Tercero/a
+  * 'VP4': Vicepresidente/a Cuarto/a
+  * 'S': Secretario/a
+  * 'S1': Secretario/a Primero/a
+  * 'S2': Secretario/a Segundo/a
+  * 'S3': Secretario/a Tercero/a
+  * 'S4': Secretario/a Cuarto/a
+  * 'PO': Portavoz
+  * 'POT': Portavoz Titular
+  * 'POS': Portavoz Sustituto/a
+  * 'POA': Portavoz adjunto/a
+  * 'V': Vocal
+  * 'VS': Vocal Suplente
+  * 'A': Adscrito/a
+
+
+Comentarios sobre ID órganos:
+  - Son sólo para tipos de órgano con más de un órgano.
+  - Son los ID que usa congreso.es
+  - ID de comisiones y subcomisiones → Se obtienen en la función obtenerComSubCom(), pero creo que lo ideal sería hacer una colección en la BD con estos datos, actualizandola cada X tiempo.
