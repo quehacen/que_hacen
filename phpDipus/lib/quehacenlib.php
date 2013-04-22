@@ -166,7 +166,7 @@ function infoCsvDiputados($csv){
 				$diputados[$fila]["facebook"]=$datos[42];
 				$diputados[$fila]["google"]=$datos[43];
 				$diputados[$fila]["youtube"]=$datos[44];
-				$diputados[$fila]["flickr"]=$datos[43];
+				$diputados[$fila]["flickr"]=$datos[45];
 				$diputados[$fila]["linkedin"]=$datos[46];
 				$diputados[$fila]["wikipedia"]=$datos[47];
 				$diputados[$fila]["blog"]=$datos[48];
@@ -991,7 +991,7 @@ function obtenerComSubcom($act=0){
 function obtenerIniciativasGrupos(){
 	$iniciativasGP=array();
 	$inicGP[0]["nombreGP"]="Popular"; $inicGP[0]["inic"]=array();
-	$inicGP[1]["nombreGP"]="Socualista"; $inicGP[1]["inic"]=array();
+	$inicGP[1]["nombreGP"]="Socialista"; $inicGP[1]["inic"]=array();
 	$inicGP[2]["nombreGP"]="Catalán (CiU)"; $inicGP[2]["inic"]=array();
 	$inicGP[3]["nombreGP"]="Izquierda Plural"; $inicGP[3]["inic"]=array();
 	$inicGP[4]["nombreGP"]="UPyD"; $inicGP[4]["inic"]=array();
@@ -999,18 +999,17 @@ function obtenerIniciativasGrupos(){
 	$inicGP[6]["nombreGP"]="Mixto"; $inicGP[6]["inic"]=array();
 	
 	for($i=0;$i<count($inicGP);$i++){
-		$idGP=$i+1;
 		$idGrupo=200+$i+1;
-		$url="http://www.congreso.es/portal/page/portal/Congreso/Congreso/GruPar?_piref73_2912060_73_1339199_1339199.next_page=/wc/buscarIniciativasGrupoForm&opcionMenu=2&opcionSubMenuIni=10&idTipo=1&idGrupo=".$idGrupo."&idLegislatura=10";
-	$contexto=getSimpleHTMLCongreso("http://www.congreso.es/portal/page/portal/Congreso/Congreso/GruPar?_piref73_2912060_73_1339199_1339199.next_page=/wc/composicionGrupo?idGrupo=".$idGrupo);
-		echo "<p>url = '$url'</p>";
+        $url="http://www.congreso.es/portal/page/portal/Congreso/Congreso/Iniciativas?_piref73_2148295_73_1335437_1335437.next_page=/wc/servidorCGI&CMD=VERLST&BASE=IW10&FMT=INITXLUS.fmt&NUM1=&DES1=&DOCS=1-25&DOCORDER=FIFO&OPDEF=Y&QUERY=%28I%29.ACIN1.+%26+%28".$idGrupo."+G%29.SAUT.";
+	    
+		echo "url = '$url'</p>";
 		$html=getSimpleHTMLCongreso($url);
 		$check=$html->find("div[class=SUBTITULO_CONTENIDO_INICIATIVAS]",0);
 		if($check!==null){
 			$inicGP[$i]["inic"]=sinTNS($check->find("span",0)->plaintext);
 		}else{
-			echo "<p>Error: ".$html->find('div[class=titulo_contenido',0)->plaintext ."</p>";
-			echo "<p>Error: ". $html->find("body",0)->plaintext ."</p>";
+			echo "Error: ".$html->find('div[class=titulo_contenido',0)->plaintext;
+			echo "Error: ". $html->find("body",0)->plaintext;
 			$inicGP[$i]["inic"]=0;
 		}
 	}
