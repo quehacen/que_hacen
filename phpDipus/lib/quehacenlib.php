@@ -1351,33 +1351,7 @@ function completarDiputado($dipu,$dipusCsv){
         $dipu["partido"]=$dipusCsv[$i]["partido"];
 	
 	$urls=$dipu["contacto"];
-	// Si tiene Telefono, Google+, Utube o wikipedia en el csv --> Se lo insertamos
-	if($dipusCsv[$i]["telefono"]!=="") $urls=insertarURL($urls,"telefono",$dipusCsv[$i]["telefono"]);
-	if($dipusCsv[$i]["google"]!=="") $urls=insertarURL($urls,"google",$dipusCsv[$i]["google"]);
-	if($dipusCsv[$i]["youtube"]!=="") $urls=insertarURL($urls,"youtube",$dipusCsv[$i]["youtube"]);
-	if($dipusCsv[$i]["wikipedia"]!=="") $urls=insertarURL($urls,"wikipedia",$dipusCsv[$i]["wikipedia"]);
-	
-	// Si no tiene tw, fb, ldin, flickr en su ficha pero si en el csv --> Se lo añadimos
-	if(tieneURL($urls,"twitter")===false && $dipusCsv[$i]["twitter"]!=="") 
-		$urls=insertarURL($urls,"twitter",$dipusCsv[$i]["twitter"]);
-	if(tieneURL($urls,"facebook")===false && $dipusCsv[$i]["facebook"]!=="") 
-		$urls=insertarURL($urls,"facebook",$dipusCsv[$i]["facebook"]);
-	if(tieneURL($urls,"linkedin")===false && $dipusCsv[$i]["linkedin"]!=="") 
-		$urls=insertarURL($urls,"linkedin",$dipusCsv[$i]["linkedin"]);
-	if(tieneURL($urls,"flickr")===false && $dipusCsv[$i]["flickr"]!=="") 
-		$urls=insertarURL($urls,"flickr",$dipusCsv[$i]["flickr"]);
-	
-	// Comparamos correos y webs (scrapeo VS csv). Insertamos los que estén en el csv y no en su ficha.
-	if($dipusCsv[$i]["email"]!=="" && tieneURL($urls,"email",$dipusCsv[$i]["email"])===false) 
-		$urls=insertarURL($urls,"email",$dipusCsv[$i]["email"]);
-	if($dipusCsv[$i]["email2"]!=="" && tieneURL($urls,"email",$dipusCsv[$i]["email2"])===false) 
-		$urls=insertarURL($urls,"email",$dipusCsv[$i]["email2"]);
-	if($dipusCsv[$i]["blog"]!=="" && tieneURL($urls,"web",$dipusCsv[$i]["blog"])===false) 
-		$urls=insertarURL($urls,"web",$dipusCsv[$i]["blog"]);
-	if($dipusCsv[$i]["blog2"]!=="" && tieneURL($urls,"web",$dipusCsv[$i]["blog2"])===false) 
-		$urls=insertarURL($urls,"web",$dipusCsv[$i]["blog2"]);
-	if($dipusCsv[$i]["web"]!=="" && tieneURL($urls,"web",$dipusCsv[$i]["web"])===false) 
-		$urls=insertarURL($urls,"web",$dipusCsv[$i]["web"]);
+	$urls=incluirURLsNoOficiales($urls,$dipuCsv);
 
     if(count($urls)>0){
 	    $dipu["contacto"]=$urls;
@@ -1626,6 +1600,43 @@ function obtenerSueldo($sexo,$provincia,$gp,$cargos,$cargosGob,$retIRPF){
     $urls[$i]["url"]=$url;
     $urls[$i]["oficial"]=0;
 	return $urls;
+ }
+
+ // Incluye las urls no oficiales junto a las oficiales (scrapeadas) del diputado
+ function incluirURLsNoOficiales($urls,$dipuCsv){
+   	// Si tiene Telefono, Google+, Utube o wikipedia en el csv --> Se lo insertamos
+     if($dipuCsv["telefono"]!=="") 
+         $urls=insertarURL($urls,"telefono",$dipuCsv["telefono"]);
+     if($dipuCsv["google"]!=="") 
+         $urls=insertarURL($urls,"google",$dipuCsv["google"]);
+     if($dipuCsv["youtube"]!=="") 
+         $urls=insertarURL($urls,"youtube",$dipuCsv["youtube"]);
+     if($dipuCsv["wikipedia"]!=="") 
+         $urls=insertarURL($urls,"wikipedia",$dipuCsv["wikipedia"]);
+	
+	// Si no tiene tw, fb, ldin, flickr en su ficha pero si en el csv --> Se lo añadimos
+	if(tieneURL($urls,"twitter")===false && $dipuCsv["twitter"]!=="") 
+		$urls=insertarURL($urls,"twitter",$dipuCsv["twitter"]);
+	if(tieneURL($urls,"facebook")===false && $dipuCsv["facebook"]!=="") 
+		$urls=insertarURL($urls,"facebook",$dipuCsv["facebook"]);
+	if(tieneURL($urls,"linkedin")===false && $dipuCsv["linkedin"]!=="") 
+		$urls=insertarURL($urls,"linkedin",$dipuCsv["linkedin"]);
+	if(tieneURL($urls,"flickr")===false && $dipuCsv["flickr"]!=="") 
+        $urls=insertarURL($urls,"flickr",$dipuCsv["flickr"]);
+
+    // Comparamos correos y webs (scrapeo VS csv). Insertamos los que estén en el csv y no en su ficha.
+	if($dipuCsv["email"]!=="" && tieneURL($urls,"email",$dipuCsv["email"])===false) 
+		$urls=insertarURL($urls,"email",$dipuCsv["email"]);
+	if($dipuCsv["email2"]!=="" && tieneURL($urls,"email",$dipuCsv["email2"])===false) 
+		$urls=insertarURL($urls,"email",$dipuCsv["email2"]);
+	if($dipuCsv["blog"]!=="" && tieneURL($urls,"web",$dipuCsv["blog"])===false) 
+		$urls=insertarURL($urls,"web",$dipuCsv["blog"]);
+	if($dipuCsv["blog2"]!=="" && tieneURL($urls,"web",$dipuCsv["blog2"])===false) 
+		$urls=insertarURL($urls,"web",$dipuCsv["blog2"]);
+	if($dipuCsv["web"]!=="" && tieneURL($urls,"web",$dipuCsv["web"])===false) 
+        $urls=insertarURL($urls,"web",$dipuCsv["web"]);
+
+    return $urls;
  }
  	
 	

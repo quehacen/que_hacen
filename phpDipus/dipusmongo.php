@@ -13,7 +13,10 @@ function infoDipusMongo($e=""){
     echo "-t5:\tAñadir a DB los 5 primeros diputados (para pruebas)\n";
     echo "-a:\tActualizar diputados (añadir nuevos diputados de congreso.es si los hay)\n";
     echo "-c:\tActualizar cargos de los diputados en el Congreso\n";
+    echo "-url:\tActualizar URLs no oficiales de los diputados\n";
+    echo "-json:\tActualizar el JSON de los diputados\n";
     echo "-img:\tActualizar imágenes y miniaturas de los diputados\n";
+    echo "-gp:\tObtener iniciativas de los grupos (en fase de desarollo)\n";
     echo "-i:\tMostrar la colección de diputados en infoDB/dipus.txt\n";
     echo "-ih:\tMostrar la colección de htmls en infoDB/htmls.txt\n";
     echo "-d:\tBorrar la colección de diputados\n";
@@ -30,6 +33,10 @@ if($argc!==2){
         case "-T":  obtenerDiputados(1); break;        
         case "-a":  obtenerNuevosDiputados();break;
         case "-c":  actualizarCargosDipus();break;
+        case "-url":actualizarUrlsCsvDipus();break;
+        case "-json":exec("mongoexport --jsonArray --db que_hacen --collection diputados -o json/diputados.json");
+            echo("Se ha actualizado json/diputados.json\n");break;
+        case "-gp": obtenerIniciativasGrupos();break;
         case "-i":  exec("php dipusmongo.php -if > infoDB/dipus.txt"); 
             echo("Info llevada a infoDB/dipus.txt\n");break;
         case "-img":actualizarImgDipus();break;
@@ -197,6 +204,50 @@ function actualizarCargosDipus(){
         $query=array('id' => $dipu['id']);
         $dipusCol->update($query,$dipu);
     }    
+}
+
+function actualizarUrlsCsvDipus(){
+    // Obtenemos la info de los csvs y los cargos en el congreso
+	$dipusCsv=infoCsvDiputados("csv/Diputados.csv");
+	$exDipusCsv=infoCsvDiputados("csv/ExDiputados.csv");
+	$i=count($dipusCsv);
+	foreach($exDipusCsv as $exDipu){
+		$dipusCsv[$i]=$exDipu;
+		$i++;
+    }
+    $dipusCol=getDipusCol();
+    $cursor=$dipusCol->find();
+    foreach($cursor as $dipu){
+	    $i=0; $encontrado=false;
+	    while($i<count($dipusCsv) && $encontrado===false){
+		    if($dipu["id"]===$dipusCsv[$i]["id"]){
+			    $encontrado=true;
+		    }else{
+			    $i++;
+		    }
+        }
+        if($encontrado!==false){
+            $dipuCsv=$dipusCsv[$i];
+            $urls=array();
+            $j=0;
+            if(isset($dipu["contacto"])){
+                foreach($dipu["contacto"] as $url){
+                    if($url["oficial"]===1){
+                        $urls[$j]["tipo"]=$url["tipo"];
+                        $urls[$j]["url"]=$url["url"];
+                        $urls[$j]["oficial"]=1;
+                        $j++;
+                    }
+                }
+            }
+            $urls=incluirURLsNoOficiales($urls,$dipuCsv);
+            if(count($urls)>0){
+                $dipu["contacto"]=$urls;
+                $query=array('id' => $dipu['id']);
+                $dipusCol->update($query,$dipu);
+            }
+        }
+    }
 }
 
 ?>
