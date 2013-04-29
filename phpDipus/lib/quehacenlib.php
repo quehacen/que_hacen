@@ -9,15 +9,12 @@ PROCESAMIENTO DEL CSV DE DIPUTADOS
 	[Visualización]
 	obtenerDiputadosCon($campo,$diputados)
 	obtenerDiputadosSin($campo,$diputados)
-	mostrarDiputado($diputado)
-	mostrarDiputados($dipus)
-	mostrarNDiputados($diputados,$n)
-	mostrarDipusOrd($dipus)
 	numDiputadosCon($diputados,$nombreCampo) : Número de diputados con un determinado campo
 	numDiputadosSin($diputados,$nombreCampo)
-	numDiputadosConAlguno($diputados,$nombreCampo,$nombreCampo2) : Número de diputados con alguno de los 2 campos
-	listarDiputadosCon($diputados, $nombreCampo) : Lista los diputados con un determinado campo
-	listarDiputadosSin($diputados, $nombreCampo)
+    numDiputadosConAlguno($diputados,$nombreCampo,$nombreCampo2) : Número de diputados con alguno de los 2 campos
+	obtenerDiputadosCon($campo,$diputados)
+	obtenerDiputadosSin($campo,$diputados)
+
 	
 SCRAPEO
 	scrapFichasDiputados()
@@ -38,7 +35,7 @@ SCRAPEO
 	
 	obtenerNumIniciativasGrupos()
 	
-	generarXMLComisiones()
+	mostrarDiputadoScrap()
 	
 	
 PROCESAMIENTO DATOS DIPUTADOS, CARGOS Y ÓRGANOS
@@ -64,12 +61,13 @@ PROCESAMIENTO DATOS DIPUTADOS, CARGOS Y ÓRGANOS
 	meterCargosSueldo($dipu,$cargos)
 	obtenerSueldo($sexo,$provincia,$gp,$cargos,$cargosGob,$retIRPF)
 	tieneURL($urls,$tipo,$url="")
-	insertarURL($urls,$tipo,$url)
+    insertarURL($urls,$tipo,$url)
+    incluirURLsNoOficiales($urls,$tipo,$url)
 	
 CADENAS, INTERNOS Y OTROS
 	separarFrases($cad)
-	separarContenido($cont) : Devuelva un array. Cada elemento del array --> array con "texto" y "ptsis"
-	parentesisTexto($cad,[$desde]) : A partir de una cadena, separaDevuelve un array con los indices "texto" y "ptsis"
+	separarContenido($cont)
+	parentesisTexto($cad,[$desde])
 	traducirHTML($cad)
 	obtenerSimpleHTML($url)
 	obtenerCampoUrl($url,$campo)
@@ -82,6 +80,9 @@ FUNCIONES MONGODB
     getSimpleHTMLCongreso($url,$forzarAct)
     verHTMLCol()
     dropHTMLCol()
+    getVotacionesCursor()
+    getDipusCol()
+    getDipusCursor()
     verDipusCol()
     dropDipusCol()
     csvLegislaturas()
@@ -262,70 +263,6 @@ function obtenerCargosPartidoGob($datos){
 	}
 }
 
-// Muestra todos los datos de un diputado obtenido del csv
-function mostrarDiputado($diputado){
-	$url="http://www.congreso.es/portal/page/portal/Congreso/Congreso/Diputados/BusqForm?_piref73_1333155_73_1333154_1333154.next_page=/wc/fichaDiputado?idDiputado=".$diputado["id"]."&idLegislatura=10";
-	$img="http://www.congreso.es/wc/htdocs/web/img/diputados/". $diputado["id"] ."_10.jpg";
-	echo "<br/><ul style='clear:left; list-style-type:none;'><a href='$url'>".$diputado["nombre"]." ".$diputado["apellidos"]."</a>  :";
-	echo "<br/><img style=' float:right; width:160px; height:200px; padding:20px;' src='$img' />";
-	foreach ($diputado as $campo => $valor){
-		if($campo == "cargos" || $campo=="cargosPartido" || $campo=="cargosGobierno" || $campo=="estudios"){
-			if($valor!==false){
-				if ($campo=="cargos") echo "<li><ul><b>Pasado profesional</b>:";
-				if ($campo=="cargosPartido") echo "<li><ul><b>Cargos actuales en el partido</b>:";
-				if ($campo=="cargosGobierno") echo "<li><ul><b>Cargos actuales en el gobierno</b>:";
-				if ($campo=="estudios") echo "<li><ul><b>Estudios cursados:</b>:";
-				
-				if($campo=="cargos"){
-					for($i=0;$i<count($valor);$i++)
-						echo "<li>".$valor[$i]["cargo"]." / ".$valor[$i]["fini"]. " / ".$valor[$i]["ffin"]."</li>";
-				}elseif($campo=="estudios"){
-					for($i=0;$i<count($valor);$i++)
-							echo "<li>".$valor[$i]["estudio"]." / ".$valor[$i]["centro"]. "</li>";
-				}else{
-					for($i=0;$i<count($valor);$i++)
-						echo "<li>".$valor[$i]["cargo"]." / ".$valor[$i]["fini"]. "</li>";
-				}
-					
-				echo "</ul></li>";
-			}
-		}elseif(gettype($valor) === "array"){
-			echo "<li><ul>$campo";
-			for($i=0;$i<count($valor);$i++){
-				echo "<li>".$valor[$i]["texto"]." / ".$valor[$i]["ptsis"]."</li>";
-			}
-			echo "</ul></li>";
-		}elseif($valor!=="" && $campo!="nombre" && $campo!="circunscripcion" && $campo!="partido"){
-			echo "<li>$campo = $valor</li>";
-		}
-	}
-	echo "</ul><br/>";
-}
-
-// Muestra todos los $diputados
-function mostrarDiputados($dipus){
-	for ($i=0; $i<count($dipus); $i++){
-		mostrarDiputado($dipus[$i]);
-	}
-}
-
-// Muestra $n diputados
-function mostrarNDiputados($diputados,$n){
-	for ($i=0; $i<$n; $i++){
-		mostrarDiputado($diputados[$i]);
-	}
-}
-
-// Devuelve el nº de $diputados con $campo
-function numDiputados($diputados,$nombreCampo){
-	$num=0;
-	for($i=0;$i<count($diputados);$i++){
-		if($diputados[$i][$nombreCampo] === "" || $diputados[$i][$nombreCampo] === false){
-			$num++;
-		}
-	}
-	return $num;
-}
 
 // Devuelve el nº de $diputados con $campo
 function numDiputadosCon($diputados,$nombreCampo){
@@ -337,6 +274,19 @@ function numDiputadosCon($diputados,$nombreCampo){
 	}
 	return $num;
 }
+
+// Devuelve el nº de $diputados con $campo
+function numDiputadosSin($diputados,$nombreCampo){
+	$num=0;
+	for($i=0;$i<count($diputados);$i++){
+		if($diputados[$i][$nombreCampo] === "" || $diputados[$i][$nombreCampo] === false){
+			$num++;
+		}
+	}
+	return $num;
+}
+
+
 
 // Devuelve el nº de $diputados que tengan $nombreCampo y/o $nombreCampo2
 function numDiputadosConAlguno($diputados,$nombreCampo,$nombreCampo2){
@@ -375,6 +325,7 @@ function obtenerDiputadosSin($campo,$diputados){
 	}
 	return $diputadosSin;
 }
+
 
 // 			SCRAPEO 
 
@@ -1016,6 +967,7 @@ function obtenerIniciativasGrupos(){
 	return $inicGP;
 }
 
+// Muestra scrap del diputado en fomato html
 function mostrarDiputadoScrap($dipu){
 	$i=$dipu["id"];
 	$url="http://www.congreso.es/portal/page/portal/Congreso/Congreso/Diputados/BusqForm?_piref73_1333155_73_1333154_1333154.next_page=/wc/fichaDiputado?idDiputado=$i&idLegislatura=10";
@@ -1031,66 +983,6 @@ function mostrarDiputadoScrap($dipu){
 		}
 	}
 	echo "</ul>";
-}
-
-// Scrapea los datos básicos de todas las comisiones y subcomisiones del congreso y los compone en 'comisiones.xml'
-// Su base se puede usar para guardar (y actualizar) en la BD los datos de estos órganos 
-function generarXMLComisiones(){
-	$url="http://www.congreso.es/portal/page/portal/Congreso/Congreso/Organos/Comision";
-	$comHTML = getSimpleHTMLCongreso($url);
-	
-	$atributos=array();
-	$atributos[0]=" legis='1' perm='1' mixta='0' ";
-	$atributos[1]=" legis='0' perm='1' mixta='0' ";
-	$atributos[2]=" legis='0' perm='0' mixta='0' ";
-	$atributos[3]=" legis='0' perm='1' mixta='1' ";
-	
-	$xml='<?xml version="1.0" encoding="UTF-8"?>'.PHP_EOL;
-	$xml=$xml."<Organos>".PHP_EOL."<Comisiones>".PHP_EOL;
-	for($i=0;$i<4;$i++){
-		$lista=$comHTML->find('div[class=listado_1_comisiones]',$i)->find('li');
-		if($lista !== null){
-			foreach ($lista as $comElem){
-				$organo_=sinSS($comElem->plaintext);
-				$organo=estandarizarOrgano($organo_);
-				if (strpos($organo, "Comisión") !== false){
-					$pre=prefijoComision($organo);
-					$organo=nombreCom($organo);
-					$xml=$xml."\t<Comision ".$atributos[$i]." pre='$pre' >$organo</Comision>".PHP_EOL;
-				}
-			}
-		}else{
-			echo "<p>Error al obtener la lista de comisiones $i/4</p>";
-		}
-	}
-	$xml=$xml."</Comisiones>".PHP_EOL;
-	$xml=$xml."<Subcomisiones>".PHP_EOL;
-	for($i=0;$i<4;$i++){
-		$lista=$comHTML->find('div[class=listado_1_comisiones]',$i)->find('span');
-		if($lista !== null){
-			foreach ($lista as $comElem){
-				$organo_=sinSS($comElem->plaintext);
-				$organo=estandarizarOrgano($organo_);
-				if (strpos($organo, "Subcomisión") !== false){
-					$organo=nombreSubcom($organo);
-					$xml=$xml."\t<Subcomision".$atributos[$i].">$organo</Subcomision>".PHP_EOL;
-				}
-			}
-		}else{
-			echo "<p>Error al obtener la lista de subcomisiones $i/4</p>";
-		}
-	}
-	$xml=$xml."</Subcomisiones>".PHP_EOL."</Organos>";
-	
-	$fd = fopen("comisiones.xml","w+");
-	if ($fd!==false){
-		if (fwrite($fd,$xml) === false){
-			echo "<p>No se pudo escribir en el archivo</p>";
-		}
-	}else{
-		echo "<p>No se pudo crear el archivo</p>";
-	}
-	fclose($fd);
 }
 
 
@@ -1387,18 +1279,17 @@ function meterCargosSueldo($dipu,$cargos){
 
 /* Función que calcula el sueldo del diputado y lo desglosa. Devuelve el siguiente array:
 	  "bruto_mes": float, (Sueldo bruto mensual)
-	  "neto_mes": float, (Sueldo neto mensual, -1 si no se sabe)
-	  "retencion": float, (-1 si no se sabe)
+	  "neto_mes": float, (Sueldo neto mensual)
+	  "retencion": float,
 	  "desglose": array[]{
 			"concepto": string
 			"cantidad": float
 			"tributa": int (0 ó 1)
 			}
 	Conflictos: Ante las dudas que no nos aclara congreso.es, la función opta por lo siguiente (se puede cambiar):
-		- Los miembros de la Mesa no cobran por cargo en comisión.
+		- Los miembros de la Mesa cobran por cargo en comisión (salvo que sean cargos en la 'Consultiva de Nombramientos' o 'Reglamento').
 		- Los miembros de la JP sí cobran por cargo en comisión (ver nómina de Rosa Díez).
-		- Los portavoces adjuntos en JP cobran siempre (es lo que aparece en el pdf de cognreso.es. Aunque sabemos que esto no 
-			es siempre así por lo que nos dijo Yuste, no hay forma de saber ahora mismo quién cobra y quién no de cada grupo).
+		- Los portavoces adjuntos en JP cobran siempre (es lo que aparece en el pdf de cognreso.es. Aunque sabemos que esto no es siempre así por lo que nos dijo Yuste, no hay forma de saber ahora mismo quién cobra y quién no de cada grupo).
 */
 function obtenerSueldo($sexo,$provincia,$gp,$cargos,$cargosGob,$retIRPF){
 	$sueldo=array();
@@ -1894,6 +1785,14 @@ function verHTMLCol(){
     echo "Número de HTMLS: ".$htmlCol->count()."\n";
 }
 
+function dropHTMLCol(){
+    $m=new MongoClient();
+    $db=$m->que_hacen;
+    $htmlCol=$db->htmlCongreso;
+    $htmlCol->drop();
+    echo "La colección htmlCol ha sido borrada\n";
+}
+
 function getVotacionesCursor(){
     $m=new MongoClient();
     $db=$m->que_hacen;
@@ -1902,13 +1801,6 @@ function getVotacionesCursor(){
     return $cursor;
 }
 
-function dropHTMLCol(){
-    $m=new MongoClient();
-    $db=$m->que_hacen;
-    $htmlCol=$db->htmlCongreso;
-    $htmlCol->drop();
-    echo "La colección htmlCol ha sido borrada\n";
-}
 
 function getDipusCol(){
     $m=new MongoClient();
