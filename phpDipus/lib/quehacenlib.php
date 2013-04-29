@@ -1525,14 +1525,15 @@ function obtenerSueldo($sexo,$provincia,$gp,$cargos,$cargosGob,$retIRPF){
 			$sueldo["desglose"][$num]["concepto"]=nombreCargo($cargoCom,$sexo)." de Comisión";
 			$sueldo["desglose"][$num]["tributa"]=1;
 		}
-		/* CÓDIGO PARA USAR SI LOS MIEMBROS DE LA MESA COBRAN POR COMISIÓN QUE NO SEA REGLAMENTO (312) o CONSULTIVA DE NOMBRAMIENTOS (150) [CONGRESO.ES NO LO DEJA CLARO]
+        /* CÓDIGO PARA USAR SI LOS MIEMBROS DE LA MESA COBRAN POR COMISIÓN QUE NO SEA REGLAMENTO (312) o CONSULTIVA DE NOMBRAMIENTOS (150) [CONGRESO.ES NO LO DEJA CLARO] 
+         Si finalmente los miembros de MC no cobran por otros cargos, simplemente quitar este elseif*/
 		elseif($cargoCom!==false && $enMesa!==false){
 			// Seleccionamos los cargos en comisión que no sean Reglamento y Consultiva de Nombramientos
-			cargosSin=array();
+			$cargosSin=array();
 			$i=0;
 			foreach($cargos as $c){
-				if($c["tipoOrgano"]==="C" && c["idOrgano]!==312 && c["idOrgano]!==150){
-					cargosSin[$i]=$c;
+				if($c["tipoOrgano"]==="C" && $c["idOrgano"]!==312 && $c["idOrgano"]!==150){
+					$cargosSin[$i]=$c;
 					$i++;
 				}
 			}
@@ -1552,14 +1553,13 @@ function obtenerSueldo($sexo,$provincia,$gp,$cargos,$cargosGob,$retIRPF){
 				$sueldo["desglose"][$num]["concepto"]=nombreCargo($cargoCom,$sexo)." de Comisión";
 				$sueldo["desglose"][$num]["tributa"]=1;
 			}
-			
-		}*/
+		}
 	}
 	$total=0.0;
 	for($i=0;$i<count($sueldo["desglose"]);$i++){
 		$total=$total + $sueldo["desglose"][$i]["cantidad"];
 	}
-	$sueldo["bruto_mes"]=$total;
+	$sueldo["bruto_mes"]=round($total,2);
 	
 	// Si tenemos el porcentaje de retención, calculamos el sueldo neto mensual
 	if($retIRPF!==false){
@@ -1571,8 +1571,7 @@ function obtenerSueldo($sexo,$provincia,$gp,$cargos,$cargosGob,$retIRPF){
 			}
 		}
 		$tributado=$totalTributa*$retIRPF/100.00;
-		$sueldo["neto_mes"]=truncar($sueldo["bruto_mes"]-$tributado,2);
-		$sueldo["neto_mes"]=round($sueldo["bruto_mes"]-$tributado,2);
+		$sueldo["neto_mes"]=round($total-$tributado,2);
 	}
 	
 	return $sueldo;
@@ -1893,6 +1892,14 @@ function verHTMLCol(){
         echo "Fecha de actualización: ".$document["fecha"]."\n\n";
     }
     echo "Número de HTMLS: ".$htmlCol->count()."\n";
+}
+
+function getVotacionesCursor(){
+    $m=new MongoClient();
+    $db=$m->que_hacen;
+    $votCol=$db->votacion;
+    $cursor=$votCol->find();
+    return $cursor;
 }
 
 function dropHTMLCol(){

@@ -14,7 +14,8 @@ function infoDipusMongo($e=""){
     echo "-a:\tActualizar diputados (añadir nuevos diputados de congreso.es si los hay)\n";
     echo "-c:\tActualizar cargos de los diputados en el Congreso\n";
     echo "-url:\tActualizar URLs no oficiales de los diputados\n";
-    echo "-json:\tActualizar el JSON de los diputados\n";
+    echo "-json:\tActualizar los JSON de los diputados\n";
+    echo "-jsonv\tActualizar los JSON de las votaciones\n";
     echo "-img:\tActualizar imágenes y miniaturas de los diputados\n";
     echo "-gp:\tObtener iniciativas de los grupos (en fase de desarollo)\n";
     echo "-i:\tMostrar la colección de diputados en infoDB/dipus.txt\n";
@@ -34,8 +35,10 @@ if($argc!==2){
         case "-a":  obtenerNuevosDiputados();break;
         case "-c":  actualizarCargosDipus();break;
         case "-url":actualizarUrlsCsvDipus();break;
-        case "-json":exec("mongoexport --jsonArray --db que_hacen --collection diputados -o json/diputados.json");
-            echo("Se ha actualizado json/diputados.json\n");break;
+        case "-json":actualizarJsonDipus();
+            echo("Se ha actualizado la carpeta json/diputados/\n");break;
+        case "-jsonv":actualizarJsonVotaciones();
+            echo("Se ha actualizado la carpeta json/votaciones/\n");break;
         case "-gp": obtenerIniciativasGrupos();break;
         case "-i":  exec("php dipusmongo.php -if > infoDB/dipus.txt"); 
             echo("Info llevada a infoDB/dipus.txt\n");break;
@@ -247,6 +250,34 @@ function actualizarUrlsCsvDipus(){
                 $dipusCol->update($query,$dipu);
             }
         }
+    }
+}
+
+function actualizarJsonDipus(){
+    $basicOp="mongoexport --db que_hacen --collection diputados"; 
+    exec("$basicOp --jsonArray -o json/diputados/todos.json");
+    exec("$basicOp --jsonArray -f id,nombre,apellidos -o json/diputados/id_nombre.json");
+    $cursor=getDipusCursor();
+    foreach($cursor as $dipu){
+        $id=$dipu["id"];
+        $nomJson="$id.json";
+        $query="{'id':$id}";
+        exec("$basicOp --query $query -o json/diputados/$nomJson");
+    }
+}
+
+function actualizarJsonVotaciones(){
+    $basicOp="mongoexport --db que_hacen --collection votacion"; 
+    exec("$basicOp --jsonArray -o json/votaciones/todas.json");
+    //exec("$basicOp --jsonArray -fieldFile json/fieldfiles/basicVotaciones.txt -o json/votaciones/basicoTodas.json");
+    $cursor=getVotacionesCursor();
+    foreach($cursor as $votacion){
+        $numS=$votacion["xml"]["resultado"]["informacion"]["sesion"];
+        $numV=$votacion["xml"]["resultado"]["informacion"]["numerovotacion"];
+        $nomJson="sesion_".$numS."_votacion_".$numV.".json";
+        $query="{'xml.resultado.informacion.sesion' : '$numS', 
+            'xml.resultado.informacion.numerovotacion' : '$numV'}";
+        exec("$basicOp --query \"$query\" -o json/votaciones/$nomJson");
     }
 }
 
