@@ -51,7 +51,8 @@ Latinise.latin_map = {
     'ñ':'n', 'ó':'o', 'ò':'o', 'ô':'o', 'õ':'o', 'ö':'o', 'ø':'o',
     'ú':'u', 'ù':'u', 'û':'u', 'ü':'u', 'ý':'y',
     'ß':'sz', 'þ':'thorn', 'ÿ':'y',
-    ',':'.'
+    ',':'.',
+    'ª':'a'
 };
 String.prototype.latinise=function() {
     return this.replace(/[^A-Za-z0-9\[\] ]/g, function(a){ return Latinise.latin_map[a]||a }).split(' ').join('');

@@ -11,7 +11,7 @@ import os, os.path, subprocess, datetime
 execstr = "git ls-files ./ | grep -E '.csv'"
 result = subprocess.check_output(execstr, shell=True).split('\n')
 
-absolutePath = 'https://github.com/hamoid/que_hacen/blob/master/csv'
+absolutePath = 'https://github.com/quehacen/que_hacen/blob/master/csv'
 now = datetime.datetime.now()
 
 f = open('readme.md', "w")
