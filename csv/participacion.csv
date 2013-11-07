@@ -1,365 +1,375 @@
 nombre,asientos,total,si,no,abs,novota,dias_no_vota,dias_vota_algo,dias_vota_todo
-"Abad Pérez, Juan Antonio","3406, 3817, 3816",330,121,200,1,8,2,0,41
-"Aguiar Rodríguez, Ernesto","3405, 3706, 3709",330,119,203,0,8,1,1,41
-"Aguilar Rivero, Rosa","1310, 1410",330,202,85,29,14,3,0,40
-"Aguirre Rodríguez, Ramón",3202,7,3,4,0,0,0,0,1
-"Albendea Pabón, Juan Manuel","3404, 2615",330,121,209,0,0,0,0,43
-"Alberto Pérez, Celia","3403, 3803, 3802",330,106,202,0,22,2,0,41
-"Alegría Continente, María Pilar","1404, 1611, 1610",330,211,92,26,1,0,1,42
-"Alonso Aranegui, Alfonso",3210,330,121,200,0,9,2,0,41
-"Alonso Núñez, Alejandro","1716, 1406",330,199,94,18,19,1,5,37
-"Alonso Ruiz, José María","3402, 3810, 3809",330,122,208,0,0,0,0,43
-"Alonso Suárez, José Antonio","1202, 1611, 1517",330,207,90,24,9,1,0,42
-"Anchuelo Crego, Álvaro",2403,330,183,120,27,0,0,0,43
-"Angulo Romero, María Teresa","2411, 2506, 2508",330,118,199,0,13,2,0,41
-"Antigüedad Auzmendi, Iñaki",2601,113,0,2,3,108,14,3,0
-"Aparicio Pérez, Juan Carlos","3407, 2411, 3303, 3305",330,121,208,0,1,1,0,42
-"Aragonés Mendiguchía, Carlos","2410, 2616",330,124,203,2,1,0,1,42
-"Araújo Gil, Rogelio","2604, 3808, 3807",330,122,208,0,0,0,0,43
-"Ares Martínez-Fortún, María de la O","2504, 3814, 3813",330,116,196,0,18,1,0,42
-"Arias Cañete, Miguel",1108,330,71,83,0,176,24,4,15
-"Ariztegui Larrañaga, Maite",2703,330,32,12,42,244,25,11,7
-"Asian González, Matilde Pastora",3204,330,122,207,0,1,0,1,42
-"Astarloa Huarte-Mendicoa, Ignacio","2409, 3501",330,119,196,0,15,2,0,41
-"Ayala Sánchez, Andrés José","3517, 3401",330,103,188,0,39,4,0,39
-"Ayllón Manso, José Luis",3201,330,122,208,0,0,0,0,43
-"Azpiazu Uriarte, Pedro María",2302,330,184,53,71,22,3,1,39
-"Azpiroz Villar, José Eugenio","3516, 2514",330,120,196,0,14,1,0,42
-"Baena Azuaga, María del Mar","2818, 2819",107,33,73,1,0,0,0,16
-"Bajo Prieto, María Luz","3515, 3613, 3615",330,114,193,0,23,2,0,41
-"Baldoví Roda, Joan",2705,330,187,59,52,32,2,10,31
-"Barberà i Montserrat, Martí",2408,330,197,62,64,7,2,1,40
-"Barkos Berruezo, Uxue",2803,330,180,64,40,46,5,2,36
-"Barreda Fontes, José María","1613, 1414",330,213,90,27,0,0,0,43
-"Barreda de los Ríos, Leopoldo",3206,330,122,200,0,8,1,0,42
-"Barreiro Álvarez, Pilar","3514, 3607, 3609",330,119,203,0,8,1,0,42
-"Barrero López, Jaime Javier",3,330,204,82,19,25,3,0,40
-"Batet Lamaña, Meritxell","1713, 1511",330,179,67,19,65,9,1,33
-"Bedera Bravo, Mario","1610, 1515",330,199,87,25,19,2,0,41
-"Benegas Haddad, José María",1820,330,185,75,19,51,5,1,37
-"Beneyto Pérez, José María","3513, 3408, 3306, 3307",330,110,177,2,41,5,5,33
-"Bermúdez de Castro Fernández, José Antonio",3209,330,122,208,0,0,0,0,43
-"Bertomeu Bertomeu, Juan","3512, 2711, 2710",330,122,207,1,0,0,0,43
-"Blanco López, José","1302, 1402",330,189,82,22,37,3,1,39
-"Blanco Terán, Rosa Delia","1809, 1807",330,173,84,26,47,6,2,35
-"Blanquer Alcaraz, Patricia","1407, 4701",67,33,12,2,20,6,0,6
-"Blasco Soto, Miriam Guadalupe","3511, 3513, 3516",330,118,206,1,5,1,0,42
-"Bolarín Sánchez, María Dolores","3510, 2715",330,122,207,1,0,0,0,43
-"Bonilla Domínguez, María Jesús","3509, 2504, 3411",330,122,208,0,0,0,0,43
-"Bosch i Pascual, Alfred",2501,330,157,44,45,84,11,4,28
-"Bravo Ibáñez, Mª Concepción","3508, 3614, 3616",330,122,207,1,0,0,0,43
-"Buyolo García, Federico","4606, 4702",330,211,91,24,4,0,1,42
-"Báñez García, María Fátima",2102,330,107,172,0,51,10,1,32
-"Caamaño Domínguez, Francisco Manuel","1304, 4807",330,148,67,20,95,13,0,30
-"Cabello de Alba Hernández, Federico","3507, 3820, 2707",330,120,204,1,5,1,0,42
-"Cabezón Ruiz, Soledad","1312, 1709, -1",330,122,56,21,131,16,5,22
-"Cabrera García, Francisco Domingo","3506, 3705, 3708",330,121,206,1,2,0,2,41
-"Caicedo Bernabé, Jesús","3505, 5704, 5606",330,122,207,1,0,0,0,43
-"Caldera Sánchez-Capitán, Jesús",1210,330,208,86,23,13,2,1,40
-"Camacho Vizcaíno, Antonio","1306, 1806",330,194,86,26,24,4,0,39
-"Camarero Benítez, Susana","3504, 3503, 3410, 3301",330,121,201,1,7,1,0,42
-"Campos Arteseros, Herick Manuel","4605, 4706",330,201,88,26,15,1,0,42
-"Camps Devesa, Gerardo","3413, 3414, 3302",330,117,191,0,22,5,0,38
-"Campuzano i Canadés, Carles",2308,330,180,58,49,43,3,1,39
-"Candón Adán, Alfonso","3503, 3713, 3716",330,122,207,1,0,0,0,43
-"Cantó García del Moral, Antonio",2405,330,182,120,28,0,0,0,43
-"Carcedo Roces, María Luisa","1508, 1206",330,178,73,20,59,4,0,39
-"Carreño Fernández, María Ascensión","3502, 2712, 2711",330,122,207,1,0,0,0,43
-"Casado Blanco, Pablo","3501, 5701, 5704",330,119,199,1,11,1,0,42
-"Castellano Ramón, Helena","1606, 1817",330,212,92,26,0,0,0,43
-"Castillo Calvín, José Miguel","2515, 3406, 3408",330,122,207,1,0,0,0,43
-"Centella Gómez, José Luis",1502,330,157,58,34,81,7,4,32
-"Cervera Soto, Santiago",9,330,113,209,0,8,1,0,42
-"Cervera Taulet, Manuel","2514, 3505, 3507",330,122,208,0,0,0,0,43
-"Chacón Piqueras, Carme","1305, 1415",330,171,71,17,71,10,2,31
-"Chaves González, Manuel María","1301, 1207",330,209,88,25,8,2,1,40
-"Cid Muñoz, Margarita del Carmen del","2513, 2609, 2716, 3701, -1",330,110,186,1,33,0,5,38
-"Ciuró i Buldó, Lourdes",2304,330,202,62,64,2,0,1,42
-"Cobaleda Hernández, María Teresa","2820, 2712",323,118,205,0,0,0,0,42
-"Cobos Trallero, Sara","3503, 2818",288,106,182,0,0,0,0,36
-"Collarte Rodríguez, Guillermo","2512, 2607, 2609",330,120,198,2,10,0,3,40
-"Conde Bajén, Agustín","2511, 2410",330,110,195,0,25,4,1,38
-"Conde Martínez, Gema","2510, 2708, 3820",330,119,196,1,14,1,0,42
-"Corcuera Plaza, Juan Carlos","1712, 1612, 1611",330,186,82,24,38,5,1,37
-"Cortizo Nieto, Miguel Ángel","1805, 1614, 1613",330,203,85,26,16,1,1,41
-"Cortés Bureta, Pilar","2509, 5702, 5705",330,122,208,0,0,0,0,43
-"Cortés Martín, Miguel Ángel","3412, 3413, 3414",330,98,187,0,45,6,0,37
-"Coscubiela Conesa, Joan",1503,330,170,66,35,59,5,4,34
-"Costa Palacios, María Angelina","1409, 1607, 1614",330,204,89,23,14,2,0,41
-"Cuadra Lasarte, Sabino",2704,330,49,18,48,215,20,14,9
-"Cunillera Mestres, Teresa",8,330,207,89,24,10,3,0,40
-"Císcar Casabán, Ciprià","4706, 1610, 1609",330,211,93,26,0,0,0,43
-"De las Heras Ladera, Ascensión",1602,330,147,60,36,87,9,4,30
-"Delgado Arce, Celso Luis","2508, 2516",330,123,207,0,0,0,0,43
-"Duran i Lleida, Josep Antoni",2207,330,115,31,39,145,18,0,25
-"Durán Ramos, Eva","2507, 3603, 3605",330,123,207,0,0,0,0,43
-"Díez González, Rosa María",2401,330,179,121,27,3,1,0,42
-"Echávarri Fernández, Gabriel","4604, 4701, 4703",330,205,90,24,11,2,1,40
-"Elorriaga Pisarik, Gabriel","2506, 2409",330,122,206,2,0,0,0,43
-"Elorza González, Odón",1819,330,196,88,32,14,2,2,39
-"Enbeita Maguregi, Onintza",2601,113,28,6,14,65,10,3,4
-"Erias Rey, Antonio","2516, 3517",330,121,208,0,1,0,1,42
-"Erkoreka Gervasio, Josu Iñaki",2201,330,186,54,71,19,3,1,39
-"Errekondo Saltsamendi, Xabier Mikel",2602,330,51,18,33,228,16,21,6
-"Escobar Las Heras, Conrado","2505, 3405, 3407",330,122,208,0,0,0,0,43
-"Escudero Berzal, Beatriz Marta","5606, 3715, 5702",330,121,207,0,2,0,1,42
-"España Reina, Carolina","5605, 3615, 3502",330,122,208,0,0,0,0,43
-"Esteban Bravo, Aitor",2202,330,172,49,70,39,3,1,39
-"Esteller Ruedas, Mª Ángeles","5604, 5706, 5602",330,120,194,1,15,1,0,42
-"Esteve Ortega, Esperança","1711, 1309",330,199,86,22,23,4,1,38
-"Fabra Fernández, Andrea","5603, 3504, 3506",330,123,207,0,0,0,0,43
-"Fajarnés Ribas, Enrique","5602, 3509, 3511",330,122,208,0,0,0,0,43
-"Falcón Dacal, Maravillas Concepción","5601, 3602, 3603",330,122,208,0,0,0,0,43
-"Fernández Davila, Mª Olaia","2702, 2701",330,197,65,38,30,3,3,37
-"Fernández Díaz, Jorge",3102,330,100,147,0,83,9,2,32
-"Fernández García, Eduardo","3615, 3806, 3805",330,122,208,0,0,0,0,43
-"Fernández González, Daniel","1205, 1707, 4606",330,153,63,21,93,14,0,29
-"Fernández González, María Mercedes","3203, 3311, 3310",110,10,22,1,77,9,2,5
-"Fernández Moya, Gracia",1704,246,153,65,21,7,0,4,26
-"Fernández Álvarez, Alejandro","3616, 3402, 3405",330,121,206,0,3,2,1,40
-"Fernández-Ahuja García, María de los Ángeles","2809, 2817",220,75,140,4,1,0,1,26
-"Ferrando Sendra, Amparo","3614, 5606, 2506",330,122,207,0,1,0,1,42
-"Ferrer Roselló, Vicente","3613, 3404, 3406",330,118,193,1,18,3,0,40
-"Figueres Górriz, María Ascensión","3612, 2716, 2605",330,118,207,0,5,1,0,42
-"Flores Lanuza, Mario Francisco José","3611, 2610, 3702",330,122,208,0,0,0,0,43
-"Floriano Corrales, Carlos Javier","3305, 3312",330,120,205,0,5,1,0,42
-"Franquis Vera, Sebastián","4702, 1609, 1608",330,207,83,24,16,2,0,41
-"Fumero Roque, Águeda","3610, 3805, 3803",330,122,206,0,2,0,1,42
-"Gallego Arriola, María del Puerto","1506, 1816, 1815",330,212,93,25,0,0,0,43
-"Gallego Burgos, Antonio","3609, 3515, 3403",330,122,208,0,0,0,0,43
-"García Díez, Joaquín María","3608, 3506, 3508",330,120,205,0,5,0,1,42
-"García Egea, Teodoro","3607, 2819, 3512",330,113,196,1,20,3,0,40
-"García Gasulla, Guillem","1816, 4805",330,210,92,28,0,0,0,43
-"García Gálvez, Paloma","3606, 2818",223,85,125,1,12,2,0,25
-"García Pérez, Pablo","3605, 2714, 2713",330,122,207,0,1,0,1,42
-"García Álvarez, María Caridad",1703,330,192,80,39,19,2,4,37
-"García-Tizón López, Arturo","3408, 2412",330,120,203,1,6,2,0,41
-"Garrido Valenzuela, Irene","3604, 3712, 3715",330,122,207,0,1,0,1,42
-"Garzón Espinosa, Alberto",1702,330,157,59,35,79,8,3,32
-"Gil Lázaro, Ignacio",6,330,113,200,0,17,3,0,40
-"González Cabaña, Francisco","1408, 1513",330,179,74,24,53,7,0,36
-"González Gutiérrez, Concepción","3408, 2816",226,83,143,0,0,0,0,28
-"González Muñoz, Ángel Luis","3602, 3704, 3707",330,122,207,1,0,0,0,43
-"González Pons, Esteban","3312, 3311",330,117,197,0,16,2,0,41
-"González Ramos, Manuel Gabriel","1612, 1812",330,204,92,30,4,2,1,40
-"González Veracruz, María","1402, 1303",330,198,86,24,22,2,1,40
-"González Vázquez, Marta","3601, 3616, 3503",330,122,206,0,2,0,2,41
-"González Vázquez, Sebastián","2616, 3601, 3604",330,116,194,1,19,2,0,41
-"Gordo Pérez, Juan Luis","1608, 1606",330,204,93,30,3,2,0,41
-"Grande Pesquero, Pilar","4703, 1509",330,213,92,25,0,0,0,43
-"Grau Reinés, Juan Carlos","2615, 3502, 3505",330,124,206,0,0,0,0,43
-"Guerra González, Alfonso",1401,330,205,86,25,14,1,0,42
-"Guillaumes i Ràfols, Feliu-Joan",2406,330,183,56,59,32,4,1,38
-"Guillén Izquierdo, Vicente","1510, 1714",330,206,87,21,16,1,2,40
-"Gutiérrez Molina, Antonio","2614, 5603, 5605",330,119,205,1,5,1,3,39
-"Gutiérrez del Castillo, María Concepción","1415, 1404",330,208,91,25,6,1,0,42
-"Gómez Sánchez, Tomás Valeriano","1307, 1310",330,186,78,22,44,7,3,33
-"Gómez de la Serna y Villacieros, Pedro Ramón","3603, 3409, 3410",330,103,188,0,39,3,1,39
-"Heredia Díaz, Miguel Ángel","1516, 1711",330,173,85,22,50,5,1,37
-"Heredia Martín, Silvia","2613, 3813, 3812",330,113,204,0,13,2,0,41
-"Hernando Fraile, Rafael Antonio",3208,330,121,208,0,1,0,1,42
-"Hernando Vera, Antonio","1209, 1302",330,206,90,26,8,2,0,41
-"Hernanz Costa, Sofía","1817, 4804",330,198,89,25,18,2,1,40
-"Hernández Gutiérrez, Patricia","4701, 4803",330,202,89,33,6,1,0,42
-"Hoyo Juliá, Belén","2612, 2709, 2708",330,122,208,0,0,0,0,43
-"Hurtado Zurera, Antonio","1410, 1705",330,204,88,31,7,1,0,42
-"Iglesias Fontal, María Olga","2611, 2605, 2716, 2609, -1, 2606",330,74,134,0,122,6,8,29
-"Iglesias Santiago, Leire","1803, 1506",330,199,87,25,19,3,1,39
-"Iñarritu García, Jon",2805,330,70,30,66,164,9,24,10
-"Jané i Guasch, Jordi",5,330,183,61,61,25,3,1,39
-"Jiménez Díaz, María Piedra Escrita","2610, 2817, 2815",330,120,208,1,1,0,1,42
-"Jiménez García-Herrera, Trinidad","1303, 1304",330,194,76,20,40,3,3,37
-"Jiménez Mínguez, Encarnación","2816, 2814",323,118,204,1,0,0,0,42
-"Jordà i Roura, Teresa",2503,330,158,51,50,71,9,4,30
-"Jorquera Caselas, Francisco Xesús",2701,306,150,56,35,65,8,1,29
-"Juste Picón, María Belén","2609, 5602, 5604",330,119,204,0,7,3,0,40
-"Jáuregui Atondo, Ramón","1308, 1311",330,188,74,19,49,5,0,38
-"Lagares Flores, Juan Carlos","2608, 5703, 5706",330,121,202,0,7,2,1,40
-"Lago Martínez, María Paz","2607, 3807, 3806",330,122,207,1,0,0,0,43
-"Landaluce Calleja, José Ignacio","2606, 3609, 3611",330,118,203,0,9,1,0,42
-"Lanzuela Marina, Santiago","2605, 3605, 3607",330,121,199,0,10,2,1,40
-"Lara Carbó, María Teresa de","5706, 3507, 3509",330,122,206,1,1,0,1,42
-"Lara Moya, Cayo",1501,330,177,73,38,42,4,2,37
-"Larreina Valderrama, Rafael",2603,330,78,38,76,138,5,25,13
-"Lavilla Martínez, Félix","1609, 1813",330,208,91,24,7,2,0,41
-"Llamazares Trigo, Gaspar",1604,330,191,76,39,24,2,3,38
-"Llorens Torres, José Ignacio","5701, 2512",330,121,207,1,1,0,1,42
-"Lozano Domingo, Irene",2404,330,182,120,27,1,0,1,42
-"Lucio Carrasco, María Pilar","1804, 1803",330,206,92,26,6,0,3,40
-"Luena López, César","1801, 1403",330,213,92,25,0,0,0,43
-"Luis Rodríguez, Teófilo de","3310, 3309, 3308",330,123,206,0,1,0,1,42
-"López Garrido, Diego","1810, 1405",330,157,61,20,92,11,2,30
-"López Garrido, José","5704, 3818, 3817",330,122,200,0,8,2,0,41
-"López González, Rocío","5703, 3703, 3706",330,122,208,0,0,0,0,43
-"López Iglesias, Germán Augusto","5702, 2713",110,43,67,0,0,0,0,16
-"López Jiménez, Luis","1406, 1704",84,51,27,3,3,0,2,11
-"López i Chamosa, María Isabel","1714, 1616",330,201,91,23,15,3,1,39
-"López-Amor García, Fernando","5705, 5601, 5603",330,122,203,0,5,1,0,42
-"Macias i Arau, Pere",2206,330,192,55,62,21,2,0,41
-"Madina Muñoz, Eduardo",1203,330,191,87,25,27,2,0,41
-"Madrazo Díaz, Ana María","3716, 3516, 3404",330,122,208,0,0,0,0,43
-"Mariscal Anaya, Guillermo","3715, 3407, 3409",330,122,208,0,0,0,0,43
-"Martín González, María Guadalupe","1715, 1808",330,206,93,24,7,0,4,39
-"Martín González, Telmo","3713, 2505, 2507",330,117,208,4,1,0,1,42
-"Martín Peré, Pablo","1818, 1613, 1612",330,209,90,25,6,2,0,41
-"Martín Pozo, María Teresa","3712, 2815, 2605",330,117,200,0,13,2,0,41
-"Martín Rodríguez, Enrique Luis","3711, 2814, 2714",330,122,208,0,0,0,0,43
-"Martín-Toledano Suárez, José Alberto","3710, 3709, 3712",330,108,189,1,32,3,0,40
-"Martínez Gorriarán, Carlos",2402,330,138,83,20,89,10,0,33
-"Martínez Olmos, José","1411, 1516",330,196,89,25,20,3,0,40
-"Martínez Rodríguez, Santiago","3708, 3809, 3808",330,122,206,0,2,1,0,42
-"Martínez Saiz, Teófila","3411, 3412, 3413",330,109,193,0,28,3,1,39
-"Martínez-Pujalte López, Vicente","3709, 3403, 3411, 3412",330,119,192,0,19,2,3,38
-"Matarí Sáez, Juan José","3304, 3306",330,122,203,1,4,1,1,41
-"Mato Adrover, Ana",1106,330,89,109,0,132,18,4,21
-"Matos Mascareño, Pablo","3707, 2513",330,122,200,0,8,2,0,41
-"Meijón Couselo, Guillermo Antonio","1807, 4806",330,187,74,23,46,7,0,36
-"Merino López, Rafael","3311, 3310, 3309",330,121,206,0,3,0,1,42
-"Micheo Carrillo-Albornoz, Julia de","2808, 2813",202,64,134,0,4,2,1,22
-"Miguélez Pariente, María Aránzazu","3706, 2707, 2820",330,122,207,0,1,0,1,42
-"Mingo Zapatero, Mario","3705, 2511",330,122,208,0,0,0,0,43
-"Molinero Hoyos, Francisco","3704, 2706, 3819",330,121,197,0,12,1,0,42
-"Moneo Díez, María Sandra","3303, 3302, 3304",330,122,208,0,0,0,0,43
-"Monteserín Rodríguez, María Virtudes","1206, 1508",330,201,89,22,18,4,0,39
-"Montesinos de Miguel, Macarena","3703, 5604, 2610",330,122,206,0,2,0,2,41
-"Montoro Romero, Cristóbal Ricardo",3103,330,87,148,0,95,16,0,27
-"Montserrat Montserrat, Dolors",4,330,119,202,0,9,2,0,41
-"Montón Giménez, Carmen","4705, 1308",330,211,93,26,0,0,0,43
-"Mora Bernat, Manuel","3702, 3815, 3814",330,122,208,0,0,0,0,43
-"Moragas Sánchez, Jorge","3307, 3202",330,77,117,0,136,16,2,25
-"Moraleja Gómez, Tristana María","3701, 3703",330,120,200,1,9,2,0,41
-"Moreno Bustos, Ramón","2716, 3610, 3612",330,122,206,1,1,0,1,42
-"Moreno Felipe, Irene","2715, 2813, 2812",330,122,208,0,0,0,0,43
-"Moreno Palanques, Rubén","2714, 5705, 5601, 5603",330,122,208,0,0,0,0,43
-"Morlán Gracia, Víctor","1511, 1716",330,213,92,25,0,0,0,43
-"Moro Almaraz, María Jesús","2713, 3512, 3515",330,122,208,0,0,0,0,43
-"Moscoso del Prado Hernández, Juan","1814, 1305",330,178,79,14,59,7,0,36
-"Muñoz González, Pedro José","1505, 1413",330,210,92,25,3,2,0,41
-"Muñoz Obón, Carlos Enrique","2712, 3708, 3711",330,122,208,0,0,0,0,43
-"Márquez de la Rubia, Francisco","3714, 5701",330,120,208,0,2,0,1,42
-"Méndez Monasterio, Lourdes","3410, 3411, 2411",330,122,208,0,0,0,0,43
-"Narbona Ruiz, Cristina","1811, 1510",330,203,89,29,9,1,0,42
-"Nasarre Goicoechea, Eugenio","2711, 3604, 3606",330,119,204,0,7,1,1,41
-"Navarro Cruz, María del Carmen","2710, 3510, 3513",330,114,197,0,19,2,0,41
-"Nuet Pujals, Joan Josep",1601,330,153,64,30,83,11,2,30
-"Olabarría Muñoz, Emilio",2203,330,186,55,69,20,3,0,40
-"Olano Vela, Jaime Eduardo de","2709, 3816, 3815",330,122,208,0,0,0,0,43
-"Oramas González-Moro, Ana María",2801,330,216,38,43,33,4,0,39
-"Ortiz Castellví, Laia",1603,330,189,77,46,18,3,1,39
-"Pacheco Atienza, Arsenio","2708, 3811, 3810",330,121,208,1,0,0,0,43
-"Pajín Iraola, Leire","1309, 1407",263,151,68,17,27,2,1,28
-"Pastor González, Ildefonso R.","2707, 2812, 3704",330,121,208,1,0,0,0,43
-"Pastor Julián, Ana María",2104,330,66,75,0,189,26,1,16
-"Pezzi Cereto, Manuel","1412, 1507",330,208,90,25,7,2,0,41
-"Picó i Azanza, Antoni",2305,330,194,61,59,16,2,1,40
-"Pigem i Palmés, Mª Mercè",2204,330,182,60,64,24,4,0,39
-"Posada Moreno, Jesús",1,330,107,204,0,19,2,5,36
-"Pozuelo Meño, María Isabel","1515, 1312",330,160,64,19,87,7,0,36
-"Prada Presa, Alfredo","3414, 3301, 3303",330,123,207,0,0,0,0,43
-"Pradas Torres, Antonio Francisco","1514, 1710",330,208,92,29,1,0,1,42
-"Puche Rodríguez-Acosta, Gabino","5802, 2612",330,113,186,0,31,3,3,37
-"Puente Redondo, Javier","5801, 2810, 2604",330,122,208,0,0,0,0,43
-"Puig Ferrer, Joaquín Francisco","4603, 1411",330,143,63,13,111,14,0,29
-"Puyuelo del Val, María Blanca","3820, 3819, 3818",330,121,208,0,1,0,1,42
-"Pàramo i Ponsetí, Carles",2407,330,135,45,45,105,10,2,31
-"Pérez Domínguez, María Soledad","1403, 1306",330,210,91,29,0,0,0,43
-"Pérez Fernández, Rosana",2702,24,20,3,1,0,0,0,5
-"Pérez Insua, Antonio","2706, 2811",330,121,207,0,2,0,2,41
-"Pérez Lapazarán, José Cruz","5803, 3508, 3510",330,123,191,1,15,1,0,42
-"Pérez Rubalcaba, Alfredo",1201,330,121,54,16,139,20,0,23
-"Quevedo Iturbe, Pedro",2802,330,165,32,33,100,12,3,28
-"Quintanilla Barba, María del Carmen","3819, 2614",330,117,196,0,17,2,2,39
-"Rajoy Brey, Mariano",3108,330,47,22,0,261,32,2,9
-"Ramis Socias, Miquel","3818, 2515",330,121,207,0,2,0,1,42
-"Ramón Utrabo, Elvira","1413, 1707",330,203,89,31,7,1,3,39
-"Rangel Tarrés, Joan","1710, 1408",330,210,91,24,5,1,0,42
-"Riera i Reñé, Inmaculada",2307,330,174,53,59,44,7,1,35
-"Robles Orozco, Gonzalo",3302,7,3,4,0,0,0,0,1
-"Rodríguez Flores, María Carmen",3613,24,4,20,0,0,0,0,5
-"Rodríguez García, Isabel","1614, 1810",330,208,92,28,2,0,2,41
-"Rodríguez Herrer, María Elvira","3301, 3415",298,117,178,1,2,0,1,35
-"Rodríguez Maniega, María del Carmen","3817, 2507, 2509",330,122,208,0,0,0,0,43
-"Rodríguez Ramos, María Soraya","1611, 1202",330,199,88,26,17,2,0,41
-"Rodríguez Ramírez, María José","1414, 1706",330,195,89,30,16,2,0,41
-"Rodríguez Sánchez, María Felicidad","3816, 2606, 2607",330,121,208,1,0,0,0,43
-"Rodríguez-Piñero Fernández, Inmaculada","1311, 1209",330,163,68,22,77,10,0,33
-"Rodríguez-Ponga Salamanca, Rafael","3415, 3302, 3408",104,39,65,0,0,0,0,15
-"Rodríguez-Salmones Cabeza, Beatriz",3207,330,110,188,0,32,4,0,39
-"Romero Girón, Aurelio","3814, 2613",330,123,207,0,0,0,0,43
-"Romero Hernández, Carmelo","3813, 3804",330,122,208,0,0,0,0,43
-"Romero Rodríguez, María Eugenia","3812, 3710, 3713",330,115,186,1,28,5,0,38
-"Romero Sánchez, Rosa María","3811, 3606, 3608",330,122,208,0,0,0,0,43
-"Román Jasanada, Antonio","3815, 2510, 3602",330,122,208,0,0,0,0,43
-"Ros Martínez, Susana","4602, 4705",330,208,92,30,0,0,0,43
-"Ruano Gómez, Juan de Dios","3810, 2604, 3504",330,122,208,0,0,0,0,43
-"Ruiz Llamas, Román","1709, 4604",330,208,89,25,8,1,2,40
-"Ruiz i Carbonell, Joan","1705, 4602",330,202,88,24,16,2,1,40
-"Ruiz-Gallardón Jiménez, Alberto",3105,330,99,167,0,64,8,1,34
-"Rumí Ibáñez, María Consuelo","1407, 1514",330,210,89,24,7,1,1,41
-"Sahuquillo García, Luis Carlos","1615, 1811, 1814",330,207,92,31,0,0,0,43
-"Salvador Armendáriz, Carlos Casimiro",2807,330,130,166,19,15,2,4,37
-"Santa Ana Fernández, María de la Concepción de","3807, 3707, 3710",330,121,207,0,2,1,1,41
-"Saura García, Pedro","1815, 1409",330,213,92,25,0,0,0,43
-"Seara Sobrado, Laura Carmen","1806, 1608, 1607",330,181,83,28,38,4,3,36
-"Segura Clavell, José","4704, 1505",330,196,85,31,18,2,2,39
-"Serrano Argüello, María Arenales","3806, 3711, 3714",330,122,208,0,0,0,0,43
-"Serrano Calurano, Bibiano","3805, 2608, 2504",330,120,208,1,1,0,1,42
-"Serrano Coronado, Daniel","3804, 3716, 5703",330,120,205,0,5,1,0,42
-"Serrano Martínez, José Enrique","1812, 1805",330,208,93,24,5,0,2,41
-"Sicilia Alférez, Felipe Jesús","1517, 1708",330,207,90,32,1,0,1,42
-"Silva Rego, María del Carmen",7,330,141,64,22,103,16,1,26
-"Simancas Simancas, Rafael","1813, 1307",330,196,84,19,31,3,0,40
-"Sixto Iglesias, Ricardo",1701,330,184,77,40,29,4,3,36
-"Soler Sicilia, Albert","1708, 4605",330,210,89,25,6,2,0,41
-"Solsona Aixalà, Marc",2303,330,183,48,63,36,3,1,39
-"Soravilla Fernández, Roberto","3803, 3611, 3613, -1",298,95,152,0,51,4,4,28
-"Soria López, José Manuel",2101,330,53,92,0,185,26,2,15
-"Sumelzo Jordán, Susana","1509, 1715",330,211,92,26,1,0,1,42
-"Surroca i Comas, Montserrat",2306,330,185,54,58,33,4,0,39
-"Susinos Tarrero, María Jesús","2820, 3702, 3705",330,119,203,0,8,1,0,42
-"Suárez Lamata, Eloy","3802, 3612, 3614",330,122,207,0,1,0,1,42
-"Suárez-Bárcena Blasco, María Cristina","2713, 2811",217,80,136,0,1,0,1,25
-"Sáenz de Santamaría Antón, María Soraya",3107,330,103,184,1,42,7,1,35
-"Sáez Jubero, Àlex","1706, 4603",330,212,92,26,0,0,0,43
-"Sánchez Amor, José Ignacio",1802,330,186,84,25,35,2,2,39
-"Sánchez Barrera, José Juan","3415, 2810",25,4,21,0,0,0,0,6
-"Sánchez Díaz, María Carmen",1204,330,213,91,24,2,0,2,41
-"Sánchez Díaz, Ovidio","3409, 3410, 3403, 3402",330,122,208,0,0,0,0,43
-"Sánchez García, Celinda","3808, 2508, 2510",330,123,206,0,1,0,1,42
-"Sánchez de Alcázar Ocaña, Miguel","3809, 3802, 3801",330,122,208,0,0,0,0,43
-"Sánchez i Llibre, Josep",2205,330,185,58,63,24,2,1,40
-"Tapia Otaegi, Arantza",2301,330,183,48,73,26,4,1,38
-"Tardà i Coma, Joan",2502,330,181,61,64,24,3,1,39
-"Tarno Blanco, Ricardo","2819, 2611",330,119,198,2,11,2,2,39
-"Tarruella Tomás, María Concepció",2310,330,195,60,62,13,2,2,39
-"Tomé Muguruza, Baudilio","3306, 3503",42,13,23,0,6,2,0,5
-"Torrado de Castro, Marta",3205,330,122,208,0,0,0,0,43
-"Torres Herrera, Manuel Luis","2818, 3812, 3811",330,122,208,0,0,0,0,43
-"Torres Mora, José Andrés","1405, 1605",330,208,92,30,0,0,0,43
-"Trevín Lombán, Antonio Ramón María","1507, 1512",330,195,82,23,30,3,1,39
-"Trillo-Figueroa Martínez-Conde, Federico","3308, 3307, 3305",110,32,45,0,33,4,2,10
-"Tudanca Fernández, Luis","1605, 1818",330,208,91,25,6,2,0,41
-"Urbina Fernández, Iker",2804,330,37,16,33,244,23,18,2
-"Uriarte Ayala, Ignacio","2817, 3514, 2608",330,120,201,0,9,1,0,42
-"Valenciano Martínez-Orozco, Elena","1207, 1301",330,118,51,14,147,16,4,23
-"Valerio Cordero, Magdalena","1616, 1809",330,193,89,28,20,2,4,37
-"Vallès Vives, Francesc","1704, 1615",330,198,83,23,26,4,0,39
-"Vañó Ferre, Francisco","3801, 2821",330,116,189,0,25,3,0,40
-"Vera Pró, Juan Carlos","3309, 3308, 3307",330,122,207,0,1,0,1,42
-"Veray Cama, Concepció","2821, 3801, 5801",330,121,204,0,5,1,0,42
-"Viera Chacón, José Antonio","1512, 1713",330,202,89,24,15,3,1,39
-"Villalobos Talero, Celia",2,330,101,203,0,26,4,1,38
-"Villanova Rueda, Joaquín","2814, 2710, 2709",330,117,208,4,1,0,1,42
-"Villarrubia Mediavilla, Julio","1607, 1412",330,211,92,25,2,1,0,42
-"Vázquez Blanco, Ana Belén","2816, 3608, 3610",330,122,208,0,0,0,0,43
-"Vázquez Jiménez, Antonio","2815, 2509, 3601",330,122,207,0,1,0,1,42
-"Vázquez Morillo, María José","1513, 1712",330,202,86,23,19,1,2,40
-"Xuclà i Costa, Jordi",2309,330,189,56,59,26,3,1,39
-"Yuste Cabello, Chesús",1504,330,189,80,43,18,2,2,39
-"Zaragoza Alonso, José","1707, 1205",330,210,91,24,5,1,0,42
-"Zarrías Arévalo, Gaspar Carlos",1208,330,162,65,15,88,6,1,36
-"Ábalos Meco, José Luis","4601, 4703, 1407",330,200,87,23,20,2,0,41
-"Álvarez Sostres, Enrique",2806,330,80,135,45,70,8,4,31
-"Álvarez de Toledo Peralta Ramos, Cayetana","3401, 5605, 2505",330,104,166,0,60,8,2,33
-"Álvarez Álvarez, Ángeles","1808, 1804",330,177,77,22,54,5,1,37
-"Álvarez-Arenas Cisneros, María del Carmen","2412, 3511, 3514",330,120,196,0,14,1,0,42
+"Abad Pérez, Juan Antonio","3406, 3816, 3817, 3818","1756","496","1243","1","16","3","2","84"
+"Agirretxea Urresti, Joseba Andoni","2301","800","422","169","162","47","1","2","38"
+"Aguiar Rodríguez, Ernesto","3405, 3706, 3709, 3710, 3711","1756","493","1255","0","8","1","2","86"
+"Aguilar Rivero, Rosa","1310, 1410","1756","929","391","240","196","7","2","80"
+"Aguirre Rodríguez, Ramón","3202","7","3","4","0","0","0","0","1"
+"Albendea Pabón, Juan Manuel","2615, 3404","1756","490","1248","2","16","1","6","82"
+"Alberto Pérez, Celia","3403, 3802, 3803, 3804","1756","476","1254","0","26","2","0","87"
+"Alegría Continente, María Pilar","1404, 1610, 1611, -1","1756","892","381","211","272","5","7","77"
+"Alonso Aranegui, Alfonso","3210","1756","496","1251","0","9","2","0","87"
+"Alonso Núñez, Alejandro","1406, 1716","1756","996","466","264","30","2","9","78"
+"Alonso Ruiz, José María","3402, 3809, 3810, 3811","1756","496","1258","0","2","0","2","87"
+"Alonso Suárez, José Antonio","1202, 1517, 1611","1023","619","263","125","16","2","2","45"
+"Anchuelo Crego, Álvaro","2403","1756","816","472","453","15","1","0","88"
+"Angulo Romero, María Teresa","2411, 2506, 2508, 2509, 3601","1756","492","1247","1","16","2","2","85"
+"Antigüedad Auzmendi, Iñaki","2601","163","0","2","3","158","14","3","0"
+"Aparicio Pérez, Juan Carlos","2411, 3303, 3305, 3306, 3407","1514","468","1028","3","15","3","3","76"
+"Aragonés Mendiguchía, Carlos","2410, 2616","1756","479","1138","6","133","4","6","79"
+"Araújo Gil, Rogelio","2604, 3807, 3808, 3809","1756","486","1237","1","32","4","1","84"
+"Ares Martínez-Fortún, María de la O","2504, 3813, 3814, 3815","1756","490","1236","4","26","0","1","88"
+"Arias Cañete, Miguel","1108","1756","234","730","8","784","54","10","25"
+"Ariztegui Larrañaga, Maite","2703","1756","179","48","78","1451","64","19","6"
+"Asian González, Matilde Pastora","3204, 3205","1756","497","1243","0","16","1","3","85"
+"Astarloa Huarte-Mendicoa, Ignacio","2409, 3501","1756","490","1242","1","23","3","3","83"
+"Ayala Sánchez, Andrés José","3401, 3517","1756","441","1224","0","91","6","2","81"
+"Ayllón Manso, José Luis","3201","1756","494","1253","0","9","1","3","85"
+"Azpiazu Uriarte, Pedro María","2202, 2302","1756","694","267","537","258","9","4","76"
+"Azpiroz Villar, José Eugenio","2513, 2514, 3516","1756","502","1252","1","1","0","1","88"
+"Baena Azuaga, María del Mar","2818, 2819, 2820","1511","383","1127","1","0","0","0","65"
+"Bajo Prieto, María Luz","3515, 3613, 3615, 3616","1756","486","1224","0","46","2","3","84"
+"Baldoví Roda, Joan","2705","1756","915","284","219","338","4","28","57"
+"Barberà i Montserrat, Martí","2408","1756","983","243","517","13","3","1","85"
+"Barkos Berruezo, Uxue","2803","1756","931","312","316","197","11","5","73"
+"Barreda Fontes, José María","1414, 1613","1756","1019","458","278","1","0","1","88"
+"Barreda de los Ríos, Leopoldo","3206","1756","497","1249","0","10","1","2","86"
+"Barreiro Álvarez, Pilar","3514, 3607, 3609, 3610","1756","488","1230","0","38","2","3","84"
+"Barrero López, Jaime Javier","3","1756","988","439","264","65","6","4","79"
+"Batet Lamaña, Meritxell","1511, 1713, -1","1756","683","277","145","651","22","9","58"
+"Bedera Bravo, Mario","1515, 1610","1756","881","427","253","195","5","2","82"
+"Benegas Haddad, José María","1820","1756","922","418","259","157","8","6","75"
+"Beneyto Pérez, José María","3306, 3307, 3308, 3408, 3513","1756","434","1121","2","199","12","12","65"
+"Bermúdez de Castro Fernández, José Antonio","3209","1756","498","1257","0","1","0","1","88"
+"Bertomeu Bertomeu, Juan","2710, 2711, 3512","1756","496","1257","2","1","0","1","88"
+"Blanco López, José","1302, 1402","1756","854","360","236","306","7","4","78"
+"Blanco Terán, Rosa Delia","1807, 1809","1756","899","447","255","155","12","4","73"
+"Blanquer Alcaraz, Patricia","1407, 4701, -1","1435","362","192","124","757","13","10","38"
+"Blasco Soto, Miriam Guadalupe","3403, 3404, 3511, 3513, 3516","1756","467","1221","1","67","2","1","86"
+"Bolarín Sánchez, María Dolores","2605, 2715, 2716, 3510","1756","495","1257","3","1","0","1","88"
+"Bonilla Domínguez, María Jesús","2504, 3411, 3413, 3414, 3509","1756","496","1259","0","1","0","1","88"
+"Bosch i Pascual, Alfred","2501","1756","644","200","99","813","21","10","58"
+"Bravo Ibáñez, Mª Concepción","3503, 3504, 3508, 3614, 3616","1756","497","1257","1","1","0","1","88"
+"Buyolo García, Federico","4606, 4702","1756","999","446","275","36","0","2","87"
+"Báñez García, María Fátima","2102","1756","411","1040","1","304","35","3","51"
+"Caamaño Domínguez, Francisco Manuel","1304, 4807","655","192","95","35","333","12","0","29"
+"Cabello de Alba Hernández, Federico","2707, 3507, 3820","1756","495","1255","1","5","1","0","88"
+"Cabezón Ruiz, Soledad","1312, 1709, -1","1756","605","312","186","653","20","9","60"
+"Cabrera García, Francisco Domingo","3506, 3705, 3708, 3709, 3710","1756","495","1258","1","2","0","2","87"
+"Caicedo Bernabé, Jesús","3505, 5602, 5603, 5606, 5704","1756","495","1259","1","1","0","1","88"
+"Caldera Sánchez-Capitán, Jesús","1210, 1312","1756","981","434","268","73","7","1","81"
+"Camacho Vizcaíno, Antonio","1306, 1806","1756","983","461","281","31","5","4","80"
+"Camarero Benítez, Susana","3301, 3302, 3303, 3410, 3503, 3504","1756","497","1251","1","7","1","0","88"
+"Campos Arteseros, Herick Manuel","4605, 4706","1756","983","460","286","27","1","0","88"
+"Camps Devesa, Gerardo","3302, 3303, 3304, 3413, 3414","1756","470","1192","0","94","9","0","80"
+"Campuzano i Canadés, Carles","2308","1756","929","217","480","130","5","8","76"
+"Candón Adán, Alfonso","3503, 3713, 3716, 5701, 5702","1756","493","1254","1","8","1","1","87"
+"Canongia Gerona, Joan","1615","305","140","90","73","2","0","2","11"
+"Cantó García del Moral, Antonio","2405","1756","831","473","452","0","0","0","89"
+"Carcedo Roces, María Luisa","1205, 1206, 1508","1756","984","449","272","51","2","5","82"
+"Carreño Fernández, María Ascensión","2711, 2712, 3502","1756","497","1256","2","1","0","1","88"
+"Casado Blanco, Pablo","3501, 3503, 5701, 5704, 5705","1756","491","1230","1","34","2","0","87"
+"Castellano Ramón, Helena","1606, 1817","1756","1012","463","281","0","0","0","89"
+"Castillo Calvín, José Miguel","2515, 3406, 3408, 3410, 3411","1756","496","1256","3","1","0","1","88"
+"Centella Gómez, José Luis","1502","1756","834","270","236","416","15","6","68"
+"Cervera Soto, Santiago","9","940","255","677","0","8","1","0","44"
+"Cervera Taulet, Manuel","2514, 3505, 3507, 3509","1451","455","975","4","17","1","2","73"
+"Chacón Piqueras, Carme","1305, 1415","1451","703","325","151","272","10","4","62"
+"Chaves González, Manuel María","1207, 1208, 1209, 1301","1756","969","434","262","91","5","7","77"
+"Cid Muñoz, Margarita del Carmen del","2513, 2609, 2716, 3701, 3702, 3703, -1","1756","489","1213","6","48","0","5","84"
+"Ciuró i Buldó, Lourdes","2304","1756","965","240","507","44","2","5","82"
+"Cobaleda Hernández, María Teresa","2712, 2713, 2820","1749","492","1256","0","1","0","1","87"
+"Cobos Trallero, Sara","2818, 3503, 3809, 3810, -1","1695","471","1196","0","28","0","4","78"
+"Collarte Rodríguez, Guillermo","2512, 2607, 2609, 3701","1756","474","1206","4","72","1","4","84"
+"Conde Bajén, Agustín","2410, 2511","1756","472","1210","5","69","10","5","74"
+"Conde Martínez, Gema","2510, 2707, 2708, 3820","1756","494","1259","1","2","1","1","87"
+"Corcuera Plaza, Juan Carlos","1611, 1612, 1712","1756","838","402","230","286","8","1","80"
+"Cortizo Nieto, Miguel Ángel","1613, 1614, 1805","1756","957","437","273","89","1","7","81"
+"Cortés Bureta, Pilar","2509, 5601, 5702, 5705, 5706","1756","497","1259","0","0","0","0","89"
+"Cortés Martín, Miguel Ángel","3301, 3302, 3412, 3413, 3414","1756","474","1232","1","49","6","0","83"
+"Coscubiela Conesa, Joan","1503","1756","708","257","205","586","8","5","76"
+"Costa Palacios, María Angelina","1409, 1607, 1614","1756","1001","457","275","23","3","3","83"
+"Cuadra Lasarte, Sabino","2704","1756","256","90","102","1308","41","37","11"
+"Cunillera Mestres, Teresa","8","1756","870","417","239","230","6","0","83"
+"Císcar Casabán, Ciprià","1609, 1610, 4706","1756","1012","457","275","12","0","6","83"
+"De las Heras Ladera, Ascensión","1602","1756","859","292","231","374","16","8","65"
+"Delgado Arce, Celso Luis","2508, 2515, 2516","1756","498","1246","0","12","0","7","82"
+"Duran i Lleida, Josep Antoni","2207","1756","502","115","298","841","40","5","44"
+"Durán Ramos, Eva","2507, 3603, 3605, 3607, 3608","1756","498","1257","0","1","0","1","88"
+"Díez González, Rosa María","2401","1756","819","470","454","13","2","1","86"
+"Echávarri Fernández, Gabriel","4604, 4701, 4703","1756","903","410","236","207","10","2","77"
+"Elorriaga Pisarik, Gabriel","2409, 2506","1756","492","1244","12","8","1","2","86"
+"Elorza González, Odón","1819","1756","975","447","277","57","4","8","77"
+"Enbeita Maguregi, Onintza","2601","1517","254","143","94","1026","35","24","7"
+"Erias Rey, Antonio","2516, 3517, -1","1756","487","1237","3","29","3","3","83"
+"Erkoreka Gervasio, Josu Iñaki","2201","951","330","135","408","78","5","3","39"
+"Errekondo Saltsamendi, Xabier Mikel","2602","1756","234","63","97","1362","44","37","8"
+"Escobar Las Heras, Conrado","2505, 3405, 3407, 3409, 3410","1756","497","1259","0","0","0","0","89"
+"Escudero Berzal, Beatriz Marta","3715, 5606, 5702, 5703, 5704","1756","488","1237","3","28","2","3","84"
+"España Reina, Carolina","3502, 3504, 3505, 3615, 5605","1756","497","1259","0","0","0","0","89"
+"Esteban Bravo, Aitor","2201, 2202","1756","616","251","515","374","11","6","72"
+"Esteller Ruedas, Mª Ángeles","5602, 5604, 5605, 5706","1756","492","1242","1","21","2","1","86"
+"Esteve Ortega, Esperança","1309, 1711","1756","785","375","230","366","14","1","74"
+"Fabra Fernández, Andrea","3504, 3506, 3508, 3509, 5603","1756","496","1259","1","0","0","0","89"
+"Fajarnés Ribas, Enrique","3509, 3511, 3513, 3514, 5602","1756","497","1254","4","1","0","1","88"
+"Falcón Dacal, Maravillas Concepción","3602, 3603, 3605, 3606, 5601","1756","491","1213","1","51","0","4","85"
+"Fernández Davila, Mª Olaia","2701, 2702","1756","964","307","249","236","4","10","75"
+"Fernández Díaz, Jorge","3102","1756","363","931","6","456","21","8","60"
+"Fernández García, Eduardo","3615, 3805, 3806, 5603, 5604","1756","498","1258","0","0","0","0","89"
+"Fernández González, Daniel","1205, 1707, 4606","951","171","74","31","675","21","0","26"
+"Fernández González, María Mercedes","3203, 3310, 3311","160","19","44","1","96","9","2","5"
+"Fernández Moya, Gracia","1704","1653","886","390","256","121","2","7","67"
+"Fernández Álvarez, Alejandro","3402, 3405, 3407, 3408, 3616","1756","496","1254","2","4","2","2","85"
+"Fernández-Ahuja García, María de los Ángeles","2809, 2817, 2819, 3802","1596","438","1153","4","1","0","1","72"
+"Ferrando Sendra, Amparo","2506, 2507, 2508, 3614, 5606","1756","494","1255","0","7","1","2","86"
+"Ferrer Roselló, Vicente","3404, 3406, 3408, 3409, 3613","1756","482","1206","0","68","9","1","79"
+"Figueres Górriz, María Ascensión","2605, 2606, 2716, 3612","1756","490","1255","0","11","2","1","86"
+"Flores Lanuza, Mario Francisco José","2610, 3611, 3702, 3703, 3704","1756","496","1259","0","1","0","1","88"
+"Floriano Corrales, Carlos Javier","3305, 3312","1756","476","1193","3","84","6","3","80"
+"Franquis Vera, Sebastián","1608, 1609, 4702","1756","903","370","249","234","8","3","78"
+"Fumero Roque, Águeda","3610, 3803, 3804, 3805","1756","497","1259","0","0","0","0","89"
+"Gallego Arriola, María del Puerto","1506, 1815, 1816","1756","1003","451","281","21","2","4","83"
+"Gallego Burgos, Antonio","3403, 3405, 3406, 3515, 3609","1756","498","1258","0","0","0","0","89"
+"García Díez, Joaquín María","3506, 3508, 3510, 3511, 3608","1756","495","1255","0","6","0","2","87"
+"García Egea, Teodoro","2819, 3512, 3514, 3515, 3607","1756","485","1228","13","30","3","6","80"
+"García Gasulla, Guillem","1816, 4805","1756","971","430","280","75","1","5","83"
+"García Gálvez, Paloma","2818, 3606","245","109","123","1","12","2","0","22"
+"García Pérez, Pablo","2713, 2714, 2715, 3605","1756","497","1258","0","1","0","1","88"
+"García Álvarez, María Caridad","1703","1756","828","279","232","417","14","5","70"
+"García-Tizón López, Arturo","2412, 3408","1756","496","1239","2","19","3","4","82"
+"Garrido Valenzuela, Irene","3604, 3712, 3715, 3716, 5701","1756","495","1257","1","3","0","3","86"
+"Garzón Espinosa, Alberto","1702","1756","815","272","224","445","20","3","66"
+"Gil Lázaro, Ignacio","6","1756","483","1214","4","55","6","0","83"
+"González Cabaña, Francisco","1408, 1513","1756","828","346","245","337","16","2","71"
+"González Gutiérrez, Concepción","2816, 2818, 2819, 3408","1602","447","1153","1","1","0","1","73"
+"González Muñoz, Ángel Luis","3602, 3704, 3707, 3708, 3709","1756","498","1256","2","0","0","0","89"
+"González Pons, Esteban","3311, 3312","1756","478","1205","0","73","8","2","79"
+"González Ramos, Manuel Gabriel","1612, 1812","1756","968","453","251","84","5","4","80"
+"González Santín, María Luisa","1816","733","334","158","130","111","0","1","39"
+"González Veracruz, María","1303, 1304, 1402","1756","973","449","267","67","7","7","75"
+"González Vázquez, Marta","3503, 3505, 3506, 3601, 3616","1756","495","1252","0","9","1","3","85"
+"González Vázquez, Sebastián","2616, 3601, 3604, 3606, 3607","1756","487","1212","2","55","5","2","82"
+"Gordo Pérez, Juan Luis","1606, 1608","1756","996","459","287","14","3","1","85"
+"Grande Pesquero, Pilar","1509, 4703","1756","979","443","258","76","1","1","87"
+"Grau Reinés, Juan Carlos","2615, 3502, 3505, 3507, 3508","1756","498","1252","0","6","1","1","87"
+"Guerra González, Alfonso","1401","1756","976","439","260","81","2","2","85"
+"Guillaumes i Ràfols, Feliu-Joan","2406","1756","945","231","504","76","9","3","77"
+"Guillén Izquierdo, Vicente","1510, 1714","1756","1011","464","277","4","0","4","85"
+"Gutiérrez Molina, Antonio","2614, 5603, 5605, 5606","1756","478","1199","15","64","5","15","69"
+"Gutiérrez del Castillo, María Concepción","1404, 1415","1756","979","452","270","55","5","6","78"
+"Gómez Sánchez, Tomás Valeriano","1307, 1310","1756","759","323","194","480","22","11","56"
+"Gómez de la Serna y Villacieros, Pedro Ramón","3409, 3410, 3412, 3413, 3603","1756","460","1210","1","85","5","4","80"
+"Heredia Díaz, Miguel Ángel","1516, 1711","1756","836","378","215","327","11","1","77"
+"Heredia Martín, Silvia","2613, 3812, 3813, 3814","1756","487","1250","0","19","3","1","85"
+"Hernando Fraile, Rafael Antonio","3208","1756","493","1252","1","10","0","6","83"
+"Hernando Vera, Antonio","1209, 1302","1756","982","443","268","63","6","1","82"
+"Hernanz Costa, Sofía","1817, 4804","1756","995","456","278","27","2","5","82"
+"Hernández Gutiérrez, Patricia","4701, 4803","1756","982","459","294","21","3","5","81"
+"Hoyo Juliá, Belén","2612, 2708, 2709, -1","1756","467","1199","0","90","0","7","82"
+"Hurtado Zurera, Antonio","1410, 1705","1756","1000","455","286","15","1","3","85"
+"Ibáñez Gimeno, Manuel","2818, 3509","305","35","269","0","1","0","1","12"
+"Iglesias Fontal, María Olga","2605, 2606, 2608, 2609, 2611, 2716, -1","1756","415","1225","1","115","3","8","78"
+"Iglesias Santiago, Leire","1506, 1803","1756","724","369","212","451","5","1","83"
+"Iñarritu García, Jon","2805","1756","325","117","120","1194","30","47","12"
+"Jané i Guasch, Jordi","5","1756","944","227","495","90","6","4","79"
+"Jiménez Díaz, María Piedra Escrita","2610, 2815, 2817","1756","491","1228","1","36","2","4","83"
+"Jiménez García-Herrera, Trinidad","1303, 1304, 1305","1756","827","362","208","359","12","9","68"
+"Jiménez Mínguez, Encarnación","2814, 2816","1749","491","1248","5","5","0","3","85"
+"Jordà i Roura, Teresa","2503","1756","641","218","122","775","17","8","64"
+"Jorquera Caselas, Francisco Xesús","2701","380","156","67","40","117","8","1","26"
+"Juste Picón, María Belén","2505, 2506, 2609, 5602, 5604","1756","489","1253","0","14","3","6","80"
+"Jáuregui Atondo, Ramón","1308, 1311","1756","934","407","251","164","7","3","79"
+"Lagares Flores, Juan Carlos","2608, 5601, 5602, 5703, 5706","1756","474","1157","1","124","5","2","82"
+"Lago Martínez, María Paz","2607, 3806, 3807, 3808","1756","497","1258","1","0","0","0","89"
+"Landaluce Calleja, José Ignacio","2606, 3609, 3611, 3613, 3614","1756","489","1230","0","37","5","0","84"
+"Lanzuela Marina, Santiago","2516, 2605, 3605, 3607","1756","490","1222","0","44","6","3","80"
+"Lara Carbó, María Teresa de","3507, 3509, 3511, 3512, 5706","1756","489","1259","1","7","1","2","86"
+"Lara Moya, Cayo","1501","1756","896","307","269","284","8","7","74"
+"Larreina Valderrama, Rafael","2603","1756","362","225","151","1018","15","57","17"
+"Lavilla Martínez, Félix","1609, 1813","1756","1012","458","278","8","2","1","86"
+"Llamazares Trigo, Gaspar","1604","1756","896","309","236","315","5","8","76"
+"Llorens Torres, José Ignacio","2511, 2512, 5701","1756","494","1243","5","14","1","4","84"
+"Lozano Domingo, Irene","2404","1756","824","468","451","13","2","1","86"
+"Lucio Carrasco, María Pilar","1803, 1804","1756","999","462","275","20","1","9","79"
+"Luena López, César","1206, 1207, 1403, 1801","1756","1017","460","279","0","0","0","89"
+"Luis Rodríguez, Teófilo de","9, 3308, 3309, 3310","1756","494","1258","1","3","0","3","86"
+"López Garrido, Diego","1405, 1810","1756","793","339","216","408","19","3","67"
+"López Garrido, José","3817, 3818, 3819, 5704","1756","494","1252","2","8","2","0","87"
+"López González, Rocío","3703, 3706, 3707, 3708, 5703","1756","498","1256","0","2","0","2","87"
+"López Iglesias, Germán Augusto","2713, 5702","160","54","106","0","0","0","0","16"
+"López Jiménez, Luis","1406, 1704","103","60","37","3","3","0","2","11"
+"López Vilaboa, José Máximo","2815","242","21","221","0","0","0","0","7"
+"López i Chamosa, María Isabel","1616, 1714, -1","1756","798","367","201","390","14","8","67"
+"López-Amor García, Fernando","3612, 5601, 5603, 5705","1756","490","1231","1","34","2","2","85"
+"Macias i Arau, Pere","2206","1756","867","209","467","213","12","3","74"
+"Madina Muñoz, Eduardo","1203","1756","846","412","243","255","13","1","75"
+"Madrazo Díaz, Ana María","3404, 3406, 3407, 3516, 3716","1756","499","1253","1","3","0","2","87"
+"Marcos Domínguez, Pilar","3801, 5802, 5803","816","232","582","1","1","0","1","43"
+"Mariscal Anaya, Guillermo","3407, 3409, 3411, 3412, 3715","1756","487","1246","0","23","3","2","84"
+"Martín González, María Guadalupe","1715, 1808","1756","1003","464","277","12","0","7","82"
+"Martín González, Telmo","2505, 2507, 2508, 2509, 3713","1756","492","1256","5","3","0","2","87"
+"Martín Peré, Pablo","1612, 1613, 1818","1756","881","425","243","207","5","2","82"
+"Martín Pozo, María Teresa","2605, 2607, 2608, 2815, 3712","1756","492","1251","0","13","2","0","87"
+"Martín Rodríguez, Enrique Luis","2714, 2715, 2716, 2814, 3711","1756","495","1259","1","1","0","1","88"
+"Martín-Toledano Suárez, José Alberto","3709, 3710, 3712, 3713, 3714","1756","464","1213","2","77","4","1","84"
+"Martínez Gorriarán, Carlos","2402","1756","766","437","433","120","10","1","78"
+"Martínez Olmos, José","1411, 1516","1756","942","396","243","175","5","5","79"
+"Martínez Rodríguez, Santiago","3708, 3715, 3716, 3808, 3809","1756","489","1232","1","34","5","2","82"
+"Martínez Saiz, Teófila","3301, 3411, 3412, 3413, 3415","1756","425","950","6","375","10","6","73"
+"Martínez-Pujalte López, Vicente","3403, 3411, 3412, 3414, 3415, 3709","1756","465","1186","4","101","4","4","81"
+"Matarí Sáez, Juan José","3304, 3306, 3307","1756","493","1236","7","20","3","3","83"
+"Mato Adrover, Ana","1106","1756","325","862","5","564","51","8","30"
+"Matos Mascareño, Pablo","2512, 2513, 3707","1756","493","1240","5","18","3","3","83"
+"Meijón Couselo, Guillermo Antonio","1807, 4806, 4807","1756","928","407","260","161","12","0","77"
+"Merino López, Rafael","3204, 3309, 3310, 3311","1756","497","1254","1","4","0","2","87"
+"Micheo Carrillo-Albornoz, Julia de","2808, 2813, 3806, 3807","1566","413","1145","0","8","2","5","64"
+"Miguélez Pariente, María Aránzazu","2707, 2820, 3706, 3801, 5706","1756","495","1258","1","2","0","2","87"
+"Mingo Zapatero, Mario","2510, 2511, 3705","1756","496","1254","3","3","1","2","86"
+"Molinero Hoyos, Francisco","2706, 3704, 3819","1756","434","1225","2","95","3","2","84"
+"Moneo Díez, María Sandra","3302, 3303, 3304, 3305, 3306, -1","1756","483","1219","0","54","0","3","86"
+"Monteserín Rodríguez, María Virtudes","1206, 1508","1756","984","444","271","57","6","2","81"
+"Montesinos de Miguel, Macarena","2610, 3703, 5604","1756","498","1256","0","2","0","2","87"
+"Montoro Romero, Cristóbal Ricardo","3103","1756","408","1059","1","288","40","1","48"
+"Montserrat Montserrat, Dolors","4","1756","471","1078","1","206","5","1","83"
+"Montón Giménez, Carmen","1207, 1208, 1308, 4705","1756","1008","466","275","7","1","0","88"
+"Mora Bernat, Manuel","3702, 3814, 3815, 3816","1756","495","1246","0","15","2","0","87"
+"Moragas Sánchez, Jorge","3202, 3307","1756","325","1018","5","408","34","9","46"
+"Moraleja Gómez, Tristana María","3701, 3703, 3704, 3705","1756","495","1246","1","14","2","5","82"
+"Moreno Bustos, Ramón","2716, 3610, 3612, 3614, 3615","1756","501","1248","3","4","0","4","85"
+"Moreno Felipe, Irene","2715, 2812, 2813, 2814, 2815","1756","484","1222","1","49","4","2","83"
+"Moreno Palanques, Rubén","2714, 3502, 3510, 5601, 5603, 5705","1756","492","1248","0","16","2","0","87"
+"Morlán Gracia, Víctor","1511, 1716","1756","1018","461","277","0","0","0","89"
+"Moro Almaraz, María Jesús","2713, 3402, 3403, 3512, 3515","1756","497","1259","0","0","0","0","89"
+"Moscoso del Prado Hernández, Juan","1305, 1306, 1814","1756","899","403","229","225","17","2","70"
+"Muñoz González, Pedro José","1413, 1505","1756","984","455","271","46","4","0","85"
+"Muñoz Obón, Carlos Enrique","2712, 3708, 3711, 3712, 3713","1756","497","1259","0","0","0","0","89"
+"Márquez de la Rubia, Francisco","3714, 5701, 5702, 5703","1756","468","1198","1","89","4","4","81"
+"Méndez Monasterio, Lourdes","2411, 3410, 3411","1756","496","1255","0","5","0","3","86"
+"Narbona Ruiz, Cristina","1510, 1811","1023","332","173","52","466","3","1","45"
+"Nasarre Goicoechea, Eugenio","2711, 3604, 3606, 3608, 3613","1756","470","1221","1","64","3","2","84"
+"Navarro Cruz, María del Carmen","2710, 3510, 3513, 3515, 3516","1756","490","1247","0","19","2","0","87"
+"Nuet Pujals, Joan Josep","1601","1756","673","258","207","618","17","4","68"
+"Olabarría Muñoz, Emilio","2203","1756","815","300","577","64","4","4","81"
+"Olano Vela, Jaime Eduardo de","2709, 3815, 3816, 3817","1756","494","1250","5","7","1","1","87"
+"Oramas González-Moro, Ana María","2801","1756","1058","255","325","118","6","4","79"
+"Ortiz Castellví, Laia","1603","1756","790","297","237","432","6","7","76"
+"Pacheco Atienza, Arsenio","2708, 3810, 3811, 3812","1756","494","1234","0","28","0","3","86"
+"Pajín Iraola, Leire","1309, 1407","321","173","88","30","30","2","1","25"
+"Pastor González, Ildefonso R.","2707, 2812, 3704, 3705, 3706","1756","491","1251","3","11","2","0","87"
+"Pastor Julián, Ana María","2104","1756","353","736","0","667","54","2","33"
+"Pezzi Cereto, Manuel","1412, 1507","1756","1013","457","276","10","3","2","84"
+"Picó i Azanza, Antoni","2305","1756","954","238","512","52","6","2","81"
+"Pigem i Palmés, Mª Mercè","2204","1756","813","195","418","330","13","2","74"
+"Posada Moreno, Jesús","1","1756","478","1227","13","38","3","12","74"
+"Pozuelo Meño, María Isabel","1312, 1403, 1515","1756","889","378","246","243","8","3","78"
+"Prada Presa, Alfredo","3301, 3303, 3304, 3305, 3414","1756","498","1258","0","0","0","0","89"
+"Pradas Torres, Antonio Francisco","1514, 1710","1756","1003","452","277","24","2","5","82"
+"Puche Rodríguez-Acosta, Gabino","2612, 5802","1756","455","1202","2","97","9","4","76"
+"Puente Redondo, Javier","2604, 2810, 5801","1756","498","1252","2","4","0","3","86"
+"Puig Ferrer, Joaquín Francisco","1411, 4603","1756","867","366","235","288","19","2","68"
+"Puyuelo del Val, María Blanca","3818, 3819, 3820","1756","495","1258","0","3","0","3","86"
+"Pàramo i Ponsetí, Carles","2407","1756","696","193","410","457","23","6","60"
+"Pérez Domínguez, María Soledad","1306, 1307, 1403","1756","1003","460","284","9","1","3","85"
+"Pérez Fernández, Rosana","2702","1376","718","218","175","265","4","5","45"
+"Pérez Insua, Antonio","2706, 2713, 2714, 2811","1756","495","1257","0","4","0","3","86"
+"Pérez Lapazarán, José Cruz","3508, 3510, 3512, 3513, 5803","1756","493","1256","4","3","0","3","86"
+"Pérez Rubalcaba, Alfredo","1201","1756","772","350","212","422","40","1","48"
+"Quevedo Iturbe, Pedro","2802","1756","543","115","171","927","31","6","52"
+"Quintanilla Barba, María del Carmen","2614, 3819","1756","483","1220","5","48","5","7","77"
+"Rajoy Brey, Mariano","3108","1756","182","496","1","1077","74","5","10"
+"Ramis Socias, Miquel","2514, 2515, 3818","1756","493","1250","0","13","1","3","85"
+"Ramón Utrabo, Elvira","1413, 1707","1756","995","456","288","17","2","9","78"
+"Rangel Tarrés, Joan","1408, 1710","1756","893","426","244","193","2","0","87"
+"Riera i Reñé, Inmaculada","2307","1756","837","204","440","275","13","3","73"
+"Robles Orozco, Gonzalo","3302","7","3","4","0","0","0","0","1"
+"Rodríguez Flores, María Carmen","3613, 5802","1376","306","1027","2","41","3","2","49"
+"Rodríguez García, Isabel","1614, 1810, -1","1756","938","453","269","96","11","4","74"
+"Rodríguez Herrer, María Elvira","3301, 3415","372","175","196","1","0","0","0","33"
+"Rodríguez Maniega, María del Carmen","2507, 2509, 3601, 3602, 3817","1756","497","1257","0","2","0","2","87"
+"Rodríguez Ramos, María Soraya","1202, 1611","1756","944","455","273","84","4","5","80"
+"Rodríguez Ramírez, María José","1414, 1706","1756","696","363","205","492","8","1","80"
+"Rodríguez Sánchez, Germán","4601, 4606","805","419","226","152","8","1","1","40"
+"Rodríguez Sánchez, María Felicidad","2606, 2607, 3701, 3702, 3816","1756","495","1259","1","1","0","1","88"
+"Rodríguez Vázquez, María Paloma","4806","892","478","249","163","2","0","2","44"
+"Rodríguez-Piñero Fernández, Inmaculada","1209, 1210, 1311","1756","529","219","137","871","19","3","67"
+"Rodríguez-Ponga Salamanca, Rafael","3302, 3408, 3415","154","50","104","0","0","0","0","15"
+"Rodríguez-Salmones Cabeza, Beatriz","3207","1756","459","1160","1","136","15","2","72"
+"Romero Girón, Aurelio","2613, 3814","1756","495","1255","1","5","0","2","87"
+"Romero Hernández, Carmelo","3804, 3805, 3806, 3813","1756","490","1254","3","9","1","2","86"
+"Romero Rodríguez, María Eugenia","3710, 3713, 3714, 3715, 3812, -1","1756","449","1154","1","152","7","10","72"
+"Romero Sánchez, Rosa María","3606, 3608, 3609, 3811","1756","496","1257","0","3","0","3","86"
+"Román Jasanada, Antonio","2510, 3602, 3604, 3605, 3815","1756","497","1258","0","1","0","1","88"
+"Ros Martínez, Susana","4602, 4705","1756","995","454","285","22","2","0","87"
+"Ruano Gómez, Juan de Dios","2604, 3504, 3506, 3507, 3810","1756","497","1259","0","0","0","0","89"
+"Ruiz Llamas, Román","1709, 4604","1756","678","337","190","551","5","7","77"
+"Ruiz i Carbonell, Joan","1705, 4602","1756","881","428","239","208","3","4","82"
+"Ruiz-Gallardón Jiménez, Alberto","3105","1756","446","1154","2","154","17","2","70"
+"Rumí Ibáñez, María Consuelo","1407, 1514","1756","1006","452","280","18","3","2","84"
+"Sahuquillo García, Luis Carlos","1615, 1811, 1814","1756","1009","459","286","2","0","2","87"
+"Salvador Armendáriz, Carlos Casimiro","2807","1756","501","838","109","308","2","15","72"
+"Santa Ana Fernández, María de la Concepción de","3707, 3710, 3711, 3712, 3807","1756","495","1248","0","13","2","2","85"
+"Saura García, Pedro","1409, 1815","1756","1010","457","270","19","1","2","86"
+"Seara Sobrado, Laura Carmen","1607, 1608, 1806, -1","1756","894","392","261","209","10","12","67"
+"Segura Clavell, José","1505, 4704","1756","970","438","281","67","5","6","78"
+"Serrano Argüello, María Arenales","2505, 3711, 3714, 3806, 5605","1756","496","1258","1","1","0","1","88"
+"Serrano Calurano, Bibiano","2504, 2608, 3805","1756","494","1259","1","2","0","2","87"
+"Serrano Coronado, Daniel","3716, 3804, 5703, 5704, 5705","1756","489","1095","0","172","3","0","86"
+"Serrano Martínez, José Enrique","1805, 1812","1756","943","428","255","130","3","5","81"
+"Sicilia Alférez, Felipe Jesús","1517, 1708","1756","977","423","273","83","2","5","82"
+"Silva Rego, María del Carmen","7","1756","478","262","162","854","33","2","54"
+"Simancas Simancas, Rafael","1307, 1308, 1813","1756","1002","456","278","20","2","0","87"
+"Sixto Iglesias, Ricardo","1701","1756","906","313","252","285","9","4","76"
+"Soler Sicilia, Albert","1708, 4605","1756","844","379","239","294","6","8","75"
+"Solsona Aixalà, Marc","2303","1756","762","177","437","380","8","1","80"
+"Soravilla Fernández, Roberto","3611, 3613, 3803, -1","372","152","152","0","68","4","3","26"
+"Soria López, José Manuel","2101","1756","219","802","8","727","60","5","24"
+"Sumelzo Jordán, Susana","1509, 1715","1756","1004","466","270","16","1","3","85"
+"Surroca i Comas, Montserrat","2306","1756","655","161","247","693","14","1","74"
+"Susinos Tarrero, María Jesús","2820, 3702, 3705, 3706, 3707","1756","494","1254","0","8","1","0","88"
+"Suárez Lamata, Eloy","3502, 3612, 3614, 3616, 3802","1756","495","1259","0","2","0","2","87"
+"Suárez-Bárcena Blasco, María Cristina","2713, 2811, 2812, 2813","1593","445","1146","0","2","0","2","70"
+"Sáenz de Santamaría Antón, María Soraya","3107","1756","385","1012","7","352","34","5","50"
+"Sáez Jubero, Àlex","1706, 4603","1756","807","357","199","393","5","2","82"
+"Sánchez Amor, José Ignacio","1802","1756","954","439","274","89","6","6","77"
+"Sánchez Barrera, José Juan","2810, 2813, 2814, 3415","1377","321","1055","0","1","0","1","54"
+"Sánchez Díaz, María Carmen","1204, -1","1756","844","343","189","380","6","9","74"
+"Sánchez Díaz, Ovidio","3402, 3403, 3404, 3405, 3409, 3410","1756","495","1260","0","1","0","1","88"
+"Sánchez García, Celinda","2508, 2510, 3602, 3603, 3808","1756","496","1254","0","6","0","4","85"
+"Sánchez Pérez-Castejón, Pedro","1517","733","386","193","149","5","1","0","39"
+"Sánchez Robles, Isabel","2302","800","452","171","163","14","0","7","34"
+"Sánchez de Alcázar Ocaña, Miguel","3801, 3802, 3803, 3809","1756","498","1258","0","0","0","0","89"
+"Sánchez i Llibre, Josep","2205","1756","851","218","489","198","8","5","76"
+"Tapia Otaegi, Arantza","2301","951","312","122","385","132","5","2","40"
+"Tardà i Coma, Joan","2502","1756","784","269","179","524","10","5","74"
+"Tarno Blanco, Ricardo","2611, 2819","1756","482","1253","3","18","3","4","82"
+"Tarruella Tomás, María Concepció","2310","1756","759","189","411","397","11","6","72"
+"Tomé Muguruza, Baudilio","3306, 3503","61","15","40","0","6","2","0","5"
+"Torrado de Castro, Marta","3205, 3310","1756","497","1259","0","0","0","0","89"
+"Torres Herrera, Manuel Luis","2818, 3811, 3812, 3813","1756","465","1249","1","41","1","5","83"
+"Torres Mora, José Andrés","1405, 1605","1756","1011","458","287","0","0","0","89"
+"Trevín Lombán, Antonio Ramón María","1507, 1512","1756","932","420","247","157","7","3","79"
+"Trillo-Figueroa Martínez-Conde, Federico","3305, 3307, 3308","160","34","62","0","64","4","2","10"
+"Tudanca Fernández, Luis","1605, 1818","1756","989","454","285","28","4","0","85"
+"Urbina Fernández, Iker","2804","1756","124","117","79","1436","57","26","6"
+"Uriarte Ayala, Ignacio","2606, 2607, 2608, 2817, 3514","1756","490","1223","3","40","2","2","85"
+"Valenciano Martínez-Orozco, Elena","1207, 1301, -1","1756","718","344","199","495","33","11","45"
+"Valerio Cordero, Magdalena","1616, 1809","1756","982","456","282","36","3","9","77"
+"Vallès Vives, Francesc","1205, 1615, 1704","1756","869","407","240","240","7","0","82"
+"Vañó Ferre, Francisco","2821, 3801","1756","483","1209","1","63","3","6","80"
+"Vera Pró, Juan Carlos","3307, 3308, 3309","1756","498","1255","0","3","0","3","86"
+"Veray Cama, Concepció","2821, 3801, 5801","1756","448","869","1","438","3","1","85"
+"Viera Chacón, José Antonio","1512, 1713","1756","897","382","229","248","13","2","74"
+"Villalobos Talero, Celia","2","1756","465","1239","4","48","5","5","79"
+"Villanova Rueda, Joaquín","2709, 2710, 2814","1756","492","1257","4","3","0","3","86"
+"Villarrubia Mediavilla, Julio","1412, 1607","1756","1005","465","276","10","2","1","86"
+"Vázquez Blanco, Ana Belén","2816, 3608, 3610, 3611","1756","494","1258","2","2","0","2","87"
+"Vázquez Jiménez, Antonio","2509, 2815, 3601, 3603, 3604","1756","492","1250","7","7","1","2","86"
+"Vázquez Morillo, María José","1513, 1712","1756","1009","457","282","8","1","4","84"
+"Xuclà i Costa, Jordi","2309","1756","807","194","433","322","15","1","73"
+"Yuste Cabello, Chesús","1504","1756","837","285","248","386","9","5","75"
+"Zaragoza Alonso, José","1205, 1707, 4606","1756","843","409","214","290","5","9","75"
+"Zarrías Arévalo, Gaspar Carlos","1208, 1303, 1304","1756","789","361","200","406","12","8","69"
+"Ábalos Meco, José Luis","1407, 4601, 4703","1756","976","440","272","68","4","1","84"
+"Álvarez Sostres, Enrique","2806","1756","370","548","436","402","14","16","59"
+"Álvarez de Toledo Peralta Ramos, Cayetana","2505, 2506, 2507, 3401, 5605","1756","468","1196","1","91","11","3","75"
+"Álvarez Álvarez, Ángeles","1804, 1808","1756","904","400","262","190","6","9","74"
+"Álvarez-Arenas Cisneros, María del Carmen","2412, 3402, 3511, 3514, 3516","1756","497","1259","0","0","0","0","89"
