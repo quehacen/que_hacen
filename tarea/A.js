@@ -24,7 +24,7 @@ var consecutiveEmptyMonths = 0;
 exports.run = function(item) { // item = { url:'', _id:'' }
 	console.log("run1 " + item.url);
 
-	if(consecutiveEmptyMonths > 2) {
+	if(consecutiveEmptyMonths > 3) {
 		this.emit(["Found 3 consecutive existing sessions. Won't try further."]);
 		return;
 	}
@@ -68,7 +68,7 @@ exports.run = function(item) { // item = { url:'', _id:'' }
                             insertedNewSession = true;
                             consecutiveEmptyMonths = 0;
                         } else {
-                            console.log("run1: Old session.");
+                            console.log("run A: Old session.");
                         }
                     }
                     cb(err);
