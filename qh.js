@@ -29,13 +29,18 @@ var argv = require('optimist')
 // Gestión de tareas
 
 function jobMaker(tarea) {
-    return function(cb) { 
+    return function(cb) {
+        var waitInSeconds = 1;
+        if(tarea.options != undefined)
+            if(tarea.options.wait != undefined)
+                waitInSeconds = tarea.options.wait;
+                
         nodeio.start(new nodeio.Job({ 
             input: tarea.input, 
             run: tarea.run 
         }), { 
             timeout: 15,
-            wait: tarea.options.wait !== null ? tarea.options.wait : 1,
+            wait: waitInSeconds,
             debug: true, 
             encoding: 'binary' 
         }, cb); 
