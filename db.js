@@ -18,14 +18,13 @@ exports.connect = function(cb) {
             console.log("Error connecting to db: " + err);
             process.exit(code=1);
         }
-        // TODO: EnsureIndex (create indexes to avoid duplicated entries).
-        // Read todo.txt
         cPendingURL = db.collection("pendingURL");
         cSession    = db.collection("session");
         cIniciativa = db.collection("iniciativa"); 
         cVotacion   = db.collection("votacion");
         console.log("Connected to db.");
-        cb();
+
+        cVotacion.ensureIndex({ fecha:1 }, {w:1}, cb);
     });
 }
 
@@ -86,14 +85,14 @@ exports.getVotacionWithNoXML = function(cb) {
     cVotacion.findOne({ xml:null }, cb);
 }
 exports.getVotacionAll = function(cb) {
-    cVotacion.find({}, cb);
+    cVotacion.find().sort({fecha:1}, cb);
 }
 exports.setVotacionXML = function(id, xml, cb) {
-    cVotacion.update({ _id: id }, {$set:{xml: xml}}, {w:1}, cb);
-    // TODO: get date out of xml, reverse date, insert in 
-    // fecha: a new indexed field, to be able to sort by date. 
-    // Original PHP code was doing this reversing.
-    // TODO: create index for fecha.
+    // TODO: insertion of fecha is not yet tested.
+    // next time there is new data, TEST.
+    var dte = xml.resultado.informacion.fecha.split("/"); 
+    var f = new Date(dte[2], dte[1]-1, dte[0], 10, 0, 0); 
+    cVotacion.update({ _id: id }, {$set:{xml: xml, fecha: f}}, {w:1}, cb);
 }
 
 // Info

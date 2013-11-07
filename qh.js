@@ -21,6 +21,7 @@ var argv = require('optimist')
     .describe('d', 'Download votacion XML files')
     .describe('e', 'Download iniciativa html')
     .describe('f', 'Export votaciones')
+    .describe('g', 'Export participacion')
     .describe('i', 'Database Info')
     .argv
 ;
@@ -34,7 +35,7 @@ function jobMaker(tarea) {
             run: tarea.run 
         }), { 
             timeout: 15,
-            wait: 1,
+            wait: tarea.options.wait !== null ? tarea.options.wait : 1,
             debug: true, 
             encoding: 'binary' 
         }, cb); 
@@ -70,8 +71,11 @@ function jobSequence() {
     // -e = descarga archivos html de las iniciativas
     if(argv.e) jobs.push(jobMaker(require('./tarea/E')));
     
-    // -f = exporta iniciativas en csv
+    // -f = exporta votaciones en csv
     if(argv.f) jobs.push(jobMaker(require('./tarea/gen_csv_votaciones')));
+
+    // -g = exporta participacion en csv
+    if(argv.g) jobs.push(jobMaker(require('./tarea/gen_csv_participacion')));
     
     // ejecuta las tareas una tras otra
     async.series(jobs, function(err, result) {

@@ -1,4 +1,5 @@
-var db = require('../db.js');
+var db = require('../db.js'),
+    async = require('async');
 
 // Analiza los html descargados por tarea 2 y extrae información
 

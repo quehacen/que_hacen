@@ -48,19 +48,10 @@ writer.writeRecord([
 // This first version of this file committed to GitHub 
 // saves one line to the CSV file on each call to run()
 
-// This follows the node.io way of doing things, but it's slow because we
-// have implemente a 1 second delay after each run().
-
-// The 1 second delay is fine when scraping data from the web, but unnecessary
-// when doing one query and writing a file.
-
-// On the other hand, if this is run as a background process, maybe it's a good
-// thing that things happen slowly, so the server is not slowed down by doing
-// complicated operations.
-
-// I will commit this code to GitHub to leave it as reference, but will
-// replace the code and write the complete file inside one call to input(),
-// and that means doing just one input() and one run().
+// Override 1 second wait. This task requires no access to the web.
+exports.options = {
+    wait: 0
+}
 
 exports.input = function(pos, limit, cb) {
     if(cursor === false) {
@@ -87,7 +78,7 @@ exports.input = function(pos, limit, cb) {
 }
 // Empty values in json are stored as an empty object: {}
 // If we put this directly in the CSV file, it becomes [object object]
-// so we replace objects with an empty string, which loosk better in CSV.
+// so we replace objects with an empty string, which looks better in CSV.
 function fix(str) {
     if(typeof str == 'object')
         return '';
@@ -115,6 +106,7 @@ exports.run = function(item) {
         ];
         values = values.map(fix);
         writer.writeRecord(values);
+        console.log(res.informacion.fecha + " " + res.informacion.sesion);
     }
 	self.emit(["run F complete: " + res.informacion.titulo]);
 }
