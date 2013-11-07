@@ -19,15 +19,13 @@
 */
 
 var db = require('../db.js');
-var csv = require('ya-csv');
-
-var filename = 'csv/participacion.csv';
-var filename2 = 'csv/diputados/%s.csv';
+var fs = require('fs');
 
 var cursor = false;
-var writer = csv.createCsvFileWriter(filename);
 
-writer.writeRecord([
+var filename1 = 'csv/participacion.csv';
+var filename2 = 'csv/diputados/%s.csv';
+var file1content = [ 
     'nombre', 
     'asientos', 
     'total', 
@@ -38,7 +36,7 @@ writer.writeRecord([
     'dias_no_vota', 
     'dias_vota_algo', 
     'dias_vota_todo'
-]);
+].join(",") + "\n";
 
 var diputado = {};
 
@@ -114,7 +112,7 @@ exports.run = function(item) {
             diputado[nom]['listado'][id] = voto;
         }
     }
-    self.emit(["run G complete. Diputado #" + diputado.length]);
+    self.emit(["run G complete."]);
 }
 
 
@@ -131,13 +129,8 @@ saveFilesToDisk = function(cb) {
         var dias_con_no_voto = {};
         var dias_con_voto = {};
 
-        var writer2 = csv.createCsvFileWriter(filename2.replace('%s', nom.latinise()));
-        writer2.writeRecord([
-            'fecha', 
-            'sesion', 
-            'numeroVotacion', 
-            'voto'
-        ]);
+        var file2content = "fecha,sesion,numeroVotacion,voto\n";
+
         for(var id in info['listado']) {
             var voto = info['listado'][id];
             var tmp = id.split(";");
@@ -145,23 +138,17 @@ saveFilesToDisk = function(cb) {
             var fecha = tmp[0];
             var sesion = tmp[1];
             var numeroVotacion = tmp[2];
-            
-            writer2.writeRecord([
-                fecha,
-                sesion,
-                numeroVotacion,
-                voto
-            ]);
+
+            file2content += '"' + [fecha,sesion,numeroVotacion,voto].join('","') + '"' + "\n";
+
             if(voto == 'No vota') {
                 dias_con_no_voto[fecha] = true;
             } else {
                 dias_con_voto[fecha] = true;
             }
         }
-
-        // I don't know how to close the csv file...
-        // fclose($fp_listado);
-
+        fs.writeFileSync(filename2.replace('%s', nom.latinise()), file2content);
+        
         var dias_no_vota = 0;
         var dias_vota_algo = 0;
         var dias_vota_todo = 0;
@@ -178,7 +165,7 @@ saveFilesToDisk = function(cb) {
             }
         }
         
-        writer.writeRecord([
+        file1content += '"' + [
             nom,
             Object.keys(info['asientos']).join(', '),
             info['total'],
@@ -189,8 +176,10 @@ saveFilesToDisk = function(cb) {
             dias_no_vota,
             dias_vota_algo,
             dias_vota_todo
-        ]);
+        ].join('","') + '"' + "\n";
     }
+    fs.writeFileSync(filename1, file1content);
+
     cb(null, false);
 }
 

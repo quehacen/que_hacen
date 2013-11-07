@@ -19,17 +19,12 @@
 */
 
 var db = require('../db.js');
-var csv = require('ya-csv');
-
-// About the node CSV library, keep an eye on 
-// http://justinratner.com/2012/07/nodejs-fs-ya-csv-mysteriously-buffered-write-stream/
-
-var filename = 'csv/votaciones.csv';
+var fs = require('fs');
 
 var cursor = false;
-var writer = csv.createCsvFileWriter(filename);
 
-writer.writeRecord([
+var filename1 = 'csv/votaciones.csv';
+var file1content = [
     'sesion', 
     'num_votacion', 
     'fecha', 
@@ -43,7 +38,7 @@ writer.writeRecord([
     'texto_expediente', 
     'titulo_subgrupo', 
     'texto_subgrupo'
-]);
+].join(",") + "\n";
 
 // This first version of this file committed to GitHub 
 // saves one line to the CSV file on each call to run()
@@ -71,8 +66,10 @@ exports.input = function(pos, limit, cb) {
         cursor.nextObject(function(err, item) {
             if(item)
     		    cb([item]);
-            else
+            else {
+                fs.writeFileSync(filename1, file1content);
                 cb(null, false);
+            }
         });
     }
 }
@@ -82,6 +79,9 @@ exports.input = function(pos, limit, cb) {
 function fix(str) {
     if(typeof str == 'object')
         return '';
+    str = str.split('"').join("'");
+    str = str.split("\n").join(" ");
+    str = str.split("\r").join("");
     return str;
 }
 
@@ -105,7 +105,7 @@ exports.run = function(item) {
             res.informacion.textosubgrupo
         ];
         values = values.map(fix);
-        writer.writeRecord(values);
+        file1content += '"' + values.join('","') + '"' + "\n";
         console.log(res.informacion.fecha + " " + res.informacion.sesion);
     }
 	self.emit(["run F complete: " + res.informacion.titulo]);
